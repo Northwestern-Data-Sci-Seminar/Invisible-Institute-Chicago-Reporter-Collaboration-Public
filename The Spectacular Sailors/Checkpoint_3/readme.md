@@ -8,5 +8,7 @@ In Checkpoint 3, we create interactive visualizations with ObservableHQ notebook
 ## How to View Analysis
 Link here: https://observablehq.com/@milan-chicago/modeling-police-misconduct
 
+A static snapshot of the notebook is saved under /src as a .gz file
+
 
 
