@@ -45,3 +45,5 @@ CREATE TEMP TABLE officers_cohorts_data AS (
 
 select * from officers_cohorts_data
 */
+
+SELECT * FROM data_officer LIMIT 10;

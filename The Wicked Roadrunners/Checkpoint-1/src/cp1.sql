@@ -154,12 +154,3 @@ inner join
 on t1.officer_id = t2.id) as t3
 group by unit, beat
 order by count(*) desc;
-
-
-
-
-
-
-
-
-
