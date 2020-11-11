@@ -153,6 +153,29 @@ CREATE TEMP TABLE officers_cohorts_data AS (
 -- View the result of query 1 breakouts by cohort
 SELECT * FROM officers_cohorts_data;
 
+DROP TABLE IF EXISTS officers_crews_ml;
+CREATE TEMP TABLE officers_crews_ml AS (
+    SELECT officer_id,
+           crid,
+           cohort,
+           last_unit_id,
+           incident_date,
+           coaccused_count,
+           DATE_PART('year', incident_date) - DATE_PART('year', appointed_date) as years_on_force_at_incident,
+           DATE_PART('year', incident_date) - DATE_PART('year', TO_TIMESTAMP(CAST(birth_year AS varchar), 'YYYY')) AS age_at_incident,
+           (CASE WHEN cohort = 1 THEN 1 ELSE 0 END) as is_crew,
+           (CASE WHEN cohort = 2 THEN 1 ELSE 0 END) as is_community,
+           (CASE WHEN cohort = 3 THEN 1 ELSE 0 END) as is_unaffiliated,
+           (CASE WHEN gender = 'M' THEN 1 ELSE 0 END) as gender,
+           (CASE WHEN active = 'Yes' THEN 1 ELSE 0 END) as is_active,
+           (CASE WHEN active = 'TRUE' THEN 1 ELSE 0 END) as is_disciplined
+    FROM officers_cohorts_data
+);
+
+SELECT * FROM officers_crews_ml;
+
+
+
 DROP TABLE IF EXISTS officers_cohorts_genders;
 CREATE TEMP TABLE officers_cohorts_genders AS (
     SELECT cohort, gender, COUNT(DISTINCT officer_id) AS officers_count
