@@ -1,0 +1,14 @@
+{
+  "name": "@tzhang1404/sortable-bar-chart",
+  "main": "d00605f46d6aac3c@293.js",
+  "version": "293.0.0",
+  "homepage": "https://observablehq.com/@tzhang1404/sortable-bar-chart",
+  "author": {
+    "name": "Tony Zhang ",
+    "url": "https://observablehq.com/@tzhang1404"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}

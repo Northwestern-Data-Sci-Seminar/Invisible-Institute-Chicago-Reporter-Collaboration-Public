@@ -66,19 +66,92 @@ The first table returns the answer to the first part of the question (how many?)
 and the `primary_allegation_precinct` column of the second table answers the
 second part of the question (what is the primary precinct?).
 
-### What’s the probability of a police officer having more than X number of allegations in a year if there exists a frequently misbehaving police officer working in the same unit in that year? ###
-execute
+### What year has the greatest number of police officers with more than X number of allegations in that year? ###
+Using psql, execute the following command:
 ```
 psql -f Q3.sql -h cpdb.cgod7egsd6vr.us-east-2.rds.amazonaws.com -U cpdb-student -d cpdb -p 5432
 ```
-returns
+Will return:
 ```
  year | count 
 ------+-------
- 2000 |  1168
-(1 row)
-```
-change number marked after `/*allegation threshold*/` to see results for each X
+ 2000 |  5091
+ 2001 |  2922
+(2 rows)
 
-### Identify the common properties, including investigator name, district name, victim info (number, age and race) of sustained complaints and unfounded complaints. ###
-Suggested method is execute the script block by block in [DataGrip](https://www.jetbrains.com/datagrip/) without using `drop` lines
+ year | count 
+------+-------
+ 2000 |  2488
+ 2001 |  1534
+(2 rows)
+
+ year | count 
+------+-------
+ 2000 |  2114
+ 2001 |   874
+(2 rows)
+
+ year | count 
+------+-------
+ 2000 |  1168
+ 2001 |   526
+(2 rows)
+
+```
+
+### For civilian allegations, which race and age group of complainants has the highest sustained rate? (For multi-allegation cases, consider it sustained if half of the sub-cases are sustained) ###
+Using psql, execute the following command:
+```
+psql -f Q4.sql -h cpdb.cgod7egsd6vr.us-east-2.rds.amazonaws.com -U cpdb-student -d cpdb -p 5432
+```
+Will return:
+```
+              race              |        percent        
+--------------------------------+-----------------------
+ Black                          |    0.5496103056980172
+                                |   0.08080604127125146
+ Asian/Pacific Islander         |  0.009562653959536404
+ Hispanic                       |   0.11110931631870129
+ White                          |   0.24758712595404433
+ Native American/Alaskan Native | 0.0013245567984492993
+(6 rows)
+
+              race              |    sustained_rate    
+--------------------------------+----------------------
+ Black                          |  0.02260102865540044
+                                |  0.01969015492253873
+ Asian/Pacific Islander         | 0.060810810810810814
+ Hispanic                       |  0.05626226648251799
+ White                          |  0.10588810960691568
+ Native American/Alaskan Native |  0.03048780487804878
+(6 rows)
+
+ age_group |       percent       
+-----------+---------------------
+         0 | 0.19401526470944555
+         1 | 0.21792189960828656
+         2 | 0.21960990186972498
+         3 | 0.17262851835399587
+           | 0.19582441545854704
+(5 rows)
+
+ age_group |    sustained_rate    
+-----------+----------------------
+         0 | 0.013404379318957622
+         1 |  0.03461566970572975
+         2 |  0.08546945680556066
+         3 |    0.081079816599607
+           |                     
+(5 rows)
+```
+
+Where age group is defined as:
+```
+ id | min | max  
+----+-----+------
+  0 |  21 |   30
+  1 |  31 |   40
+  2 |  41 |   50
+  3 |  51 | 1000
+
+```

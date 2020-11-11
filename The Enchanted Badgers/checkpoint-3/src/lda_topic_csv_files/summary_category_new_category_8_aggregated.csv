@@ -1,0 +1,236 @@
+original_category,new_category,frequency
+Operation/Personnel Violations,topic_6,71
+Domestic,topic_6,41
+Domestic,topic_19,80
+Use Of Force,topic_19,314
+Conduct Unbecoming (Off-Duty),topic_7,6
+Use Of Force,topic_4,210
+Domestic,topic_4,39
+Drug / Alcohol Abuse,topic_4,9
+Operation/Personnel Violations,topic_19,179
+Operation/Personnel Violations,topic_15,2180
+Illegal Search,topic_16,32
+Supervisory Responsibilities,topic_16,1
+Operation/Personnel Violations,topic_4,77
+Verbal Abuse,topic_6,13
+Supervisory Responsibilities,topic_19,22
+Use Of Force,topic_6,349
+Domestic,topic_7,12
+Conduct Unbecoming (Off-Duty),topic_4,8
+Domestic,topic_3,1
+Domestic,topic_1,4
+Supervisory Responsibilities,topic_1,1
+Operation/Personnel Violations,topic_7,43
+Use Of Force,topic_7,46
+Drug / Alcohol Abuse,topic_19,8
+False Arrest,topic_1,471
+Operation/Personnel Violations,topic_0,71
+Illegal Search,topic_9,613
+Use Of Force,topic_10,67
+Lockup Procedures,topic_13,524
+Operation/Personnel Violations,topic_12,120
+Operation/Personnel Violations,topic_8,240
+Use Of Force,topic_14,12
+False Arrest,topic_8,138
+Lockup Procedures,topic_6,31
+Lockup Procedures,topic_8,52
+Verbal Abuse,topic_8,20
+Illegal Search,topic_14,61
+Illegal Search,topic_5,305
+Use Of Force,topic_8,51
+Use Of Force,topic_16,20
+Illegal Search,topic_11,46
+Illegal Search,topic_8,633
+Traffic,topic_8,185
+Verbal Abuse,topic_14,7
+Operation/Personnel Violations,topic_5,329
+Operation/Personnel Violations,topic_16,96
+Operation/Personnel Violations,topic_3,37
+Illegal Search,topic_10,73
+Conduct Unbecoming (Off-Duty),topic_0,27
+False Arrest,topic_13,63
+False Arrest,topic_15,86
+Drug / Alcohol Abuse,topic_18,7
+Illegal Search,topic_19,12
+Use Of Force,topic_9,20
+Operation/Personnel Violations,topic_2,151
+Operation/Personnel Violations,topic_9,104
+Operation/Personnel Violations,topic_1,49
+Conduct Unbecoming (Off-Duty),topic_11,11
+Illegal Search,topic_13,124
+Illegal Search,topic_1,160
+Conduct Unbecoming (Off-Duty),topic_13,7
+Operation/Personnel Violations,topic_18,38
+Lockup Procedures,topic_15,57
+Use Of Force,topic_1,41
+Verbal Abuse,topic_15,8
+False Arrest,topic_12,18
+Lockup Procedures,topic_16,38
+False Arrest,topic_10,35
+Illegal Search,topic_15,104
+Domestic,topic_5,15
+False Arrest,topic_5,89
+Illegal Search,topic_18,19
+Conduct Unbecoming (Off-Duty),topic_8,14
+Verbal Abuse,topic_5,17
+Lockup Procedures,topic_5,42
+Lockup Procedures,topic_1,19
+False Arrest,topic_3,88
+Operation/Personnel Violations,topic_13,143
+Operation/Personnel Violations,topic_10,46
+False Arrest,topic_9,49
+Illegal Search,topic_12,10
+Verbal Abuse,topic_1,4
+Conduct Unbecoming (Off-Duty),topic_14,17
+Conduct Unbecoming (Off-Duty),topic_17,15
+Lockup Procedures,topic_12,5
+Verbal Abuse,topic_10,7
+Domestic,topic_10,7
+Conduct Unbecoming (Off-Duty),topic_12,15
+Verbal Abuse,topic_7,10
+Criminal Misconduct,topic_3,5
+Lockup Procedures,topic_10,28
+Use Of Force,topic_11,251
+Operation/Personnel Violations,topic_11,79
+False Arrest,topic_14,58
+Operation/Personnel Violations,topic_17,38
+Bribery / Official Corruption,topic_1,5
+Domestic,topic_8,9
+Operation/Personnel Violations,topic_14,75
+Domestic,topic_11,19
+Domestic,topic_12,16
+Conduct Unbecoming (Off-Duty),topic_6,5
+Illegal Search,topic_17,43
+Illegal Search,topic_0,28
+Drug / Alcohol Abuse,topic_12,10
+Drug / Alcohol Abuse,topic_6,2
+False Arrest,topic_17,14
+Criminal Misconduct,topic_12,8
+Use Of Force,topic_13,7
+Traffic,topic_16,9
+Lockup Procedures,topic_4,5
+Traffic,topic_13,8
+Verbal Abuse,topic_0,1
+Drug / Alcohol Abuse,topic_7,3
+Excessive Force,topic_11,7
+Criminal Misconduct,topic_17,4
+False Arrest,topic_6,6
+Conduct Unbecoming (Off-Duty),topic_15,35
+Conduct Unbecoming (Off-Duty),topic_5,29
+Conduct Unbecoming (Off-Duty),topic_2,64
+Lockup Procedures,topic_3,5
+Traffic,topic_19,7
+Conduct Unbecoming (Off-Duty),topic_1,3
+Use Of Force,topic_3,11
+Domestic,topic_9,2
+Lockup Procedures,topic_9,9
+Domestic,topic_13,3
+Criminal Misconduct,topic_14,2
+Excessive Force,topic_7,2
+Use Of Force,topic_12,19
+Domestic,topic_15,12
+Illegal Search,topic_2,26
+Verbal Abuse,topic_11,18
+Verbal Abuse,topic_16,1
+False Arrest,topic_2,13
+Drug / Alcohol Abuse,topic_14,2
+Illegal Search,topic_6,5
+Supervisory Responsibilities,topic_15,34
+Lockup Procedures,topic_11,38
+Use Of Force,topic_2,15
+False Arrest,topic_11,106
+Bribery / Official Corruption,topic_11,7
+Use Of Force,topic_0,33
+Verbal Abuse,topic_19,25
+Conduct Unbecoming (Off-Duty),topic_19,10
+Supervisory Responsibilities,topic_4,6
+Use Of Force,topic_5,51
+Conduct Unbecoming (Off-Duty),topic_3,5
+Lockup Procedures,topic_19,36
+Use Of Force,topic_15,37
+Traffic,topic_5,14
+False Arrest,topic_16,26
+Lockup Procedures,topic_17,2
+Traffic,topic_7,3
+Lockup Procedures,topic_18,28
+Traffic,topic_10,3
+Lockup Procedures,topic_7,7
+Conduct Unbecoming (Off-Duty),topic_18,12
+Traffic,topic_15,35
+Traffic,topic_12,3
+Domestic,topic_14,15
+False Arrest,topic_4,53
+False Arrest,topic_0,29
+Domestic,topic_2,5
+Racial Profiling,topic_11,1
+Verbal Abuse,topic_18,3
+Illegal Search,topic_4,4
+Verbal Abuse,topic_4,5
+Illegal Search,topic_7,20
+First Amendment,topic_1,3
+Lockup Procedures,topic_14,7
+Traffic,topic_14,3
+False Arrest,topic_7,12
+Traffic,topic_1,1
+Drug / Alcohol Abuse,topic_2,3
+Conduct Unbecoming (Off-Duty),topic_9,5
+Use Of Force,topic_18,7
+Lockup Procedures,topic_2,24
+Lockup Procedures,topic_0,9
+Illegal Search,topic_3,12
+Traffic,topic_2,4
+False Arrest,topic_19,9
+Bribery / Official Corruption,topic_12,3
+Criminal Misconduct,topic_1,2
+Bribery / Official Corruption,topic_5,8
+Supervisory Responsibilities,topic_7,3
+Criminal Misconduct,topic_5,4
+Criminal Misconduct,topic_11,2
+Drug / Alcohol Abuse,topic_17,1
+Traffic,topic_6,1
+Criminal Misconduct,topic_19,4
+Excessive Force,topic_3,1
+Drug / Alcohol Abuse,topic_5,3
+Traffic,topic_11,1
+Bribery / Official Corruption,topic_17,2
+Verbal Abuse,topic_13,4
+Domestic,topic_16,2
+False Arrest,topic_18,10
+Supervisory Responsibilities,topic_5,2
+Drug / Alcohol Abuse,topic_3,2
+Supervisory Responsibilities,topic_11,2
+Use Of Force,topic_17,14
+Criminal Misconduct,topic_18,4
+Conduct Unbecoming (Off-Duty),topic_10,3
+Conduct Unbecoming (Off-Duty),topic_16,1
+Bribery / Official Corruption,topic_14,1
+Criminal Misconduct,topic_9,1
+Supervisory Responsibilities,topic_0,1
+Drug / Alcohol Abuse,topic_8,1
+Traffic,topic_3,1
+Criminal Misconduct,topic_15,3
+Excessive Force,topic_4,1
+Bribery / Official Corruption,topic_15,3
+Criminal Misconduct,topic_0,1
+Bribery / Official Corruption,topic_7,2
+First Amendment,topic_13,2
+Bribery / Official Corruption,topic_8,2
+Supervisory Responsibilities,topic_18,13
+Supervisory Responsibilities,topic_6,1
+Verbal Abuse,topic_3,1
+Bribery / Official Corruption,topic_3,4
+Supervisory Responsibilities,topic_12,1
+Criminal Misconduct,topic_6,1
+Drug / Alcohol Abuse,topic_11,1
+Domestic,topic_18,1
+Traffic,topic_0,2
+Supervisory Responsibilities,topic_14,2
+Bribery / Official Corruption,topic_13,2
+Criminal Misconduct,topic_13,1
+Bribery / Official Corruption,topic_6,2
+Racial Profiling,topic_8,2
+Uncategorized,topic_6,2
+Uncategorized,topic_19,40
+Uncategorized,topic_7,1
+Uncategorized,topic_4,56
+Uncategorized,topic_15,2
