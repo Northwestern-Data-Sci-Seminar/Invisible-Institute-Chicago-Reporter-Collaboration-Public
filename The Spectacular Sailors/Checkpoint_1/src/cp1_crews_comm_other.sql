@@ -184,7 +184,11 @@ CREATE TEMP TABLE officers_crews_ml AS (
     ORDER BY 1
 );
 
+DELETE FROM officers_crews_ml WHERE avg_years_on_force_at_incident IS NULL;
+DELETE FROM officers_crews_ml WHERE avg_complaint_percentile IS NULL;
+
 SELECT * FROM officers_crews_ml;
+
 
 
 
