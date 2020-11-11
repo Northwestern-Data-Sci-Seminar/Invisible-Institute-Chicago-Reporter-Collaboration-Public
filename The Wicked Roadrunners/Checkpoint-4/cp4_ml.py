@@ -5,16 +5,54 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.neighbors import KNeighborsClassifier
 import matplotlib.pyplot as plt
 import pandas as pd
+from sklearn.svm import SVC
 import numpy as np
+from sklearn.naive_bayes import GaussianNB
+from sklearn.neural_network import MLPClassifier
 from sklearn import preprocessing
+from sklearn.neural_network import MLPClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.svm import SVC
+from sklearn.gaussian_process import GaussianProcessClassifier
+from sklearn.gaussian_process.kernels import RBF
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
+from sklearn.naive_bayes import GaussianNB
+from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis
+
 
 # cp4 question 1: predict discipline
 file_path = 'cp4_data_all.csv'
 df = pd.read_csv (file_path)
 df = pd.DataFrame(df,columns=['gender','race','rank','complaint_percentile','allegation_count','category','disciplined'])
 df = df.dropna()
-y = df.loc[:,'disciplined']
-X = df[['complaint_percentile']]
+y = df[['disciplined']]
+
+# visualize class imbalance between number of disciplined allegations
+print(" *** Original class imbalance: ***")
+print(y.value_counts())
+plt.title("Original Class Imbalance")
+plt.bar(*zip(*y['disciplined'].value_counts().items()))
+plt.xlabel('False vs True (Disciplined)')
+plt.ylabel('Frequency')
+plt.show()
+
+# resample to fix imbalance
+class_0 = df[df['disciplined'] == False]
+class_1 = df[df['disciplined'] == True]
+class_count_0, class_count_1 = df['disciplined'].value_counts()
+class_1_over = class_1.sample(class_count_0, replace=True)
+data_over = pd.concat([class_1_over, class_0], axis=0)
+
+print("*** New fixed class imbalance: ***\n", data_over['disciplined'].value_counts())
+plt.title("New Fixed Class Imbalance")
+plt.bar(*zip(*data_over['disciplined'].value_counts().items()))
+plt.xlabel('False vs True (Disciplined)')
+plt.ylabel('Frequency')
+plt.show()
+
+y = data_over[['disciplined']]
+X = data_over[['complaint_percentile', 'allegation_count']]
 
 # preprocess data to encode categorical data as numeric
 le = preprocessing.LabelEncoder()
@@ -22,12 +60,13 @@ for column_name in X.columns:
     if X[column_name].dtype == object:
         X[column_name] = le.fit_transform(X[column_name])
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.20)
-clf = RandomForestClassifier(n_estimators=5)
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20)
+clf = RandomForestClassifier(n_estimators=10)
 clf.fit(X_train, y_train)
 y_pred = clf.predict(X_test)
-scores = cross_val_score(clf, X, y, cv=5, scoring='accuracy') #try using 'accuracy', 'precision', 'recall', and 'f1_macro' for the scoring parameter
-print("CV scores = ",scores)
+scores = cross_val_score(clf, X, y, cv=5, scoring='accuracy')  # try using 'accuracy', 'precision', 'recall', and 'f1_macro' for the scoring parameter
+print("CV scores = ", scores)
 print(metrics.classification_report(y_test, y_pred, digits=3))
 
 # cp4 question 2: predict settlement amount
