@@ -75,6 +75,7 @@ CREATE TEMP TABLE officers_cohorts AS (
     FROM working_cohort_0
 );
 
+
 UPDATE officers_cohorts
     SET cohort = (CASE WHEN cohort IS NULL THEN (CASE WHEN detected_crew = 'true' THEN 1 ELSE 2 END) ELSE cohort END);
 
@@ -158,15 +159,18 @@ CREATE TEMP TABLE officers_crews_ml AS (
     SELECT officer_id,
            crid,
            cohort,
+           (CASE WHEN crew_id != 0 THEN crew_id ELSE (CASE WHEN community_id != 0 THEN community_id ELSE 0 END) END) as cohort_id,
            last_unit_id,
            incident_date,
            coaccused_count,
+           gender,
+           beat_id,
+           allegation_category_id,
            DATE_PART('year', incident_date) - DATE_PART('year', appointed_date) as years_on_force_at_incident,
            DATE_PART('year', incident_date) - DATE_PART('year', TO_TIMESTAMP(CAST(birth_year AS varchar), 'YYYY')) AS age_at_incident,
            (CASE WHEN cohort = 1 THEN 1 ELSE 0 END) as is_crew,
            (CASE WHEN cohort = 2 THEN 1 ELSE 0 END) as is_community,
            (CASE WHEN cohort = 3 THEN 1 ELSE 0 END) as is_unaffiliated,
-           (CASE WHEN gender = 'M' THEN 1 ELSE 0 END) as gender,
            (CASE WHEN active = 'Yes' THEN 1 ELSE 0 END) as is_active,
            (CASE WHEN active = 'TRUE' THEN 1 ELSE 0 END) as is_disciplined
     FROM officers_cohorts_data
