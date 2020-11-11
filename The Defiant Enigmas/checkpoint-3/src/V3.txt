@@ -1,0 +1,33 @@
+https://observablehq.com/@iffix/interactive-visualization-3
+
+drop table if exists bad_allegations;
+create temp table bad_allegations as
+  select distinct bad.bad_id, doa.allegation_id
+  from data_officerallegation as doa
+         join (select id as bad_id from data_officer where civilian_allegation_percentile >= 99 order by id asc) as bad
+           on doa.officer_id = bad.bad_id;
+​
+​
+drop table if exists bad_relations;
+create temp table bad_relations as
+  select doa.officer_id, ba.bad_id, count(*) as count
+  from data_officerallegation as doa
+         join bad_allegations as ba on doa.allegation_id = ba.allegation_id
+  group by doa.officer_id, ba.bad_id
+  having count(*) > 1 and doa.officer_id != ba.bad_id;
+​
+select * from bad_relations;
+​
+select dao.id,
+       gender,
+       race,
+       extract(year from appointed_date) as appointed_year,
+       birth_year,
+       civilian_allegation_percentile    as ca_per,
+       internal_allegation_percentile    as ia_per,
+       current_salary                    as salary
+from data_officer as dao
+       right join (select bad_id as id from bad_relations
+                   union
+                   select officer_id as id from bad_relations) as all_ids on dao.id = all_ids.id
+order by id asc;

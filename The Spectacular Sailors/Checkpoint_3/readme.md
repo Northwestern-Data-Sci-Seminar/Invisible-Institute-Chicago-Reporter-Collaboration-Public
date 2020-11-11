@@ -2,7 +2,7 @@ By: Pengyi Shi, Milan McGraw, and Justin Chae
 
 Project Title: Modeling Risk of Police Misconduct
 
-## Summary of Checkpoint 4
+## Summary of Checkpoint 3
 In Checkpoint 3, we create interactive visualizations with ObservableHQ notebooks. 
 
 ## How to View Analysis

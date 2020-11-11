@@ -1,0 +1,933 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.20.0918.1727                               -->
+<workbook original-version='18.1' source-build='2020.3.1 (20203.20.0918.1727)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Custom SQL Query (cpdb)' inline='true' name='federated.0kcm49q1re76x81fw3tw609ud6mw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cpdb.cgod7egsd6vr.us-east-2.rds.amazonaws.com' name='postgres.0ry86ut10998rq1424yg91ycy87f'>
+            <connection authentication='username-password' class='postgres' dbname='cpdb' odbc-native-protocol='' one-time-sql='' port='5432' server='cpdb.cgod7egsd6vr.us-east-2.rds.amazonaws.com' username='cpdb-student' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='postgres.0ry86ut10998rq1424yg91ycy87f' name='Custom SQL Query1' type='text'><![CDATA[WITH top_repeat_officers AS (
+    SELECT count(distinct allegation_id) AS allegation_count,
+           officer_id
+    FROM data_officerallegation
+    GROUP BY officer_id
+    order by random()
+    limit 4000),
+     salary_top_repeat_officers AS (
+         select top_repeat_officers.officer_id, max(data_salary.salary) as salary
+         from top_repeat_officers
+                  left join
+              data_salary
+              on data_salary.officer_id = top_repeat_officers.officer_id
+         where data_salary.salary is not null
+         group by top_repeat_officers.officer_id),
+     salary_level AS (
+         select salary_top_repeat_officers.*,
+                case
+                    when salary <<= 50000 then 40000
+                    when salary >>= 50000 and salary <<= 70000 then 60000
+                    when salary >>= 70000 and salary <<= 90000 then 80000
+                    when salary >>= 90000 and salary <<= 110000 then 100000
+                    when salary >>= 110000 and salary <<= 130000 then 120000
+                    when salary >>= 130000 and salary <<= 150000 then 140000
+                    when salary >>= 150000 and salary <<= 170000 then 160000
+                    when salary >>= 170000 and salary <<= 190000 then 180000
+                    when salary >>= 190000 and salary <<= 210000 then 200000
+                    when salary >>= 210000 then 220000
+                    else salary
+                    end as salary_mean
+         from salary_top_repeat_officers
+     )
+select 
+(COUNT(*) / (SUM(COUNT(*)) OVER() )) * 100 as percentage,
+salary_level.salary_mean 
+from salary_level
+group by salary_level.salary_mean]]></_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='postgres.0ry86ut10998rq1424yg91ycy87f' name='Custom SQL Query' type='text'><![CDATA[WITH top_repeat_officers AS (
+    SELECT count(distinct allegation_id) AS allegation_count,
+           officer_id
+    FROM data_officerallegation
+    GROUP BY officer_id
+    order by allegation_count desc
+    limit 4000),
+     salary_top_repeat_officers AS (
+         select top_repeat_officers.officer_id, max(data_salary.salary) as salary
+         from top_repeat_officers
+                  left join
+              data_salary
+              on data_salary.officer_id = top_repeat_officers.officer_id
+         where data_salary.salary is not null
+         group by top_repeat_officers.officer_id),
+     salary_level AS (
+         select salary_top_repeat_officers.*,
+                case
+                    when salary >>= 50000 and salary <<= 70000 then 60000
+                    when salary >>= 70000 and salary <<= 90000 then 80000
+                    when salary >>= 90000 and salary <<= 110000 then 100000
+                    when salary >>= 110000 and salary <<= 130000 then 120000
+                    when salary >>= 130000 and salary <<= 150000 then 140000
+                    when salary >>= 150000 and salary <<= 170000 then 160000
+                    when salary >>= 170000 and salary <<= 190000 then 180000
+                    when salary >>= 190000 and salary <<= 210000 then 200000
+                    else salary
+                    end as salary_mean
+         from salary_top_repeat_officers
+     )
+select (COUNT(*) / (SUM(COUNT(*)) OVER() )) * 100 as percentage,
+salary_level.salary_mean from salary_level
+group by salary_level.salary_mean]]></relation>
+          <relation connection='postgres.0ry86ut10998rq1424yg91ycy87f' name='Custom SQL Query1' type='text'><![CDATA[WITH top_repeat_officers AS (
+    SELECT count(distinct allegation_id) AS allegation_count,
+           officer_id
+    FROM data_officerallegation
+    GROUP BY officer_id
+    order by random()
+    limit 4000),
+     salary_top_repeat_officers AS (
+         select top_repeat_officers.officer_id, max(data_salary.salary) as salary
+         from top_repeat_officers
+                  left join
+              data_salary
+              on data_salary.officer_id = top_repeat_officers.officer_id
+         where data_salary.salary is not null
+         group by top_repeat_officers.officer_id),
+     salary_level AS (
+         select salary_top_repeat_officers.*,
+                case
+                    when salary <<= 50000 then 40000
+                    when salary >>= 50000 and salary <<= 70000 then 60000
+                    when salary >>= 70000 and salary <<= 90000 then 80000
+                    when salary >>= 90000 and salary <<= 110000 then 100000
+                    when salary >>= 110000 and salary <<= 130000 then 120000
+                    when salary >>= 130000 and salary <<= 150000 then 140000
+                    when salary >>= 150000 and salary <<= 170000 then 160000
+                    when salary >>= 170000 and salary <<= 190000 then 180000
+                    when salary >>= 190000 and salary <<= 210000 then 200000
+                    when salary >>= 210000 then 220000
+                    else salary
+                    end as salary_mean
+         from salary_top_repeat_officers
+     )
+select 
+(COUNT(*) / (SUM(COUNT(*)) OVER() )) * 100 as percentage,
+salary_level.salary_mean 
+from salary_level
+group by salary_level.salary_mean]]></relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[percentage (Custom SQL Query1)]' value='[Custom SQL Query1].[percentage]' />
+          <map key='[percentage]' value='[Custom SQL Query].[percentage]' />
+          <map key='[salary_mean (Custom SQL Query1)]' value='[Custom SQL Query1].[salary_mean]' />
+          <map key='[salary_mean]' value='[Custom SQL Query].[salary_mean]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>percentage</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[percentage]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>percentage</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>30</precision>
+            <scale>6</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_NUMERIC&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_E61B4992E8CE40DFA1DAA5BA94636816]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>salary_mean</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[salary_mean]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>salary_mean</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>4</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_E61B4992E8CE40DFA1DAA5BA94636816]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percentage</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[percentage (Custom SQL Query1)]</local-name>
+            <parent-name>[Custom SQL Query1]</parent-name>
+            <remote-alias>percentage</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>30</precision>
+            <scale>6</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_NUMERIC&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_0F2121BDD3DB4B6285B3B4FA8E44CBDB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>salary_mean</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[salary_mean (Custom SQL Query1)]</local-name>
+            <parent-name>[Custom SQL Query1]</parent-name>
+            <remote-alias>salary_mean</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>4</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_0F2121BDD3DB4B6285B3B4FA8E44CBDB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='Offenders Salary Range' datatype='table' name='[__tableau_internal_object_id__].[_0F2121BDD3DB4B6285B3B4FA8E44CBDB]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Repeaters Salary Range' datatype='table' hidden='true' name='[__tableau_internal_object_id__].[_E61B4992E8CE40DFA1DAA5BA94636816]' role='measure' type='quantitative' />
+      <column caption='Offenders Percentage' datatype='real' name='[percentage (Custom SQL Query1)]' role='measure' type='quantitative' />
+      <column caption='Repeaters Percentage' datatype='real' name='[percentage]' role='measure' type='quantitative' />
+      <column-instance column='[percentage (Custom SQL Query1)]' derivation='Avg' name='[avg:percentage (Custom SQL Query1):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[percentage]' derivation='Avg' name='[avg:percentage:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[percentage (Custom SQL Query1)]' derivation='None' name='[none:percentage (Custom SQL Query1):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[percentage]' derivation='None' name='[none:percentage:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[percentage (Custom SQL Query1)]' derivation='Sum' name='[sum:percentage (Custom SQL Query1):ok]' pivot='key' type='ordinal' />
+      <column-instance column='[percentage (Custom SQL Query1)]' derivation='Sum' name='[sum:percentage (Custom SQL Query1):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[percentage]' derivation='Sum' name='[sum:percentage:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0kcm49q1re76x81fw3tw609ud6mw].[avg:percentage (Custom SQL Query1):qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0kcm49q1re76x81fw3tw609ud6mw].[none:percentage (Custom SQL Query1):qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0kcm49q1re76x81fw3tw609ud6mw].[sum:percentage (Custom SQL Query1):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0kcm49q1re76x81fw3tw609ud6mw].[avg:percentage:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0kcm49q1re76x81fw3tw609ud6mw].[none:percentage:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0kcm49q1re76x81fw3tw609ud6mw].[sum:percentage:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[sum:percentage (Custom SQL Query1):ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>0.65000000000000002</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>2.9249999999999998</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>0.050000000000000003</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>0.57499999999999996</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>0.29999999999999999</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>3.2250000000000001</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>5.8250000000000002</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>3.0750000000000002</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>0.17499999999999999</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>0.25</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>33.725000000000001</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>5.7249999999999996</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>29.550000000000001</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>34.325000000000003</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>0.45000000000000001</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>29.324999999999999</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>4.9500000000000002</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>29.449999999999999</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>33.350000000000001</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>0.27500000000000002</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>3.3250000000000002</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>0.42499999999999999</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>0.69999999999999996</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>0.22500000000000001</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>34.25</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>5.1500000000000004</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>29.5</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>0.125</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Offenders Salary Range' id='_0F2121BDD3DB4B6285B3B4FA8E44CBDB'>
+            <properties context=''>
+              <relation connection='postgres.0ry86ut10998rq1424yg91ycy87f' name='Custom SQL Query1' type='text'><![CDATA[WITH top_repeat_officers AS (
+    SELECT count(distinct allegation_id) AS allegation_count,
+           officer_id
+    FROM data_officerallegation
+    GROUP BY officer_id
+    order by random()
+    limit 4000),
+     salary_top_repeat_officers AS (
+         select top_repeat_officers.officer_id, max(data_salary.salary) as salary
+         from top_repeat_officers
+                  left join
+              data_salary
+              on data_salary.officer_id = top_repeat_officers.officer_id
+         where data_salary.salary is not null
+         group by top_repeat_officers.officer_id),
+     salary_level AS (
+         select salary_top_repeat_officers.*,
+                case
+                    when salary <<= 50000 then 40000
+                    when salary >>= 50000 and salary <<= 70000 then 60000
+                    when salary >>= 70000 and salary <<= 90000 then 80000
+                    when salary >>= 90000 and salary <<= 110000 then 100000
+                    when salary >>= 110000 and salary <<= 130000 then 120000
+                    when salary >>= 130000 and salary <<= 150000 then 140000
+                    when salary >>= 150000 and salary <<= 170000 then 160000
+                    when salary >>= 170000 and salary <<= 190000 then 180000
+                    when salary >>= 190000 and salary <<= 210000 then 200000
+                    when salary >>= 210000 then 220000
+                    else salary
+                    end as salary_mean
+         from salary_top_repeat_officers
+     )
+select 
+(COUNT(*) / (SUM(COUNT(*)) OVER() )) * 100 as percentage,
+salary_level.salary_mean 
+from salary_level
+group by salary_level.salary_mean]]></relation>
+            </properties>
+          </object>
+          <object caption='Repeaters Salary Range' id='_E61B4992E8CE40DFA1DAA5BA94636816'>
+            <properties context=''>
+              <relation connection='postgres.0ry86ut10998rq1424yg91ycy87f' name='Custom SQL Query' type='text'><![CDATA[WITH top_repeat_officers AS (
+    SELECT count(distinct allegation_id) AS allegation_count,
+           officer_id
+    FROM data_officerallegation
+    GROUP BY officer_id
+    order by allegation_count desc
+    limit 4000),
+     salary_top_repeat_officers AS (
+         select top_repeat_officers.officer_id, max(data_salary.salary) as salary
+         from top_repeat_officers
+                  left join
+              data_salary
+              on data_salary.officer_id = top_repeat_officers.officer_id
+         where data_salary.salary is not null
+         group by top_repeat_officers.officer_id),
+     salary_level AS (
+         select salary_top_repeat_officers.*,
+                case
+                    when salary >>= 50000 and salary <<= 70000 then 60000
+                    when salary >>= 70000 and salary <<= 90000 then 80000
+                    when salary >>= 90000 and salary <<= 110000 then 100000
+                    when salary >>= 110000 and salary <<= 130000 then 120000
+                    when salary >>= 130000 and salary <<= 150000 then 140000
+                    when salary >>= 150000 and salary <<= 170000 then 160000
+                    when salary >>= 170000 and salary <<= 190000 then 180000
+                    when salary >>= 190000 and salary <<= 210000 then 200000
+                    else salary
+                    end as salary_mean
+         from salary_top_repeat_officers
+     )
+select (COUNT(*) / (SUM(COUNT(*)) OVER() )) * 100 as percentage,
+salary_level.salary_mean from salary_level
+group by salary_level.salary_mean]]></relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[salary_mean]' />
+              <expression op='[salary_mean (Custom SQL Query1)]' />
+            </expression>
+            <first-end-point object-id='_E61B4992E8CE40DFA1DAA5BA94636816' />
+            <second-end-point object-id='_0F2121BDD3DB4B6285B3B4FA8E44CBDB' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Salary Range of Repeaters and Offenders</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Custom SQL Query (cpdb)' name='federated.0kcm49q1re76x81fw3tw609ud6mw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kcm49q1re76x81fw3tw609ud6mw'>
+            <column-instance column='[percentage (Custom SQL Query1)]' derivation='None' name='[none:percentage (Custom SQL Query1):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[percentage]' derivation='None' name='[none:percentage:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[salary_mean]' derivation='None' name='[none:salary_mean:qk]' pivot='key' type='quantitative' />
+            <column caption='Offenders Percentage' datatype='real' name='[percentage (Custom SQL Query1)]' role='measure' type='quantitative' />
+            <column caption='Repeaters Percentage' datatype='real' name='[percentage]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[salary_mean]' role='measure' type='quantitative' />
+            <column-instance column='[percentage (Custom SQL Query1)]' derivation='Sum' name='[sum:percentage (Custom SQL Query1):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[percentage]' derivation='Sum' name='[sum:percentage:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0kcm49q1re76x81fw3tw609ud6mw].[none:percentage:qk]' field-type='quantitative' max='70.0' min='0.0' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.0kcm49q1re76x81fw3tw609ud6mw].[none:percentage (Custom SQL Query1):qk]' field-type='quantitative' max='70.0' min='0.0' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.0kcm49q1re76x81fw3tw609ud6mw].[none:salary_mean:qk]' field-type='quantitative' major-origin='40000' major-spacing='20000' scope='cols' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.9890055656433105' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0kcm49q1re76x81fw3tw609ud6mw].[none:percentage:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0kcm49q1re76x81fw3tw609ud6mw].[sum:percentage:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.9890055656433105' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0kcm49q1re76x81fw3tw609ud6mw].[none:percentage (Custom SQL Query1):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0kcm49q1re76x81fw3tw609ud6mw].[sum:percentage (Custom SQL Query1):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.9890055656433105' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#59a14f' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0kcm49q1re76x81fw3tw609ud6mw].[none:percentage:qk] + [federated.0kcm49q1re76x81fw3tw609ud6mw].[none:percentage (Custom SQL Query1):qk])</rows>
+        <cols>[federated.0kcm49q1re76x81fw3tw609ud6mw].[none:salary_mean:qk]</cols>
+      </table>
+      <simple-id uuid='{D22FF649-F1C6-492A-909D-0806402A1019}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0kcm49q1re76x81fw3tw609ud6mw].[:Measure Names]</field>
+            <field>[federated.0kcm49q1re76x81fw3tw609ud6mw].[none:percentage (Custom SQL Query1):qk]</field>
+            <field>[federated.0kcm49q1re76x81fw3tw609ud6mw].[sum:percentage (Custom SQL Query1):ok]</field>
+            <field>[federated.0kcm49q1re76x81fw3tw609ud6mw].[sum:percentage:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1A96C5E5-C58D-430D-A1FB-25419CD9C138}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Sheet 1' width='384'>
+      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
+      /3jYr0J4GQAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>

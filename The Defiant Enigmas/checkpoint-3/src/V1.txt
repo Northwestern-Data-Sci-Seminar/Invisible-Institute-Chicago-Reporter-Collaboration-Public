@@ -1,0 +1,18 @@
+https://observablehq.com/@barrieca/officer-sustained-allegations-timeline
+
+select o.first_name || ' ' || o.last_name as name, a.incident_date, involved.involved_officers, sustained_percentile.sustained_allegation_percentile
+from data_officer o
+join data_officerallegation oa on o.id = oa.officer_id
+join data_allegation a on oa.allegation_id = a.crid
+join (
+	select off_alleg.allegation_id, string_agg(d_officer.first_name || ' ' || d_officer.last_name, '<br/>') involved_officers
+	from data_officer d_officer join data_officerallegation off_alleg on d_officer.id = off_alleg.officer_id
+	group by off_alleg.allegation_id
+) involved on oa.allegation_id = involved.allegation_id
+join (
+	select o1.id,
+	(select count(*) from data_officer o2 where o2.sustained_count < o1.sustained_count)::decimal / (select count(*) from data_officer o3) sustained_allegation_percentile
+	from data_officer o1
+) sustained_percentile on o.id = sustained_percentile.id
+where sustained_allegation_percentile >= 0.9
+order by a.incident_date;
