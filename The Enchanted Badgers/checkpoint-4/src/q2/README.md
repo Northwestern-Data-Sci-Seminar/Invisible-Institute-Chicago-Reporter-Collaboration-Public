@@ -31,4 +31,4 @@ Then, to evaluate this model on the test dataset, use the following command in t
 allennlp evaluate boe_model/model.tar.gz data/complaints/test_prepped.tsv --include-package complaint_classifier_module
 ```
 
-A set of metrics and accuracy output will be viewable as output in the terminal.
+A set of metrics and accuracy output will be viewable as output in the terminal. A full analysis of the results can be found in the `findings.pdf` document for Checkpoint 4.
