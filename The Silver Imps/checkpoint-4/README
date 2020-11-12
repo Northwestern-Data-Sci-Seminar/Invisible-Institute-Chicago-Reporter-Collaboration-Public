@@ -1,0 +1,3 @@
+In terminal make sure you are at checkpoint-4/src folder
+
+RUN `jupyter notebook` and go into `checkpoint4.ipynb`. Use Shift+Enter to go through all cells to create the model and get the analysis
