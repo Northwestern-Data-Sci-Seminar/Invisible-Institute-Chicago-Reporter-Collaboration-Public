@@ -169,20 +169,7 @@ CREATE TEMP TABLE officers_crews_ml AS (
             , MIN(cohort) AS cohort_id
             , AVG(severity) AS avg_allegation_severity
             , MAX(severity) AS max_allegation_severity
---            (CASE WHEN crew_id != 0 THEN crew_id ELSE (CASE WHEN community_id != 0 THEN community_id ELSE 0 END) END) as cohort_id,
---            last_unit_id,
---            incident_date,
---            coaccused_count,
---            beat_id,
---            allegation_category_id,
---            DATE_PART('year', incident_date) - DATE_PART('year', appointed_date) as years_on_force_at_incident,
---            DATE_PART('year', incident_date) - DATE_PART('year', TO_TIMESTAMP(CAST(birth_year AS varchar), 'YYYY')) AS age_at_incident,
---            (CASE WHEN gender = 'M' THEN 1 ELSE 0 END) as gender,
---            (CASE WHEN cohort = 1 THEN 1 ELSE 0 END) as is_crew,
---            (CASE WHEN cohort = 2 THEN 1 ELSE 0 END) as is_community,
---            (CASE WHEN cohort = 3 THEN 1 ELSE 0 END) as is_unaffiliated,
---            (CASE WHEN active = 'Yes' THEN 1 ELSE 0 END) as is_active,
---            (CASE WHEN active = 'TRUE' THEN 1 ELSE 0 END) as is_disciplined
+
     FROM officers_cohorts_data
     GROUP BY 1 --,3,4,5,6,7,8,9,10,12,13,14,15,16,17
     ORDER BY 1
@@ -193,6 +180,20 @@ DELETE FROM officers_crews_ml WHERE avg_complaint_percentile IS NULL;
 DELETE FROM officers_crews_ml WHERE avg_allegation_severity IS NULL;
 DELETE FROM officers_crews_ml WHERE max_allegation_severity IS NULL;
 SELECT * FROM officers_crews_ml;
+
+SELECT * FROM data_crew;
+
+SELECT community_id as cohort_id
+        , member_count
+        , years_on_force
+        , percent_black
+        , percent_white
+        , percent_male
+        , percent_female
+        , internal_complaints_per_person
+        , within_community_complaints
+FROM data_crew;
+
 
 
 DROP TABLE IF EXISTS officers_cohorts_genders;
