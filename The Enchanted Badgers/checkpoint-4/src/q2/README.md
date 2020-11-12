@@ -4,6 +4,11 @@ This code was tested using Python 3.7.5. Make sure you have installed the requir
 
 `pip install -r requirements.txt`
 
+Due to a recent update to AllenNLP, you'll also need to run the following command:
+
+```
+pip uninstall -y dataclasses
+```
 
 ## Processing the Raw Data
 
