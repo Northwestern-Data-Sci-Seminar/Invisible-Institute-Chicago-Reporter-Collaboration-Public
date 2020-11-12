@@ -65,6 +65,7 @@ plt.show()
 y = data_over[['disciplined']]
 X = data_over[['race', 'rank', 'complaint_percentile', 'allegation_count', 'category']]
 
+
 # see relationship between race and disciplined
 df4 = df[['race', 'disciplined']]
 df4 = df4[df4['race'] == 'White']
@@ -92,6 +93,17 @@ autolabel(rects2)
 fig.tight_layout()
 plt.show()
 
+# look at breakdown of other input features
+print("\n\n*** RANK ***")
+print(df.loc[:,'rank'].value_counts())
+print("\n\n*** MISCONDUCT CATEGORY ***")
+print(df.loc[:,'category'].value_counts())
+print("\n\n*** COMPLAINT PERCENTILE ***")
+print(df.loc[:,'complaint_percentile'].describe())
+print("\n\n*** ALLEGATION COUNT ***")
+print(df.loc[:,'allegation_count'].describe())
+
+
 
 # preprocess data to encode categorical data as numeric
 le = preprocessing.LabelEncoder()
@@ -111,61 +123,80 @@ print("CV scores = ", scores)
 print(metrics.classification_report(y_test, y_pred, digits=3))
 
 
-# # cp4 question 2: predict settlement amount
-# file_path = 'cp4_question_2_predict_settlement_amount.csv'
-# df = pd.read_csv (file_path)
-# df = pd.DataFrame(df,columns=['gender', 'race', 'rank', 'interactions', 'outcomes', 'misconducts', 'violences', 'primary_cause', 'total_settlement'])
-# df = df.dropna()
-# df = df[df['total_settlement'] >= 10]
-# y = df[['total_settlement']].astype(int)
-# y = y.transform(lambda x: np.floor(np.log10(x))) # predict the magnitude (e.g. 10 is 1, 100 is 2, 1000 is 3...)
-# X = df[['interactions', 'outcomes', 'misconducts', 'gender', 'race']]
-#
-#
-# # ************* Average settlemt cost by gender *************
-# df2 = df[['gender', 'total_settlement']]
-# df2 = df2[df2['gender'] == 'F']
-# df3 = df[['gender', 'total_settlement']]
-# df3 = df3[df3['gender'] == 'M']
-# plt.bar(['Female','Male'], [np.int(df2.mean()), np.int(df3.mean())], color='red')
-# plt.title("Average settlement cost by gender")
-# plt.show()
-#
-# # ************* Average settlemt cost by race *************
-#
-# df4 = df[['race', 'total_settlement']]
-# df4 = df4[df4['race'] == 'White']
-#
-# df5 = df[['race', 'total_settlement']]
-# df5 = df5[df5['race'] == 'Hispanic']
-#
-# df6 = df[['race', 'total_settlement']]
-# df6 = df6[df6['race'] == 'Black']
-#
-# df7 = df[['race', 'total_settlement']]
-# df7 = df7[df7['race'] == 'Asian/Pacific']
-#
-# df8 = df[['race', 'total_settlement']]
-# df8 = df8[df8['race'] == 'Native American/Alaskan Native']
-#
-# plt.bar(['White','Hispanic', 'Black', 'Asian/Pacific', 'Native American/Alaskan Native'], [np.int(df4.mean()), np.int(df5.mean()), np.int(df6.mean()), np.int(df7.mean()), np.int(df8.mean())], color='red')
-# plt.title("Average settlement cost by race")
-# plt.show()
-#
-#
-#
-# #preprocess data to encode categorical data as numeric
-# le = preprocessing.LabelEncoder()
-# for column_name in X.columns:
-#     if X[column_name].dtype == object:
-#         X[column_name] = le.fit_transform(X[column_name])
-#
-# X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.30, random_state = 5)
-# clf = KNeighborsClassifier(n_neighbors=3, weights='distance')
-# clf.fit(X_train, y_train)
-# y_pred = clf.predict(X_test)
-# scores = cross_val_score(clf, X, y, cv=4, scoring='accuracy') #try using 'accuracy', 'precision', 'recall', and 'f1_macro' for the scoring parameter
-# print("CV scores = ",scores)
-# print(metrics.classification_report(y_test, y_pred, digits=3))
+# cp4 question 2: predict settlement amount
+
+file_path = 'cp4_question_2_predict_settlement_amount.csv'
+df = pd.read_csv (file_path)
+df = pd.DataFrame(df,columns=['gender', 'race', 'rank', 'interactions', 'outcomes', 'misconducts', 'violences', 'primary_cause', 'total_settlement'])
+df = df.dropna()
+df = df[df['total_settlement'] >= 10]
+
+# ************* Average settlemt cost by gender *************
+df2 = df[['gender', 'total_settlement']]
+df2 = df2[df2['gender'] == 'F']
+df3 = df[['gender', 'total_settlement']]
+df3 = df3[df3['gender'] == 'M']
+plt.bar(['Female','Male'], [np.int(df2.mean()), np.int(df3.mean())], color='red')
+plt.title("Average settlement cost by gender")
+plt.show()
+
+# ************* Average settlemt cost by race *************
+
+df4 = df[['race', 'total_settlement']]
+df4 = df4[df4['race'] == 'White']
+
+df5 = df[['race', 'total_settlement']]
+df5 = df5[df5['race'] == 'Hispanic']
+
+df6 = df[['race', 'total_settlement']]
+df6 = df6[df6['race'] == 'Black']
+
+df7 = df[['race', 'total_settlement']]
+df7 = df7[df7['race'] == 'Asian/Pacific']
+
+df8 = df[['race', 'total_settlement']]
+df8 = df8[df8['race'] == 'Native American/Alaskan Native']
+
+plt.bar(['White','Hispanic', 'Black', 'Asian/Pacific', 'Native American/Alaskan Native'], [np.int(df4.mean()), np.int(df5.mean()), np.int(df6.mean()), np.int(df7.mean()), np.int(df8.mean())], color='red')
+plt.title("Average settlement cost by race")
+plt.show()
+
+# change total settlement value to its magnitude (e.g. 10 is 1, 100 is 2, 1000 is 3...)
+df['total_settlement'] = df['total_settlement'].astype(int)
+df['total_settlement'] = df['total_settlement'].transform(lambda x: np.round_(np.log10(x)))
+
+# Resample to fix imbalance
+# class 5 is the majority class
+class_3 = df[df['total_settlement'] == 3]
+class_4 = df[df['total_settlement'] == 4]
+class_5 = df[df['total_settlement'] == 5]
+class_6 = df[df['total_settlement'] == 6]
+class_7 = df[df['total_settlement'] == 7]
+class_count_5, class_count_4, class_count_6, class_count_3, class_count_7 = df['total_settlement'].value_counts()
+class_3_over = class_3.sample(class_count_5, replace=True)
+class_4_over = class_4.sample(class_count_5, replace=True)
+class_6_over = class_6.sample(class_count_5, replace=True)
+class_7_over = class_7.sample(class_count_5, replace=True)
+data_over = pd.concat([class_3_over, class_4_over, class_5, class_6_over, class_7_over], axis=0)
+
+# split resampled data into input/output vectors
+X = data_over[['interactions', 'outcomes', 'misconducts', 'gender', 'race']]
+y = data_over[['total_settlement']]
+
+
+# preprocess data to encode categorical data as numeric
+le = preprocessing.LabelEncoder()
+for column_name in X.columns:
+    if X[column_name].dtype == object:
+        X[column_name] = le.fit_transform(X[column_name])
+
+# create model and run training and testing
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20)
+clf = RandomForestClassifier(n_estimators=10)
+clf.fit(X_train, y_train)
+y_pred = clf.predict(X_test)
+scores = cross_val_score(clf, X, y, cv=5, scoring='accuracy') #try using 'accuracy', 'precision', 'recall', and 'f1_macro' for the scoring parameter
+print("CV scores = ", scores)
+print(metrics.classification_report(y_test, y_pred, digits=3))
 
 
