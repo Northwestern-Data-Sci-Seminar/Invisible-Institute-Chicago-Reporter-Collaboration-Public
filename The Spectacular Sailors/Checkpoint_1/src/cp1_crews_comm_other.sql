@@ -109,7 +109,6 @@ GROUP BY cohort);
 -- View officers counts table
 SELECT * FROM officers_cohorts_countstotal;
 
-
 -- Q1 Part B: Join accusals and disciplinary data to officers_cohorts
 
 -- Return allegation and officer data for all officers based on cohorts
@@ -132,6 +131,7 @@ CREATE TEMP TABLE officers_cohorts_data AS (
            "da".point,
            "da".beat_id,
            "da".location,
+           "sa".severity,
            "doa".allegation_category_id,
            case when disciplined IS Null
    or "doa".disciplined = 'False'then 0 when "doa".disciplined = 'true' then 1 end as disciplined_flag,
@@ -145,10 +145,12 @@ CREATE TEMP TABLE officers_cohorts_data AS (
                        on "doa".allegation_id = "da".crid
              INNER JOIN officers_cohorts "oc"
                        on "doa".officer_id = "oc".officer_id
+             LEFT JOIN data_allegationseverity "sa"
+                       on "doa".allegation_category_id = "sa".allegationcategory_id
     WHERE "do".id in (
         SELECT officers_cohorts.officer_id
         FROM officers_cohorts)
-    group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20
+    group by 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21
 );
 
 -- View the result of query 1 breakouts by cohort
@@ -165,6 +167,8 @@ CREATE TEMP TABLE officers_crews_ml AS (
             , AVG(complaint_percentile) AS avg_complaint_percentile
             , CAST (SUM(disciplined_flag) as decimal) / COUNT(DISTINCT crid)  AS avg_disciplined_count
             , MIN(cohort) AS cohort_id
+            , AVG(severity) AS avg_allegation_severity
+            , MAX(severity) AS max_allegation_severity
 --            (CASE WHEN crew_id != 0 THEN crew_id ELSE (CASE WHEN community_id != 0 THEN community_id ELSE 0 END) END) as cohort_id,
 --            last_unit_id,
 --            incident_date,
@@ -188,8 +192,6 @@ DELETE FROM officers_crews_ml WHERE avg_years_on_force_at_incident IS NULL;
 DELETE FROM officers_crews_ml WHERE avg_complaint_percentile IS NULL;
 
 SELECT * FROM officers_crews_ml;
-
-
 
 
 DROP TABLE IF EXISTS officers_cohorts_genders;
