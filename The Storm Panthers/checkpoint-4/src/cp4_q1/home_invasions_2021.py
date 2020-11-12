@@ -7,6 +7,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
 from sklearn.metrics import mean_squared_error
+from sklearn.preprocessing import PolynomialFeatures
 from scipy import stats
 
 # Navigate to src/cp4_q1 in your terminal
@@ -132,7 +133,7 @@ print('\n')
 
 # compute accuracy score
 y_pred1 = model.predict(X_test)
-print(y_pred1)
+print("Compute accuracy score using the testing data: ")
 print('R^2 Score:', r2_score(y_test, y_pred1))
 print('MSE:', mean_squared_error(y_test, y_pred1))
 print('\n')
@@ -140,6 +141,31 @@ print('\n')
 print('\n')
 print("This marks the end of Checkpoint 4, Question 1. Thank you for following along. Go 'cats!")
 print('\n')
+
+# plot the regression line:
+# poly_x = np.arange(start=1997, stop=2018)
+# # poly_x = poly_x.reshape(-1, 1)
+#
+# poly = PolynomialFeatures(degree=3)
+# poly_x_transformed = poly.fit_transform(X)
+#
+# model2 = LinearRegression()
+# model2.fit(poly_x_transformed, y_train)
+#
+# poly_y = model.predict(poly_x_transformed)
+#
+# fig2 = plt.figure()
+# plt.title('FIGURE 3: Number of Home Invasion Allegations Per Year w/ Regression Line')
+# plt.xlabel('Year')
+# plt.ylabel('Count')
+# plt.scatter(home_invasions_per_year.loc[:, 0], home_invasions_per_year.loc[:, 1])
+# plt.plot(poly_x, poly_y)
+# txt = "FIGURE 1: This is the complete set of our data. It presents the total number of home invasion allegations for " \
+#       "each of the years for which we have data"
+# fig.text(.5, -.1, txt, ha='center')
+# plt.show()
+
+
 
 
 
