@@ -2,7 +2,6 @@ from sklearn.model_selection import train_test_split
 import sklearn.metrics as metrics
 from sklearn.model_selection import cross_val_score
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.neighbors import KNeighborsClassifier
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
@@ -164,6 +163,16 @@ plt.show()
 # change total settlement value to its magnitude (e.g. 10 is 1, 100 is 2, 1000 is 3...)
 df['total_settlement'] = df['total_settlement'].astype(int)
 df['total_settlement'] = df['total_settlement'].transform(lambda x: np.round_(np.log10(x)))
+
+# visualize class imbalance between settlement magnitudes
+print(" *** Original class imbalance: ***")
+print(df['total_settlement'].value_counts())
+plt.title("Original Class Imbalance")
+plt.bar(*zip(*df['total_settlement'].value_counts().items()))
+plt.xlabel('Magnitude')
+plt.ylabel('Frequency')
+plt.show()
+
 
 # Resample to fix imbalance
 # class 5 is the majority class
