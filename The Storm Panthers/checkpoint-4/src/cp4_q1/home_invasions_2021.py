@@ -5,6 +5,8 @@ import seaborn as sns
 import sklearn
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
+from sklearn.metrics import r2_score
+from sklearn.metrics import mean_squared_error
 from scipy import stats
 
 # Navigate to src/cp4_q1 in your terminal
@@ -41,7 +43,7 @@ print('\n')
 
 # Z-SCORE METHOD:
 # convert our pandas series to a numpy array
-home_invasions_per_year_np = np.array(home_invasions_per_year)
+home_invasions_per_year_np = np.array(home_invasions_per_year)[:, 1]
 
 outliers = []
 z_scores = np.empty((home_invasions_per_year_np.shape[0]))
@@ -61,7 +63,18 @@ def detect_outlier(data_1):
 print("If any of the absolute values of the z-scores were > 3, that would be an outlier. We do not have any instances of this, as you can see: ", '\n', detect_outlier(home_invasions_per_year_np))
 print('\n')
 
-print("We can check the IQR results visually by creating a box plot. As you can see,"
+print("Now let's do the same for the IQR method.")
+print('\n')
+sorted_home_invasions_per_year = np.sort(home_invasions_per_year_np)
+q1, q3= np.percentile(sorted_home_invasions_per_year,[25,75])
+iqr = q3 - q1
+lower_bound = q1 - (1.5 * iqr)
+upper_bound = q3 + (1.5 * iqr)
+print("Lower bound: ", lower_bound, "Upper bound", upper_bound)
+print("Are there any points either below lower_bound or above upper_bound?", np.any((home_invasions_per_year_np < lower_bound) | (home_invasions_per_year_np > upper_bound)))
+print('\n')
+
+print("We can also check the IQR results visually by creating a box plot. As you can see,"
       " no points fall outside of the quartiles")
 print('\n')
 outlier_boxplot = sns.boxplot(x=home_invasions_per_year.loc[:, 1])
@@ -89,6 +102,7 @@ predict_this = pd.Series(2021)
 predict_this = predict_this.values.reshape(1, -1)
 # predict:
 prediction_2021 = model.predict(predict_this)
+print("Now let's apply our model to predict an outcome for the year 2021.")
 print("Predicted # of home invasion allegations in 2021:", prediction_2021)
 print('\n')
 
@@ -114,8 +128,16 @@ params = np.round(params,4)
 regression_results = pd.DataFrame()
 regression_results["Coefficients"],regression_results["Standard Errors"],regression_results["t values"],regression_results["p values"] = [params,sd_b,ts_b,p_values]
 print("Accuracy of our model based on training data: ", regression_results)
+print('\n')
 
+# compute accuracy score
+y_pred1 = model.predict(X_test)
+print(y_pred1)
+print('R^2 Score:', r2_score(y_test, y_pred1))
+print('MSE:', mean_squared_error(y_test, y_pred1))
+print('\n')
 
+print('\n')
 print("This marks the end of Checkpoint 4, Question 1. Thank you for following along. Go 'cats!")
 print('\n')
 
