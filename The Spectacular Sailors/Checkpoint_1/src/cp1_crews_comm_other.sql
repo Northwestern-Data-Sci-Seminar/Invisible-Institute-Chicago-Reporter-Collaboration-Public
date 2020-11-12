@@ -191,7 +191,7 @@ SELECT community_id as cohort_id
         , percent_male
         , percent_female
         , internal_complaints_per_person
-        , within_community_complaints
+        , CASE WHEN detected_crew = 'true' THEN 1 ELSE 0 END AS detected_crew
 FROM data_crew;
 
 
