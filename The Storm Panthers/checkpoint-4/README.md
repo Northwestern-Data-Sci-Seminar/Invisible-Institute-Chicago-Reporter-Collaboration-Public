@@ -1,15 +1,27 @@
 ## Question 1
 
+We sought to answer the question "How many home invasions and illegal searches can we expect in 2021 if there is no policy change?"
+
+### Running the code
+
+* Navigate to `src/cp4_q1` in your terminal
+* Run `pip install -r requirements.txt`
+* Use the command `pythonw home_invasions_2021.py` to run the code.
+* Note: To walk through all plots and output printed to the terminal, you will need to close the current plot to continue on.
+
+### Results, in brief
+The predicted number of home invasion allegations in 2021 is 18.
 
 ## Question 2
-
+Coming soon!
 
 ## Question 3
 
 We sought to answer the question "Can we predict which officers will be implicated in Home Invasion complaints?"
 
 ### Running the code
-Use the command `pythonw cp4_q3.py` to run.
+* Navigate to `src/cp4_q3` in your terminal
+* Use the command `pythonw cp4_q3.py` to run the code.
 
 ### Procedure
 The relevant information here was obtained using the SQL queries present in c4_q3.sql and includes information about officers who either were or were not involved in at least one home invasion complaint. 
