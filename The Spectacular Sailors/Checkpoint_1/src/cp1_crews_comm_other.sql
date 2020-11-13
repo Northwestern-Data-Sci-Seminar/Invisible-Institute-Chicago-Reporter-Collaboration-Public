@@ -488,3 +488,7 @@ FROM officers_cohorts_counts occ
 LEFT JOIN officers_costs oc on occ.cohort = oc.cohort
 ORDER BY cohort ASC;
 
+-- For NLP tasks
+
+SELECT id, created_at, column_name, text_content
+FROM data_attachmentnarrative;
