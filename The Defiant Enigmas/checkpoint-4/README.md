@@ -9,9 +9,8 @@ We are using two methods in checkpoint 4. The first method focuses on learning m
 
 > The default configuration requires a local running distance of cpdb on postgresql, however, you can change the credential dict in `GNN/train.py` to switch to your database. And remember to `cd src/GNN` first.
 > Type `python3 train.py -h` for help, normally you should run:
-```
-python3 train.py --patience 200 --min-year 2006 --max-year 2013
-```
-A tighter year range has better performance and uses less GPU memory.
-
+> ```
+> python3 train.py --patience 200 --min-year 2006 --max-year 2013
+> ```
+> A tighter year range has better performance and uses less GPU memory.
 
