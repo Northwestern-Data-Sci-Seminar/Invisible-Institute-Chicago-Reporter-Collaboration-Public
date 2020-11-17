@@ -490,5 +490,14 @@ ORDER BY cohort ASC;
 
 -- For NLP tasks
 
-SELECT id, created_at, column_name, text_content
-FROM data_attachmentnarrative;
+SELECT da.id
+     , doa.officer_id
+     , da.created_at
+     , da.column_name
+     , da.text_content
+
+FROM data_attachmentnarrative da
+LEFT JOIN data_officerallegation doa on da.id = doa.id
+;
+
+SELECT * FROM data_officerallegation;
