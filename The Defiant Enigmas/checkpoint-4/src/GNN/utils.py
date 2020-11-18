@@ -104,6 +104,7 @@ def get_officer_info(conn, year, is_until_year=True):
                     + (get_normalized_year(roi[3], roi[5] or year),
                        get_normalized_year(roi[4], year))
                     for roi in raw_officer_info]
+    officer_id = [roi[0] for roi in raw_officer_info]
     target = [roi[6] for roi in raw_officer_info]
     officer_index = {roi[0]: idx for idx, roi in enumerate(raw_officer_info)}
 
@@ -176,7 +177,7 @@ def get_officer_info(conn, year, is_until_year=True):
     features = column_normalize(features)
     adjacency_weight = column_normalize(adjacency_weight)
 
-    return features, adjacency, adjacency_weight, target
+    return officer_id, features, adjacency, adjacency_weight, target
 
 
 def shift_adjacency_and_concat(features_list,
@@ -214,7 +215,9 @@ def get_split(officer_num, adjacency, train_validate_test_ratio):
     # Remove nodes.
     # Will completely remove nodes in the test and validation set
     # which are adjacent to nodes in the train set.
-    train_adj_set = train_nodes.union(set(int(adj[1]) for adj in adjacency if adj[0] in train_nodes))
+    train_adj_set = train_nodes.union(
+        set(int(adj[1]) for adj in adjacency if adj[0] in train_nodes)
+    )
     val_nodes = val_nodes - train_adj_set
     test_nodes = test_nodes - train_adj_set
 
@@ -228,9 +231,10 @@ def get_data(train_validate_test_ratio=(4, 1, 1),
              **credential):
     print("Generating cpdb dataset...")
     conn = get_conn(**credential)
-    f_list, adj_list, adj_w_list, t_list = [], [], [], []
+    oid_list, f_list, adj_list, adj_w_list, t_list = [], [], [], [], []
     for year in range(min_year, max_year):
-        f, adj, adj_w, t = get_officer_info(conn, year, is_until_year)
+        oid, f, adj, adj_w, t = get_officer_info(conn, year, is_until_year)
+        oid_list += oid
         f_list.append(f)
         adj_list.append(adj)
         adj_w_list.append(adj_w)
@@ -249,7 +253,7 @@ def get_data(train_validate_test_ratio=(4, 1, 1),
     print("Dataset processing finished, {} nodes, {} edges in total"
           .format(f.shape[0], adj.shape[0]))
     return (
-        f,
+        oid_list, f,
         [adj[train_adj_idx], adj_w[train_adj_idx], t[list(train_n)], list(train_n)],
         [adj[val_adj_idx], adj_w[val_adj_idx], t[list(val_n)], list(val_n)],
         [adj[test_adj_idx], adj_w[test_adj_idx], t[list(test_n)], list(test_n)]
