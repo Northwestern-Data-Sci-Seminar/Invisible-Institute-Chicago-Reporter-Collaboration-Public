@@ -10,6 +10,11 @@ Then, before running either of the models from their respective root directory, 
 > ```
 > python3 cp4.py
 > ```
+> or
+> ```
+> python cp4.py
+> ```
+> depending on the installation.
 
 2. Utilizing graph neural networks, and the attention mechanism from NLP literature, make a general predictor which can understand network structures of the web (made up of the three dimensions discussed above), by extracting the attention layer of the GNN we can acquire an importance weight vector of different dimensions of data. The GNN predictor will output the predicted number of officer complaints for the next year when given a complete history trajectory of that officer. The history trajectory includes officer/civilian allegation events, award events, etc.
 
