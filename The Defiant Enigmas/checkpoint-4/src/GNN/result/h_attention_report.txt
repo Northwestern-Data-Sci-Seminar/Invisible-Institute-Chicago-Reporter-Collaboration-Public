@@ -1,0 +1,18 @@
+Officer: 31873
+Neighbor num: 18
+Neighbors: [1662, 3605, 6114, 8993, 14442, 14598, 15353, 15592, 16567, 17176, 19813, 20885, 21133, 23786, 29299, 29511, 30409, 31904]
+Attention mean of neighbors: 0.0555555559694767
+Attention variance of neighbors: 2.1776411813334562e-05
+
+Officer: 16550
+Neighbor num: 2
+Neighbors: [25994, 28529]
+Attention mean of neighbors: 0.5
+Attention variance of neighbors: 8.382755368074868e-06
+
+Officer: 28878
+Neighbor num: 2
+Neighbors: [6548, 8442]
+Attention mean of neighbors: 0.5
+Attention variance of neighbors: 0.0003526972432155162
+
