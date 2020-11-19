@@ -1,8 +1,8 @@
 ## Checkpoint 4
 We are using two methods in checkpoint 4. The first method focuses on learning manually segmented structured data, while the second method focuses on learning semi-structured raw data with topology, we hope that by combining these two methods, we can gain more insights of data from multiple views
 
-Begin by installing Pytorch by running `pip install torch==1.7.0+cpu -f https://download.pytorch.org/whl/torch_stable.html`.
-Then, for bofore running either of the models from their respective root directory, run `pip install -r requirements.txt`.
+Begin by installing PyTorch by running `pip install torch==1.7.0+cpu -f https://download.pytorch.org/whl/torch_stable.html`.
+Then, before running either of the models from their respective root directory, run `pip install -r requirements.txt`.
 
 1. Using a decision tree, first we will preprocess features of officers in the three dimensions discussed above and group them into bins. Then we can utilize the tree to not only make predictions such as the number of complaints, allegations, sustained allegations, and use of force reports that officers will have in the following year, but also extract most important, defining features by extracting the topmost level of decision trees.
 
