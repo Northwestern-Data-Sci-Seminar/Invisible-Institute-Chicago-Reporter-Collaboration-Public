@@ -514,3 +514,5 @@ CREATE TEMP TABLE data_narrative_nlp AS (
 );
 
 SELECT * FROM data_narrative_nlp;
+
+SELECT * FROM data_officerallegation;
