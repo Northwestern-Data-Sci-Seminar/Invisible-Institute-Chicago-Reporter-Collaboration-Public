@@ -497,6 +497,7 @@ CREATE TEMP TABLE data_narrative_nlp AS (
            dn.text_content,
            da.officer_id,
            oc.cohort as cohort_num,
+           da.created_at,
 --            oc.community_id,
 --            oc.crew_id,
            CASE WHEN oc.community_id != 0 THEN oc.community_id ELSE oc.crew_id END AS cohort_id,
