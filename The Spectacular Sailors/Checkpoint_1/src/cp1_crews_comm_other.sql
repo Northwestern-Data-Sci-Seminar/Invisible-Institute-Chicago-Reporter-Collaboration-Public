@@ -453,6 +453,7 @@ CREATE TEMP TABLE officers_times AS (
 SELECT * FROM officers_times;
 
 DROP TABLE IF EXISTS officers_cohorts_counts;
+DROP TABLE IF EXISTS officers_cohorts_counts;
 CREATE TEMP TABLE officers_cohorts_counts AS (
     SELECT officers_cohorts_countstotal.cohort,
            officers_cohorts_countstotal.total_officers,
@@ -489,15 +490,26 @@ LEFT JOIN officers_costs oc on occ.cohort = oc.cohort
 ORDER BY cohort ASC;
 
 -- For NLP tasks
+DROP TABLE IF EXISTS data_narrative_nlp;
+CREATE TEMP TABLE data_narrative_nlp AS (
+    SELECT dn.id AS allegation_id,
+           dn.column_name AS allegation_narrative_type,
+           dn.text_content,
+           da.officer_id,
+           oc.cohort as cohort_num,
+--            oc.community_id,
+--            oc.crew_id,
+           CASE WHEN oc.community_id != 0 THEN oc.community_id ELSE oc.crew_id END AS cohort_id,
+           CASE WHEN oc.crew_id = 0 THEN 0 ELSE 1 END AS is_crew,
+           CASE WHEN oc.community_id = 0 THEN 0 ELSE 1 END AS is_community,
+           CASE WHEN oc.community_id = 0 AND crew_id = 0 THEN 1 ELSE 0 END AS is_unaffiliated
 
-SELECT da.id
-     , doa.officer_id
-     , da.created_at
-     , da.column_name
-     , da.text_content
+    FROM data_attachmentnarrative dn
+             INNER JOIN data_officerallegation da
+                        ON dn.id = da.id
+             INNER JOIN officers_cohorts oc
+                        ON da.officer_id = oc.officer_id
+    WHERE dn.column_name NOT LIKE 'Finding'
+);
 
-FROM data_attachmentnarrative da
-LEFT JOIN data_officerallegation doa on da.id = doa.id
-;
-
-SELECT * FROM data_officerallegation;
+SELECT * FROM data_narrative_nlp;
