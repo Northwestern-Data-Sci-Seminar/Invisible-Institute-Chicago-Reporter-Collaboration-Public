@@ -2,7 +2,6 @@ import csv
 import string
 import pandas as pd
 
-
 # load in csv data from data_allegation table
 file_path = 'data_allegation_summaries.csv'
 df = pd.read_csv (file_path)
@@ -24,6 +23,7 @@ with open(file_path, newline='') as f:
 
 # manually tag data allegation summaries by summing keyword weights
 verbal_abuse = []
+verbal_abuse_weight = []
 # t = 0 /# true -- verbal abuse found
 # f = 0 # false -- verbal abuse not found
 for s in summaries:
@@ -35,14 +35,20 @@ for s in summaries:
             #keys.append(k)
     if count > 2:
         verbal_abuse.append(1)  # true
+        verbal_abuse_weight.append(count)
         #t += 1
     else:
         verbal_abuse.append(0)  # false
+        verbal_abuse_weight.append(0)
         #f += 1
 
 # add verbal abuse classification to data set
 df['verbal_abuse'] = verbal_abuse
-# drop rows with any NaNs 
+df['verbal_abuse_weight'] = verbal_abuse_weight
+# drop rows with any NaNs
 df = df.dropna()
 # export tagged data set to csv
 df.to_csv('verbal_abuse.csv', index=True)
+
+
+
