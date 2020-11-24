@@ -1,6 +1,9 @@
 import csv
 import string
 import pandas as pd
+import matplotlib.pyplot as plt
+import heapq
+from operator import itemgetter
 
 # load in csv data from data_allegation table
 file_path = 'data_allegation_summaries.csv'
@@ -18,37 +21,51 @@ with open(file_path, newline='') as f:
     reader = list(reader)
     keywords = {}
     for r in reader:
-        k = "".join(filter(lambda char: char in string.printable, r[0]))
-        keywords[k] = int(r[1])
+        keyword = "".join(filter(lambda char: char in string.printable, r[0]))
+        keywords[keyword] = int(r[1])
 
 # manually tag data allegation summaries by summing keyword weights
 verbal_abuse = []
 verbal_abuse_weight = []
-# t = 0 /# true -- verbal abuse found
-# f = 0 # false -- verbal abuse not found
+keyword_freq = {}
 for s in summaries:
-    count = 0 # weight of total keywords found
-    #keys = []
-    for k, v in keywords.items():
-        if k in s:
-            count += v # add weight of found keyword
-            #keys.append(k)
-    if count > 2:
+    total_weight = 0  # weight of total keywords found
+    for keyword, weight in keywords.items():
+        if keyword in s:
+            # add weight of found keyword
+            total_weight += weight
+            # track frequency of keywords across all summaries
+            if keyword in keyword_freq:
+                keyword_freq[keyword] += 1
+            else:
+                keyword_freq[keyword] = 1
+    if total_weight > 2:
         verbal_abuse.append(1)  # true
-        verbal_abuse_weight.append(count)
-        #t += 1
+        verbal_abuse_weight.append(total_weight)
     else:
         verbal_abuse.append(0)  # false
         verbal_abuse_weight.append(0)
-        #f += 1
+
+top_keywords = heapq.nlargest(15, keyword_freq.items(), key=itemgetter(1))
+
+# visualize keyword frequencies
+plt.title("Top 15 Keyword Frequencies")
+plt.bar(*zip(*top_keywords))
+labels = [l[0] for l in top_keywords]
+plt.xticks(range(len(labels)), labels)
+plt.xlabel('Keyword')
+plt.ylabel('Frequency')
+plt.show()
 
 # add verbal abuse classification to data set
 df['verbal_abuse'] = verbal_abuse
 df['verbal_abuse_weight'] = verbal_abuse_weight
+
 # drop rows with any NaNs
 df = df.dropna()
 # export tagged data set to csv
 df.to_csv('verbal_abuse.csv', index=True)
+
 
 
 
