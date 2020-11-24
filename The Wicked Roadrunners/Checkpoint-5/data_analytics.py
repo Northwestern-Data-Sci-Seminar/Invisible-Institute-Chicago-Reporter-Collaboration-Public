@@ -1,8 +1,5 @@
-import csv
-import string
 import pandas as pd
 import matplotlib.pyplot as plt
-import itertools
 from textwrap import wrap
 
 # load in data set
