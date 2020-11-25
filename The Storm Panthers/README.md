@@ -12,7 +12,7 @@ On March 13, 2020, a Black woman named Breonna Taylor was fatally shot in her sl
 
 #### Questions Asked and Answers (at the time - queries are given which can be re-run with most recent data as long as the schema has not changed)
 - How many officers who were involved in a “Search Of Premise Without Warrant” are still on the force today, and what proportion of all officers involved in these illegal searches do they constitute?
-  - There are 25292 total officers involved in such a complaint and 52.93% of them remain active.
+  - There are 8499 total officers involved in such a complaint and 53.24% of them remain active on the force.
 - Are there any officers who’ve been involved in more than one home invasion? What are their IDs and number of illegal searches? How many total repeaters are there?
   - 2569 officers have been involved in multiple home invasions. Take this with a grain of salt because supervisors are tagged in complaints, so may be more frequently implicated.
 - How many instances of a “Search Of Premise Without Warrant” occurred at someone’s home (Apartment, Other Private Premise, Private Residence, or Residence)? Then, list these allegations and other relevant data (address, incident date, etc).
