@@ -1,6 +1,9 @@
 # Safe at home? Examining the impact of police-led home invasions in Chicago and predicting the effect of policy change involving “no-knock” warrants and officer-led illegal searches.
 
-This project was undertaken for Jennie Rogers' Fall 2020 Data Science seminar. It is divided into five checkpoints based on that class structure.
+This project was undertaken for Jennie Rogers' Fall 2020 Data Science seminar. It is divided into five checkpoints based on that class structure. 
+
+## Presentation Link
+You can view the slides for our final presentation [here](https://northwestern.zoom.us/j/5050308677?pwd=dFgrODRObG16RWM0dXBXQ2dvazFNZz09).
 
 ## Background
 On March 13, 2020, a Black woman named Breonna Taylor was fatally shot in her sleep by plainclothes white officers who entered her apartment as part of an investigation into drug dealing operations. In the aftermath of the killing of Breonna Taylor, renewed attention has been brought to the presence of “no-knock” warrants, or warrants that permit officers to enter a residence. “No-knock” warrants are legal in many states, including Illinois. Illinois also has a Stand-Your-Ground law, so the legal conflict that created the circumstances surrounding Breonna Taylor’s death also exists in Illinois. We investigate the impact of “no-knock” warrants, as well as home searches conducted without a warrant, in Chicago.

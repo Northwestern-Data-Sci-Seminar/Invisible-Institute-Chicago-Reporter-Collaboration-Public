@@ -143,27 +143,30 @@ print("This marks the end of Checkpoint 4, Question 1. Thank you for following a
 print('\n')
 
 # plot the regression line:
-# poly_x = np.arange(start=1997, stop=2018)
-# # poly_x = poly_x.reshape(-1, 1)
-#
-# poly = PolynomialFeatures(degree=3)
-# poly_x_transformed = poly.fit_transform(X)
-#
-# model2 = LinearRegression()
-# model2.fit(poly_x_transformed, y_train)
-#
-# poly_y = model.predict(poly_x_transformed)
-#
-# fig2 = plt.figure()
-# plt.title('FIGURE 3: Number of Home Invasion Allegations Per Year w/ Regression Line')
-# plt.xlabel('Year')
-# plt.ylabel('Count')
-# plt.scatter(home_invasions_per_year.loc[:, 0], home_invasions_per_year.loc[:, 1])
-# plt.plot(poly_x, poly_y)
-# txt = "FIGURE 1: This is the complete set of our data. It presents the total number of home invasion allegations for " \
-#       "each of the years for which we have data"
-# fig.text(.5, -.1, txt, ha='center')
-# plt.show()
+poly_x = np.arange(start=1997, stop=2018)
+# poly_x = poly_x.reshape(-1, 1)
+
+poly = PolynomialFeatures(degree=3)
+poly_x_transformed = poly.fit_transform(X)
+poly_x_transformed = poly_x_transformed.reshape(-1, 1)
+train_y_transformed = poly.fit_transform(y_train)
+train_y_transformed = train_y_transformed.reshape(-1, 1)
+
+model2 = LinearRegression()
+model2.fit(poly_x_transformed, train_y_transformed)
+
+poly_y = model.predict(poly_x_transformed)
+
+fig2 = plt.figure()
+plt.title('FIGURE 3: Number of Home Invasion Allegations Per Year w/ Regression Line')
+plt.xlabel('Year')
+plt.ylabel('Count')
+plt.scatter(home_invasions_per_year.loc[:, 0], home_invasions_per_year.loc[:, 1])
+plt.plot(poly_x, poly_y)
+txt = "FIGURE 1: This is the complete set of our data. It presents the total number of home invasion allegations for " \
+      "each of the years for which we have data"
+fig.text(.5, -.1, txt, ha='center')
+plt.show()
 
 
 
