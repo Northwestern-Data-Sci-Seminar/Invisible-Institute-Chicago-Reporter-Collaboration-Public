@@ -1,5 +1,5 @@
 import torch
-from sklearn import tree
+from sklearn import tree, metrics
 import numpy as np
 import pandas as pd
 import utils
@@ -137,12 +137,20 @@ def train_using_entropy(X_train, y_train):
     return clf_entropy
 
 
+def train_using_regression(X_train, y_train):
+    # Decision tree with entropy
+    clf_regression = tree.DecisionTreeRegressor(random_state=100, max_depth=3, min_samples_leaf=5)
+    # Performing training
+    clf_regression.fit(X_train, y_train)
+    return clf_regression
+
+
 def prediction(X, y, clf_object):
     # Predicton on test with giniIndex
     y_pred = clf_object.predict(X)
     #print("Predicted values:")
     #print(y_pred)
-    print("\tAccuracy: {}".format(np.mean(y_pred == y)))
+    print("\nMean Squared Error: {}".format(metrics.mean_squared_error(y, y_pred)))
     return y_pred
 
 
@@ -157,6 +165,7 @@ def main():
     y_val = t[val_n].flatten()
     clf_gini = train_using_gini(X_train, y_train)
     clf_entropy = train_using_entropy(X_train, y_train)
+    clf_regression = train_using_regression(X_train, y_train)
     # Operational Phase
     print("Results Using Gini Index:")
     # Prediction using gini
@@ -174,7 +183,15 @@ def main():
     y_pred_entropy = prediction(X_val, y_val, clf_entropy)
     print("\t-- Testing --")
     y_pred_entropy = prediction(X_test, y_test, clf_entropy)
-    
+    # Prediction using regression
+    print("\t-- Training --")
+    y_pred_regression = prediction(X_train, y_train, clf_regression)
+    print("\t-- Validation --")
+    y_pred_regression = prediction(X_val, y_val, clf_regression)
+    print("\t-- Testing --")
+    y_pred_regression = prediction(X_test, y_test, clf_regression)
+
+
     feature_names = ["Gender: Male",
                      "Gender: Female",
                      "Officer Race: White",
@@ -183,7 +200,7 @@ def main():
                      "Officer Race: Black",
                      "Officer Race: Asian/Pacific",
                      "Officer Race: Hispanic",
-                     "Normalized Appointed/Resignation Year",
+                     "Normalized Career Length",
                      "Normalized Birth Year",
                      "Number of prior allegations",
                      "Sustained allegation rate",
@@ -219,7 +236,7 @@ def main():
                      "Complainant Age"]
 
     fig = plt.figure(figsize=(28,8))
-    tree.plot_tree(clf_gini, feature_names=feature_names, filled=True, fontsize=6)
+    tree.plot_tree(clf_regression, feature_names=feature_names, filled=True, fontsize=6)
     plt.show()
 
 

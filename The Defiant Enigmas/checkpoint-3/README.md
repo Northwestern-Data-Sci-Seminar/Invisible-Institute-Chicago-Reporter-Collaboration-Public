@@ -1,4 +1,4 @@
-## Checkpoint 2
+## Checkpoint 3
 For each of the "questions" below, the link to the corresponding observable visualization for answering the question can be found in `src/V#.txt`
 These files also contain the sql for populating the data files used in the visualizations.
 
