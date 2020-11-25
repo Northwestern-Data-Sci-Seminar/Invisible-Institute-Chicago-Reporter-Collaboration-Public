@@ -16,3 +16,4 @@ A static version of the notebook is located in /src as a pdf and jupyter notbook
 ## For Data
 The sql code to create a temp table data_narrative_nlp from CPDB data is from CP1 here: https://github.com/Northwestern-Data-Sci-Seminar/Invisible-Institute-Chicago-Reporter-Collaboration-Public/blob/master/The%20Spectacular%20Sailors/Checkpoint_1/src/cp1_crews_comm_other.sql
 
+Some data structures are changed and joined in the colab notebook mentioned above.
