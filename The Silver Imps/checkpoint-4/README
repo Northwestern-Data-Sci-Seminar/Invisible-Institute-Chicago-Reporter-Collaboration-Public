@@ -1,0 +1,5 @@
+In terminal make sure you are at checkpoint-4/src folder
+
+The SQL code for generating the `repeaters14-18.csv` is in `checkpoint4-query.sql`
+
+RUN `jupyter notebook` and go into `checkpoint4-knn.ipynb` and `checkpoint4-LR.ipynb`. Use Shift+Enter to go through all cells to create the model and get the analysis
