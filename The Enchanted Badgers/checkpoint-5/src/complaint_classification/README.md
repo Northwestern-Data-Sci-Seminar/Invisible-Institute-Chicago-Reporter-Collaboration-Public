@@ -2,7 +2,17 @@
 
 This code was tested using Python 3.7.5 on MacOS 10.15. Make sure you have installed the requirements using the following command (ideally in a new virtual environment):
 
-`pip install -r requirements.txt`
+```
+pip install -r requirements.txt
+```
+
+This will sometimes result in Jsonnet failing to install. To install this within your Anaconda virtual environment, you can use the following command:
+
+```
+conda install -c conda-forge jsonnet
+```
+
+You'll need to re-run the `pip install -r requirements.txt` command after this as well.
 
 Due to a recent update to AllenNLP, you'll also need to run the following command:
 
