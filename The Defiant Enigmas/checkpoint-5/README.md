@@ -29,5 +29,6 @@ factorization. Scatterplots in order are:
 * 18-feature complaint tuples from database (no summary information)
 * 300-feature complaint summary embeddings
 * 318-feature tuples comprising the concatenation of the prior two tuples
+
 Each figure may need to be closed before program execution continues.
 
