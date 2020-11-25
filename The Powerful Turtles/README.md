@@ -120,7 +120,7 @@ https://colab.research.google.com/drive/1zQyuDwcFXEiZ2HKkPA3S1eWnSTPecCwX?usp=sh
 More details are shown in findings.pdf.
 
 
-# **Checkpoint 5**
+**[Checkpoint-1: Relational Analytics Questions:](https://github.com/Northwestern-Data-Sci-Seminar/Invisible-Institute-Chicago-Reporter-Collaboration-Public/tree/master/The%20Powerful%20Turtles/checkpoint-5)**
 
 *Team member: Jiangnan Fu, Yunan Wu, Ziyin Huang*
 
