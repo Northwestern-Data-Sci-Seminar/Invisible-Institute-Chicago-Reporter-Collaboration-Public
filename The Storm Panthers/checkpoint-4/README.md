@@ -68,7 +68,8 @@ You can view other work in the jupyter notebook "Question 3 - Predicting Officer
 
 We also used GridSearchCV to search for the optimal parameters. It turned out that the default was actually the most effective, so no changes were made on that front.
 
+We tried balancing the datasets as well, but accuracy dropped by 20%, probably due to the loss of so much data.
 ### Results
 
-This model does better than chance with predicting which officers are involved in Home Invasion complaints, but not much better. This model (and indeed all models tested) does poorly with accurately identifying officers who were involved in Home Invasions, with more false positives than true positives. The model's accuracy is .608.
+This model does better than chance with predicting which officers are involved in Home Invasion complaints, but not much better. This model (and indeed all models tested) does poorly with accurately identifying officers who were involved in Home Invasions, with more false positives than true positives. The model's accuracy is .801.
 
