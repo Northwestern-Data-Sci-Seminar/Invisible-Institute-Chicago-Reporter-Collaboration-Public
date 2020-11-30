@@ -165,13 +165,15 @@ A preview of the visualization:
 #### Questions Modeled and Results
 
 - "How many home invasions and illegal searches can we expect in 2021 if there is no policy change?"
-
   - The predicted number of home invasion allegations in 2021 is 18.
+  - This model is not statistically significant.
 
-- Coming Soon!
+- “How much are lawsuit settlements connected to home invasions likely to cost the police department next year if nothing changes?”
+  - Our predicted settlement total for 2021 is $626,610.
+  - This model is not statistically significant.
 
 - "Can we predict which officers will be implicated in Home Invasion complaints?"
-  - A LinearSVC model does better than chance with predicting which officers are involved in Home Invasion complaints, but not much better. This model (and indeed all models tested) does poorly with accurately identifying officers who were involved in Home Invasions, with more false positives than true positives. The model's accuracy is .608.
+  - A LinearSVC model does better than chance with predicting which officers are involved in Home Invasion complaints, but not much better. This model (and indeed all models tested) does poorly with accurately identifying officers who were involved in Home Invasions, with more false positives than true positives. The model's accuracy is .801.
 
 #### Tools used:
 - Python
@@ -179,8 +181,13 @@ A preview of the visualization:
 
 ## Checkpoint 5: Natural Language Processing
 
-- Coming soon!
+When we looked at the summary data, we found there was a dearth of summaries categorized as home invasions, and we suspected that there were many more summaries that should be categorized as such. We trained a classifier to categorize narrative summaries as either home invasions or not. We used TF-IDF as the features for our classifier. There were around 150 summaries that were classified as home invasions. We hand-classified another ~150 randomly selected summaries as non-home invasions. We used sklearn’s TF-IDF to vectorize by unigrams, bigrams, and trigrams. We fit 3 different models. Multinomial Naive Bayes outperformed the rest with .907 accuracy.
+
+We then used our model on the remaining summaries to attempt to classify any summaries not labeled as “Search of Premise Without Warrant” that were still home invasion cases. Of those 6000 or so, 595 were positively labeled. We hand-classified 150 of the positive results and got an accuracy of approximately 25%.
+We noticed some patterns in the false positives related to “without justification” and other types of search. We tried removing “justification” from the tf-idf, but the results hardly changed. Further steps we could take include adding a third category to decrease False Positives, re-incorporating freshly categorized summaries into our training data, and identifying other keywords to exclude.
 
 #### Tools used:
 
-- Coming soon!
+- Trifacta
+- Python
+- scikit-learn
