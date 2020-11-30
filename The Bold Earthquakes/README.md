@@ -1,7 +1,7 @@
 # Project by The Bold Earthquake
-Luke Salamone/
-Simon Benigeri/
-Renpin Luo/
+Luke Salamone 
+Simon Benigeri 
+Renpin Luo 
 
 ## Theme:
 For the CPD to function as intended, the incentive system needs to be aligned with the public interest. Given the CPD record of misconduct, the existence of phenomena such as the “blue wall of silence”, and the appearance of impunity for misconduct within the force, we expect to see that police officer rewards, as defined below, are not aligned with the fulfillment of their roles. 
