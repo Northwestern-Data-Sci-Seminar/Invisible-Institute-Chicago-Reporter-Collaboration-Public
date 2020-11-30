@@ -1,6 +1,6 @@
 # Project by The Bold Earthquake
-Luke Salamone 
-Simon Benigeri 
+Luke Salamone, 
+Simon Benigeri, 
 Renpin Luo 
 
 ## Theme:
