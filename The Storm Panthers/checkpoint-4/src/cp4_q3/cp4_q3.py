@@ -9,7 +9,7 @@ from sklearn.metrics import accuracy_score, classification_report
 from sklearn.metrics import plot_confusion_matrix
 
 # import data and combine to make binary independent variable (whether or not an officer participated in a home invasion complaint)
-home_invasion_officers = pd.read_csv("home_invasion_officers.csv")
+home_invasion_officers = pd.read_csv("home_invasions_officers.csv")
 non_home_invasion_officers = pd.read_csv("non_home_invasion_officers.csv")
 home_invasion_officers["home_invasion"] = 1
 non_home_invasion_officers["home_invasion"] = 0
