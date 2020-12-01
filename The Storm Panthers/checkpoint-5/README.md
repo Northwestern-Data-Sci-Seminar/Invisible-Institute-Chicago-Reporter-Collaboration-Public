@@ -3,6 +3,9 @@
 ## View the code and results
 To view the code, visualizations, and results all in one place, check out our Google Colab notebook [here](https://colab.research.google.com/drive/1FxWZpqRLe9WKlM0H9wElr8CWDCJbg2XV?usp=sharing).
 
+## Running the code on your local machine
+If prefer to run our code outside of Google Colab, navigate to `The Storm Panthers/checkpoint-5/src/code`. Then, run `pip install -r requirements.txt`. Finally, run `pythonw narratives_tfidf.py`. There are three plots. You will have to exit out of one plot in order to view the next.
+
 ## Background
 
 The goal for this checkpoint was to be able to classify allegation summaries as either “home disturbances” or “other.” We use the term “home disturbance” in order to broaden the category of “home invasions” that can be found in the Chicago Reporter settlements data and the category of “illegal search without a warrant” in the cpdb data. The reasoning for doing so comes down to our question of, “Are Chicagoans safe at home?” Warrant or not, invasion or not, we wanted to be able to identify incidents in which CPD cops were in a Chicagoan’s place of residence and caused some harm or disturbance. This keeps to our theme, as there have been some contested details about the warrant in Breonna Taylor’s case, but when it comes down to it, Breonna Taylor was not safe in her own home because of these police officers. We build an NLP model to identify similar cases by using TF-IDF as our approach.  
