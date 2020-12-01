@@ -1,1 +1,7 @@
-Group Folder for The Enchanted Badgers (Alexander Einarsson, Sergio Servantez, Marko Sterbentz)
+# Exploring the Relationship between Complaint Narratives and Categories
+
+**The Enchanted Badgers (Alexander Einarsson, Sergio Servantez, Marko Sterbentz)**
+
+Monitoring complaints filed against the police offers a rare glimpse into the inner workings of the police force who have been tasked with protecting and serving the public. It is clear that complaints and their categorization play a meaningful role in being able to predict the likelihood of future misconduct on the part of police officers. However, predictive capabilities are only as good as the data with which the models are built. Making sure that the categorization of complaints filed against the Chicago Police Department is both complete and meaningful is of critical importance for ensuring the analysis of the data provided by the Invisible Institute is as correct as possible. We posit that confirming that the existing categorizations are meaningful and accurate, as well as assigning meaningful categories to unknown and uncategorized complaints would be a valuable asset for those trying to analyze the data. 
+
+As a result, the theme of our project was to identify meaningful categories for uncategorized complaints by analyzing the relationship that exists between the complaint category and the complaint report narrative, and to use this new information to explore various aspects of complaint investigations and outcomes. In particular, we examine the capabilities of language models in predicting the categories and outcomes of complaint narratives and determine alternate categorizations derived directly from the text of complaint report narratives.
