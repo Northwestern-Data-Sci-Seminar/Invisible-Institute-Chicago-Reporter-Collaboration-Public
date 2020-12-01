@@ -17,5 +17,5 @@ Thanks.
 
 [Checkpoint 5](https://github.com/Northwestern-Data-Sci-Seminar/Invisible-Institute-Chicago-Reporter-Collaboration-Public/tree/master/The%20Wicked%20Roadrunners/Checkpoint-5)
 
-[Final Report](https://docs.google.com/document/d/1DsZEm6gcUSWD1uuj2Hw3CQ5d5y0oYd8zSXLJlZoPtsI/edit)
+[Final Report](https://github.com/Northwestern-Data-Sci-Seminar/Invisible-Institute-Chicago-Reporter-Collaboration-Public/blob/master/The%20Wicked%20Roadrunners/Final%20Report.pdf)
 
