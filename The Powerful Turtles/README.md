@@ -1,4 +1,4 @@
-# **Proposal**
+# **Officer-complainant-community demographic correlations for complaint prediction**
 
 *Team member: Jiangnan Fu, Yunan Wu, Ziyin Huang*
 
