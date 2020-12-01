@@ -134,7 +134,7 @@ function bubbleChart() {
 			return colorCircles(d[columnForColors]);
 		})
 		.on("mouseover", function(d) {
-			tooltip.html("Unit ID: " + d[columnForTitle] + "<br/>" + d[columnForRadius] + " "+ unitName);
+			tooltip.html("Unit ID: " + d[columnForColors] + "<br/>" + "Unit Name: " + d[columnForTitle] + "<br/>" + "Unit Description: " + d["unit_desc"] + "<br/>" + d[columnForRadius] + " "+ unitName);
 			return tooltip.style("visibility", "visible");
 		})
 		.on("mousemove", function() {
