@@ -1,7 +1,8 @@
 
 # READ ME
 ## Question 
- **To build an NLP pipeline which will read through the reports filed by the police and use it  as a feature for predictive modelling. This can give the victim a good estimation of whether or not the allegation will sustain.**
+
+* To build an NLP Pipeline which will read through the filed reports and use it as a feature for predictive modelling. This can give the victim a good estimation of whether or not the allegation will sustain.
 
 ## File Structure
 

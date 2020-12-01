@@ -1,7 +1,8 @@
 ## Questions
 
-1. Choropleth Map of allegations filed by different race
-2. Choropleth Map of how officers relate to the population of different areas of Chicago over the years
+* Is there any pattern between the race of the victim, and where the allegation was reported?
+* How does the number of officers relate to the population of different areas of Chicago over the years?
+
 
 ## Instructions to run Observable Notebooks
 Open the following links to see the executed code and the Choropleth maps.

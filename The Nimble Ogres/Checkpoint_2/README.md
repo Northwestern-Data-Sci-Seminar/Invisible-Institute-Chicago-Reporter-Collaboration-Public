@@ -2,8 +2,8 @@
 
 ## Questions
 
-1. Visualization of the relationship between the type of misconduct and the race of the officer
-2. Visualization of the number of allegations filed by a race over the years.
+* Is there any relationship between the type of misconduct and the race of the officer?
+* How have the number of allegations filed by a race changed over the years?
 
 ## How to Open Files
 Just open the file  **src/nimble_ogres_cp2.twb** in Tableau Desktop to view the visualizations.
