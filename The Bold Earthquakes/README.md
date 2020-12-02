@@ -10,7 +10,7 @@ We will analyze instances of career rewards and misconduct records, and the rela
 
 
 ## Checkpoint 1: SQL Analytics
-[## Checkpoint 1: SQL Analytics](https://github.com/Northwestern-Data-Sci-Seminar/Invisible-Institute-Chicago-Reporter-Collaboration-Public/tree/master/The%20Wicked%20Roadrunners/Checkpoint-1)
+[**Checkpoint 1: SQL Analytics](https://github.com/Northwestern-Data-Sci-Seminar/Invisible-Institute-Chicago-Reporter-Collaboration-Public/tree/master/The%20Bold%20Earthquakes/checkpoint-1)
 
 
 ## Checkpoint 2: Data Visualizations
