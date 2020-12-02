@@ -9,17 +9,12 @@ For the CPD to function as intended, the incentive system needs to be aligned wi
 We will analyze instances of career rewards and misconduct records, and the relationships between rewards and misconduct. We understand that police officers get yearly pay raises, so better indicators of reward are pay raise % for the same rank, promotions, and awards. We understand that many factors go into career advancement: successes, failures, misconduct, race, gender, unit, visibility of one's work, network, etc. However, we believe that by controlling for some of these factors, including through the analysis of “doppelgangers”, we can see how misconduct correlates with various measures of career advancement. The central question we seek to explore is: Do officers who frequently engage in misconduct get rewarded more than peers who offend less often?
 
 
-## Checkpoint 1: SQL Analytics
-[**Checkpoint 1: SQL Analytics](https://github.com/Northwestern-Data-Sci-Seminar/Invisible-Institute-Chicago-Reporter-Collaboration-Public/tree/master/The%20Bold%20Earthquakes/checkpoint-1)
+[**Checkpoint 1: SQL Analytics**](https://github.com/Northwestern-Data-Sci-Seminar/Invisible-Institute-Chicago-Reporter-Collaboration-Public/tree/master/The%20Bold%20Earthquakes/checkpoint-1)
 
+[**Checkpoint 2: Data Visualizations**](https://github.com/Northwestern-Data-Sci-Seminar/Invisible-Institute-Chicago-Reporter-Collaboration-Public/tree/master/The%20Bold%20Earthquakes/checkpoint-1)
 
-## Checkpoint 2: Data Visualizations
+[**Checkpoint 3: Interactive Visualization**](https://github.com/Northwestern-Data-Sci-Seminar/Invisible-Institute-Chicago-Reporter-Collaboration-Public/tree/master/The%20Bold%20Earthquakes/checkpoint-1)
 
+[**Checkpoint 4: Machine Learning**](https://github.com/Northwestern-Data-Sci-Seminar/Invisible-Institute-Chicago-Reporter-Collaboration-Public/tree/master/The%20Bold%20Earthquakes/checkpoint-1)
 
-## Checkpoint 3: Interactive Visualization
-
-
-## Checkpoint 4: Machine Learning
-
-
-## Checkpoint 5: Natural Language Processing
+[**Checkpoint 5: Natural Language Processing**](https://github.com/Northwestern-Data-Sci-Seminar/Invisible-Institute-Chicago-Reporter-Collaboration-Public/tree/master/The%20Bold%20Earthquakes/checkpoint-1)
