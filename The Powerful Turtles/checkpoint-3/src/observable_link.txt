@@ -1,0 +1,8 @@
+  Q1: Stacked-to-Grouped Bars showing the relationship between officer race and the community population race. 
+  
+  Link: https://observablehq.com/@yunanwu/stacked-to-grouped-bars
+
+
+  Q2: A scatter plot matrix showing the relationship between officer race percentage within community vs. complaint filer race percentage within the community. 
+  
+  Link: https://observablehq.com/d/a210438ec4686c6e

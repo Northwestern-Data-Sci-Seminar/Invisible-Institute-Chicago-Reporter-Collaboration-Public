@@ -1,0 +1,72 @@
+unit_id,unit_name,unit_desc,total_settlement
+2,001,District 001,7159393
+3,002,District 002,16312752
+4,003,District 003,9734287
+5,004,District 004,5456127
+6,005,District 005,6153239
+7,006,District 006,7866491
+8,007,District 007,5642910
+9,008,District 008,3857865
+10,009,District 009,8039900
+11,010,District 010,17976555
+12,011,District 011,19457770
+13,012,District 012,602396
+14,013,District 013,2355111
+15,014,District 014,1282393
+16,015,District 015,6687499
+17,016,District 016,237500
+18,017,District 017,1653004
+19,018,District 018,3487850
+20,019,District 019,1275500
+21,020,District 020,335000
+22,021,District 021,895750
+23,022,District 022,1782500
+24,023,District 023,4576502
+25,024,District 024,446143
+26,025,District 025,14326239
+30,044,Recruit Training Section,7937681
+31,045,District Reinstatement Unit,201505
+42,059,Marine Operations Unit,69000
+53,075,Youth Division Area5,100000
+65,092,Narc General Enforce,170000
+80,121,Bureau Of Internal Affairs,5944250
+83,124,Education And Training Division,90000
+107,142,Bureau Of Patrol,5717250
+119,153,Special Functions Support Unit,8246491
+132,167,Evidence And Recovered Property Section,45000
+142,177,Forensic Services Division,970000
+148,188,Bureau Of Organized Crime,6680000
+149,189,Narcotics Division,6378155
+151,191,Intelligence Section,3000
+152,192,Vice & Asset Forfeiture Division,246000
+153,193,Gang Investigation Division,11876752
+156,211,Bureau Of Patrol - Area Central,45000
+160,214,Freedom Of Information Section,1619148
+162,216,Deputy Chief Central Control Group,5467250
+168,253,Targeted Response Unit,4685523
+172,284,Admin School Securit,99000
+173,311,Gang Enforcement - Area Central,733150
+174,312,Gang Enforcement - Area South,295500
+175,313,Gang Enforcement - Area North,278500
+176,314,Gang Section - Area 4,515003
+177,315,Gang Section - Area 5,847501
+179,353,Special Weapons And Tactics (Swat) Unit,40000
+183,393,Gang Enforcement Division,438903
+191,477,Forensic Services Unit - Et South,22500
+194,543,Detached Services - Miscellaneous Detail,9600
+198,601,Det Div Admin.,5482250
+200,603,Arson Section,4755000
+204,606,Central Investigations Division,265000
+206,608,Major Accident Investigation Unit,250000
+208,610,Detective Area - Central,12687250
+211,612,Violent Crimes Dda 1,18677750
+212,620,Detective Area - South,760147
+214,622,Violent Crimes Dda 2,37350000
+215,630,Detective Area - North,717500
+217,632,Violent Crimes Dda 3,20205000
+218,640,Detective Section - Area 4,2811650
+221,650,Detective Section - Area 5,2087895
+225,701,Public Transportation Section,3100000
+229,710,G/C Unit South,327750
+236,765,Public Housing North,2500
+255,093,,77750

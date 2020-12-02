@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+</style>
+<body>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script>
+
+// Adapted from template found here: https://bl.ocks.org/bricedev/0d95074b6d83a77dc3ad
+
+var margin = {top: 80, right: 20, bottom: 220, left: 150},
+    width = 1260 - margin.left - margin.right,
+    height = 800 - margin.top - margin.bottom;
+
+var x0 = d3.scale.ordinal()
+    .rangeRoundBands([0, width], .1);
+
+var x1 = d3.scale.ordinal();
+
+var y = d3.scale.linear()
+    .range([height, 0]);
+
+var xAxis = d3.svg.axis()
+    .scale(x0)
+    .tickSize(0)
+    .orient("bottom");
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left");
+
+var color = d3.scale.ordinal()
+    .range(["#ca0020","#0571b0"]);
+
+var svg = d3.select('body').append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+// get the data
+d3.csv("bert_and_bow_classification_distribution.csv", function(error, data) {
+  if (error) throw error;
+
+  // format the data
+  data.forEach(function(d) {
+    d.category = d.category;
+    d.bert = +d.bert;
+    d.bow = +d.bow;
+    console.log(d);
+  });
+
+  var categories = data.map(function(d) { return d.category; });
+  var models = ["BERT", "Bag of Words"];
+
+  x0.domain(categories);
+  x1.domain(models).rangeRoundBands([0, x0.rangeBand()]);
+  y.domain([0, d3.max(data, function(d) { return d.bert })]);
+
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis)
+      .selectAll("text")  
+      .style("text-anchor", "end")
+      .attr("dx", "-.8em")
+      .attr("dy", ".15em")
+      .attr("font-size", "12")
+      .attr("transform", "rotate(-65)");
+
+  svg.append("g")
+      .attr("class", "y axis")
+      .style('opacity','0')
+      .call(yAxis)
+  .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("dy", ".71em")
+      .style("text-anchor", "end")
+      .style('font-weight','bold')
+      .text("Value");
+
+  svg.select('.y').transition().duration(500).delay(1300).style('opacity','1');
+
+  var slice = svg.selectAll(".slice")
+      .data(data)
+      .enter().append("g")
+      .attr("class", "g")
+      .attr("transform",function(d) { return "translate(" + x0(d.category) + ",0)"; });
+
+  slice.selectAll("rect")
+      .data(function(d) { return [{"model":"BERT", "frequency":d.bert}, {"model":"Bag of Words", "frequency":d.bow}]; })
+  .enter().append("rect")
+      .attr("width", x1.rangeBand())
+      .attr("x", function(d) { return x1(d.model); })
+      .style("fill", function(d) { return color(d.model) })
+      .attr("y", function(d) { return y(0); })
+      .attr("height", function(d) { return 0; })
+      .on("mouseover", function(d) {
+          d3.select(this).style("fill", d3.rgb(color(d.model)).darker(2));
+      })
+      .on("mouseout", function(d) {
+          d3.select(this).style("fill", color(d.model));
+      });
+
+  slice.selectAll("rect")
+      .transition()
+      .delay(function (d) {return Math.random()*1000;})
+      .duration(1000)
+      .attr("y", function(d) { return y(d.frequency); })
+      .attr("height", function(d) { return height - y(d.frequency); });
+
+  //Legend
+  var legend = svg.selectAll(".legend")
+      .data(["BERT", "Bag of Words"])
+  .enter().append("g")
+      .attr("class", "legend")
+      .attr("transform", function(d,i) { return "translate(0," + i * 20 + ")"; })
+      .style("opacity","0");
+
+  legend.append("rect")
+      .attr("x", width - 18)
+      .attr("width", 18)
+      .attr("height", 18)
+      .style("fill", function(d) { return color(d); });
+
+  legend.append("text")
+      .attr("x", width - 24)
+      .attr("y", 9)
+      .attr("dy", ".35em")
+      .style("text-anchor", "end")
+      .style("font-size", "12")
+      .text(function(d) {return d; });
+
+  legend.transition().duration(500).delay(function(d,i){ return 1300 + 100 * i; }).style("opacity","1");
+
+    // add label for x Axis
+  svg.append("text")
+    .attr("transform",
+          "translate(" + (width/2) + " ," + 
+                          (height + 200) + ")")
+      .style("text-anchor", "middle")
+      .style("font-family", "sans-serif")
+      .style("font-size", "16px")
+      .text("Categories");
+
+  // add label for y Axis
+  svg.append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("y", 0 - (margin.left / 2))
+    .attr("x", 0 - (height / 2))
+    .style("text-anchor", "middle")
+    .style("font-family", "sans-serif")
+    .style("font-size", "16px")
+    .text("Complaint Frequency"); 
+
+  // add title
+  svg.append("text")
+      .attr("x", (width / 2))
+      .attr("y", 0 - (margin.top / 2))
+      .attr("text-anchor", "middle")
+      .text("Classification of Uncategorized Complaints using NLP")
+      .style("font-family", "sans-serif")
+      .style("font-size", "20px");
+
+});
+
+</script>

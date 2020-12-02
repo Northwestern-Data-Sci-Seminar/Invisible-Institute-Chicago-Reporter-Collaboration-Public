@@ -1,0 +1,14 @@
+select dn.id,
+       dn.text_content,
+       da.officer_id,
+       oc.cohort,
+       oc.community_id,
+       oc.crew_id
+
+
+from data_attachmentnarrative dn
+inner join data_officerallegation da
+on dn.id = da.id
+inner join officers_cohorts oc
+on da.officer_id = oc.officer_id
+where text_content <> '(None Entered)'

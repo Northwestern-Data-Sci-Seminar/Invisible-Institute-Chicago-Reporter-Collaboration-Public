@@ -1,0 +1,26 @@
+[
+  {
+    "cohort": 1,
+    "total_officers": 1156,
+    "avg_cost_per_officer": 36772.009515570934,
+    "total_cost": 42508443,
+    "total_legal_cost": 9391756,
+    "total_settlement_cost": 33116687
+  },
+  {
+    "cohort": 2,
+    "total_officers": 10071,
+    "avg_cost_per_officer": 25307.717704299474,
+    "total_cost": 254874025,
+    "total_legal_cost": 34505947,
+    "total_settlement_cost": 220368078
+  },
+  {
+    "cohort": 3,
+    "total_officers": 23780,
+    "avg_cost_per_officer": 3311.5217409587888982,
+    "total_cost": 78747987,
+    "total_legal_cost": 11450704,
+    "total_settlement_cost": 67297283
+  }
+]

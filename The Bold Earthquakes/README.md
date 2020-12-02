@@ -1,32 +1,20 @@
-# Checkpoint 1
-Our group analyzed the following 6 questions. Each question may have subsections. We have listed the corresponding SQL script which can be found in `src/` as well as a brief analysis of the result. At the end of this document are figures containing charts related to the given SQL queries.
+# Project by The Bold Earthquake
+Luke Salamone, 
+Simon Benigeri, 
+Renpin Luo 
 
-1. What proportion of officers get promoted each year?  
-`script1.sql`
+## Theme:
+For the CPD to function as intended, the incentive system needs to be aligned with the public interest. Given the CPD record of misconduct, the existence of phenomena such as the “blue wall of silence”, and the appearance of impunity for misconduct within the force, we expect to see that police officer rewards, as defined below, are not aligned with the fulfillment of their roles. 
 
-2. What proportion of officers get awards each year?  
-`script2.sql`
+We will analyze instances of career rewards and misconduct records, and the relationships between rewards and misconduct. We understand that police officers get yearly pay raises, so better indicators of reward are pay raise % for the same rank, promotions, and awards. We understand that many factors go into career advancement: successes, failures, misconduct, race, gender, unit, visibility of one's work, network, etc. However, we believe that by controlling for some of these factors, including through the analysis of “doppelgangers”, we can see how misconduct correlates with various measures of career advancement. The central question we seek to explore is: Do officers who frequently engage in misconduct get rewarded more than peers who offend less often?
 
-3. What proportion of officers with 0, 1+, 2+, 3+, etc. allegations get promoted each year?  
-_0 allegations_: `script3a.sql`  
-_1 allegation_: `script3b.sql`  
-_2 allegations_: `script3c.sql`  
-_3 allegations_: `script3d.sql`  
-_4 allegations_: `script3e.sql`  
 
-4. What proportion of officers with 0, 1+, 2+, 3+, etc. allegations get awards?  
-_0 allegations_: `script4a.sql`  
-_1 allegation_: `script4b.sql`  
-_2 allegations_: `script4c.sql`  
-_3 allegations_: `script4d.sql`  
-_4 allegations_: `script4e.sql`  
+[**Checkpoint 1: SQL Analytics**](https://github.com/Northwestern-Data-Sci-Seminar/Invisible-Institute-Chicago-Reporter-Collaboration-Public/tree/master/The%20Bold%20Earthquakes/checkpoint-1)
 
-5. What proportion of officers with 1 or more allegation and 0, 1+, 2+ sustained allegations get promoted each year?  
-_0 sustained allegations_: `script5a.sql`  
-_1 sustained allegation_: `script5b.sql`  
-_2 sustained allegations_: `script5c.sql`  
+[**Checkpoint 2: Data Visualizations**](https://github.com/Northwestern-Data-Sci-Seminar/Invisible-Institute-Chicago-Reporter-Collaboration-Public/tree/master/The%20Bold%20Earthquakes/checkpoint-2)
 
-6. What proportion of officers with 1 or more allegation and 0, 1+, 2+ sustained allegations get awards each year?  
-_0 sustained allegations_: `script6a.sql`  
-_1 sustained allegation_: `script6b.sql`  
-_2 sustained allegations_: `script6c.sql`  
+[**Checkpoint 3: Interactive Visualization**](https://github.com/Northwestern-Data-Sci-Seminar/Invisible-Institute-Chicago-Reporter-Collaboration-Public/tree/master/The%20Bold%20Earthquakes/checkpoint-3)
+
+[**Checkpoint 4: Machine Learning**](https://github.com/Northwestern-Data-Sci-Seminar/Invisible-Institute-Chicago-Reporter-Collaboration-Public/tree/master/The%20Bold%20Earthquakes/checkpoint-4)
+
+[**Checkpoint 5: Natural Language Processing**](https://github.com/Northwestern-Data-Sci-Seminar/Invisible-Institute-Chicago-Reporter-Collaboration-Public/tree/master/The%20Bold%20Earthquakes/checkpoint-5)

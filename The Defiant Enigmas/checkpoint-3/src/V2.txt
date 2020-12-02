@@ -1,0 +1,6 @@
+https://observablehq.com/@barrieca/interactive-visualization-2
+
+select first_name || ' ' || last_name as name, civilian_allegation_percentile, incident_date, st_asgeojson(point) from data_officer o
+join data_officerallegation doa on o.id = doa.officer_id
+join data_allegation da on doa.allegation_id = da.crid
+where point is not null and civilian_allegation_percentile is not null and incident_date >= '01-01-2010';

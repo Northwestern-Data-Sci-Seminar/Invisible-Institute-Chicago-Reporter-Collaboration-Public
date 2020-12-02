@@ -1,0 +1,70 @@
+Topics found via LDA:
+Topic #0:incident search witness arrest warrant document department hour falsely execute member state
+Topic #1:date duty time court child unknown fail discharge inattentive secure location various
+Topic #2:star suspect county cook search bag unit approximately jail contain district hour
+Topic #3:justification search stop vehicle citation arrest issue traffic false unknown residence handcuff
+Topic #4:return inventory fail usc phone remove card key arrest inventorie money cell
+Topic #5:state tell rude unprofessional fuck refuse ask number car threaten request make
+Topic #6:subject department fail arrest use force involve violate 1s incident member cpd
+Topic #7:property damage personal door kick inside residence cause destroy time item throw
+Topic #8:face strike head body beat punch apartment throw dog vehicle pull floor
+Topic #9:search warrant enter apartment residence plaintiff cause probable execution justification floor permission
+Topic #10:arrest justification detain false old son evidence year city harass trial unit
+Topic #11:vehicle traffic drive fail car driver accident license individual passenger follow exit
+Topic #12:arrest falsely drug charge possession place november plant weapon interior control cause
+Topic #13:fail hour itis department message harass properly order james duty send text
+Topic #14:fail state refuse arrest respond provide scene offender file regard 911 service
+Topic #15:fail allegation recommend department sustain duty statement finding incident false misconduct base
+Topic #16:member conduct investigation information department fail firearm witness physically 15 case thorough
+Topic #17:male white uniformed black state female vehicle gun unknown search home possibly
+Topic #18:location hour handcuff district station justification minor approximately member wall august department
+Topic #19:civilian mr copa medical street investigation perform arrestee need meet observe ensure[[1.61792414e-02 6.94444447e-04 6.94444445e-04 6.94444470e-04
+  6.94444473e-04 6.94444455e-04 6.94444450e-04 6.94444445e-04
+  6.94444456e-04 6.94444451e-04 6.94444453e-04 1.63779561e-02
+  3.61533112e-02 6.94444448e-04 6.94444469e-04 8.68800798e-01
+  2.15045190e-02 3.12619519e-02 6.94444454e-04 6.94444457e-04]
+ [1.41242939e-04 1.41242940e-04 1.41242940e-04 1.41242940e-04
+  1.41242939e-04 1.41242939e-04 1.41242939e-04 1.41242939e-04
+  1.41242961e-04 1.41242939e-04 1.41242940e-04 1.41242939e-04
+  1.41242938e-04 1.41242939e-04 1.41242939e-04 9.97316384e-01
+  1.41242940e-04 1.41242938e-04 1.41242942e-04 1.41242939e-04]
+ [1.41242939e-04 1.41242940e-04 1.41242940e-04 1.41242940e-04
+  1.41242939e-04 1.41242939e-04 1.41242939e-04 1.41242939e-04
+  1.41242961e-04 1.41242939e-04 1.41242940e-04 1.41242939e-04
+  1.41242938e-04 1.41242939e-04 1.41242939e-04 9.97316384e-01
+  1.41242940e-04 1.41242938e-04 1.41242942e-04 1.41242939e-04]
+ [1.41242939e-04 1.41242940e-04 1.41242940e-04 1.41242940e-04
+  1.41242939e-04 1.41242939e-04 1.41242939e-04 1.41242939e-04
+  1.41242961e-04 1.41242939e-04 1.41242940e-04 1.41242939e-04
+  1.41242938e-04 1.41242939e-04 1.41242939e-04 9.97316384e-01
+  1.41242940e-04 1.41242938e-04 1.41242942e-04 1.41242939e-04]
+ [1.41242939e-04 1.41242940e-04 1.41242940e-04 1.41242940e-04
+  1.41242939e-04 1.41242939e-04 1.41242939e-04 1.41242939e-04
+  1.41242961e-04 1.41242939e-04 1.41242940e-04 1.41242939e-04
+  1.41242938e-04 1.41242939e-04 1.41242939e-04 9.97316384e-01
+  1.41242940e-04 1.41242938e-04 1.41242942e-04 1.41242939e-04]
+ [1.41242939e-04 1.41242940e-04 1.41242940e-04 1.41242940e-04
+  1.41242939e-04 1.41242939e-04 1.41242939e-04 1.41242939e-04
+  1.41242961e-04 1.41242939e-04 1.41242940e-04 1.41242939e-04
+  1.41242938e-04 1.41242939e-04 1.41242939e-04 9.97316384e-01
+  1.41242940e-04 1.41242938e-04 1.41242942e-04 1.41242939e-04]
+ [1.41242939e-04 1.41242940e-04 1.41242940e-04 1.41242940e-04
+  1.41242939e-04 1.41242939e-04 1.41242939e-04 1.41242939e-04
+  1.41242961e-04 1.41242939e-04 1.41242940e-04 1.41242939e-04
+  1.41242938e-04 1.41242939e-04 1.41242939e-04 9.97316384e-01
+  1.41242940e-04 1.41242938e-04 1.41242942e-04 1.41242939e-04]
+ [1.41242939e-04 1.41242940e-04 1.41242940e-04 1.41242940e-04
+  1.41242939e-04 1.41242939e-04 1.41242939e-04 1.41242939e-04
+  1.41242961e-04 1.41242939e-04 1.41242940e-04 1.41242939e-04
+  1.41242938e-04 1.41242939e-04 1.41242939e-04 9.97316384e-01
+  1.41242940e-04 1.41242938e-04 1.41242942e-04 1.41242939e-04]
+ [1.41242939e-04 1.41242940e-04 1.41242940e-04 1.41242940e-04
+  1.41242939e-04 1.41242939e-04 1.41242939e-04 1.41242939e-04
+  1.41242961e-04 1.41242939e-04 1.41242940e-04 1.41242939e-04
+  1.41242938e-04 1.41242939e-04 1.41242939e-04 9.97316384e-01
+  1.41242940e-04 1.41242938e-04 1.41242942e-04 1.41242939e-04]
+ [1.41242939e-04 1.41242940e-04 1.41242940e-04 1.41242940e-04
+  1.41242939e-04 1.41242939e-04 1.41242939e-04 1.41242939e-04
+  1.41242961e-04 1.41242939e-04 1.41242940e-04 1.41242939e-04
+  1.41242938e-04 1.41242939e-04 1.41242939e-04 9.97316384e-01
+  1.41242940e-04 1.41242938e-04 1.41242942e-04 1.41242939e-04]]

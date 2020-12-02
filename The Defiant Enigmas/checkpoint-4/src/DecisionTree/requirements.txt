@@ -1,0 +1,6 @@
+numpy==1.19.3
+torch
+sklearn
+pandas
+matplotlib
+psycopg2

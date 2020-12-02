@@ -1,0 +1,850 @@
+unit_id,unit_name,unit_desc,total_settlement
+2,001,District 001,1000.00
+2,001,District 001,3000.00
+2,001,District 001,7143.00
+2,001,District 001,10000.00
+2,001,District 001,15000.00
+2,001,District 001,20000.00
+2,001,District 001,45000.00
+2,001,District 001,50000.00
+2,001,District 001,56000.00
+2,001,District 001,100000.00
+2,001,District 001,250000.00
+2,001,District 001,1135000.00
+2,001,District 001,5467250.00
+3,002,District 002,2000.00
+3,002,District 002,8500.00
+3,002,District 002,9000.00
+3,002,District 002,14750.00
+3,002,District 002,15000.00
+3,002,District 002,20000.00
+3,002,District 002,20001.00
+3,002,District 002,30000.00
+3,002,District 002,36000.00
+3,002,District 002,37500.00
+3,002,District 002,45000.00
+3,002,District 002,50000.00
+3,002,District 002,50001.00
+3,002,District 002,60000.00
+3,002,District 002,75000.00
+3,002,District 002,80000.00
+3,002,District 002,200000.00
+3,002,District 002,560000.00
+3,002,District 002,15000000.00
+4,003,District 003,500.00
+4,003,District 003,3000.00
+4,003,District 003,5000.00
+4,003,District 003,6000.00
+4,003,District 003,10500.00
+4,003,District 003,12500.00
+4,003,District 003,15000.00
+4,003,District 003,20000.00
+4,003,District 003,21000.00
+4,003,District 003,25000.00
+4,003,District 003,28000.00
+4,003,District 003,29000.00
+4,003,District 003,30000.00
+4,003,District 003,35000.00
+4,003,District 003,50000.00
+4,003,District 003,65000.00
+4,003,District 003,70000.00
+4,003,District 003,75000.00
+4,003,District 003,80000.00
+4,003,District 003,85000.00
+4,003,District 003,99000.00
+4,003,District 003,100000.00
+4,003,District 003,103630.00
+4,003,District 003,110000.00
+4,003,District 003,150000.00
+4,003,District 003,152000.00
+4,003,District 003,180000.00
+4,003,District 003,250000.00
+4,003,District 003,290000.00
+4,003,District 003,925000.00
+4,003,District 003,1241907.00
+4,003,District 003,5467250.00
+5,004,District 004,950.00
+5,004,District 004,1000.00
+5,004,District 004,2500.00
+5,004,District 004,2650.00
+5,004,District 004,4000.00
+5,004,District 004,5000.00
+5,004,District 004,6500.00
+5,004,District 004,7000.00
+5,004,District 004,10000.00
+5,004,District 004,12000.00
+5,004,District 004,12500.00
+5,004,District 004,15000.00
+5,004,District 004,20000.00
+5,004,District 004,20001.00
+5,004,District 004,22500.00
+5,004,District 004,24000.00
+5,004,District 004,24436.00
+5,004,District 004,25000.00
+5,004,District 004,27500.00
+5,004,District 004,30000.00
+5,004,District 004,40000.00
+5,004,District 004,45000.00
+5,004,District 004,50000.00
+5,004,District 004,52500.00
+5,004,District 004,55000.00
+5,004,District 004,62000.00
+5,004,District 004,65000.00
+5,004,District 004,75000.00
+5,004,District 004,95000.00
+5,004,District 004,99000.00
+5,004,District 004,99999.00
+5,004,District 004,100000.00
+5,004,District 004,110000.00
+5,004,District 004,330000.00
+5,004,District 004,350000.00
+5,004,District 004,700000.00
+5,004,District 004,2855091.00
+6,005,District 005,500.00
+6,005,District 005,1000.00
+6,005,District 005,1500.00
+6,005,District 005,2000.00
+6,005,District 005,3000.00
+6,005,District 005,5000.00
+6,005,District 005,5500.00
+6,005,District 005,7000.00
+6,005,District 005,7500.00
+6,005,District 005,9000.00
+6,005,District 005,10000.00
+6,005,District 005,10500.00
+6,005,District 005,16250.00
+6,005,District 005,20000.00
+6,005,District 005,24000.00
+6,005,District 005,25000.00
+6,005,District 005,30000.00
+6,005,District 005,35000.00
+6,005,District 005,36000.00
+6,005,District 005,40000.00
+6,005,District 005,45000.00
+6,005,District 005,46250.00
+6,005,District 005,50000.00
+6,005,District 005,55000.00
+6,005,District 005,60000.00
+6,005,District 005,62000.00
+6,005,District 005,70000.00
+6,005,District 005,75000.00
+6,005,District 005,80000.00
+6,005,District 005,95000.00
+6,005,District 005,97500.00
+6,005,District 005,99000.00
+6,005,District 005,100000.00
+6,005,District 005,185000.00
+6,005,District 005,200000.00
+6,005,District 005,250001.00
+6,005,District 005,330000.00
+6,005,District 005,409647.00
+6,005,District 005,700000.00
+6,005,District 005,2855091.00
+7,006,District 006,500.00
+7,006,District 006,1000.00
+7,006,District 006,3000.00
+7,006,District 006,3500.00
+7,006,District 006,4615.00
+7,006,District 006,5000.00
+7,006,District 006,5800.00
+7,006,District 006,7000.00
+7,006,District 006,8000.00
+7,006,District 006,8273.00
+7,006,District 006,9000.00
+7,006,District 006,10000.00
+7,006,District 006,12500.00
+7,006,District 006,14500.00
+7,006,District 006,15000.00
+7,006,District 006,16000.00
+7,006,District 006,17500.00
+7,006,District 006,18000.00
+7,006,District 006,20000.00
+7,006,District 006,20002.00
+7,006,District 006,22000.00
+7,006,District 006,24000.00
+7,006,District 006,25000.00
+7,006,District 006,26500.00
+7,006,District 006,29000.00
+7,006,District 006,30000.00
+7,006,District 006,30001.00
+7,006,District 006,30500.00
+7,006,District 006,31000.00
+7,006,District 006,40000.00
+7,006,District 006,50000.00
+7,006,District 006,51000.00
+7,006,District 006,54000.00
+7,006,District 006,60000.00
+7,006,District 006,65000.00
+7,006,District 006,71000.00
+7,006,District 006,75000.00
+7,006,District 006,78000.00
+7,006,District 006,80000.00
+7,006,District 006,85000.00
+7,006,District 006,95000.00
+7,006,District 006,99000.00
+7,006,District 006,100000.00
+7,006,District 006,180000.00
+7,006,District 006,285000.00
+7,006,District 006,350000.00
+7,006,District 006,360000.00
+7,006,District 006,495000.00
+7,006,District 006,500000.00
+7,006,District 006,4246300.00
+8,007,District 007,1000.00
+8,007,District 007,1500.00
+8,007,District 007,2000.00
+8,007,District 007,2100.00
+8,007,District 007,2500.00
+8,007,District 007,3000.00
+8,007,District 007,3500.00
+8,007,District 007,4000.00
+8,007,District 007,5000.00
+8,007,District 007,6000.00
+8,007,District 007,7500.00
+8,007,District 007,8000.00
+8,007,District 007,9500.00
+8,007,District 007,10000.00
+8,007,District 007,12500.00
+8,007,District 007,15000.00
+8,007,District 007,16000.00
+8,007,District 007,17000.00
+8,007,District 007,18500.00
+8,007,District 007,20000.00
+8,007,District 007,23003.00
+8,007,District 007,25000.00
+8,007,District 007,30000.00
+8,007,District 007,35000.00
+8,007,District 007,45000.00
+8,007,District 007,50000.00
+8,007,District 007,52500.00
+8,007,District 007,55000.00
+8,007,District 007,60000.00
+8,007,District 007,75000.00
+8,007,District 007,95000.00
+8,007,District 007,100000.00
+8,007,District 007,152000.00
+8,007,District 007,200000.00
+8,007,District 007,215000.00
+8,007,District 007,400807.00
+8,007,District 007,1500000.00
+8,007,District 007,2365000.00
+9,008,District 008,1500.00
+9,008,District 008,2500.00
+9,008,District 008,5000.00
+9,008,District 008,7500.00
+9,008,District 008,8364.00
+9,008,District 008,8500.00
+9,008,District 008,9000.00
+9,008,District 008,10000.00
+9,008,District 008,15000.00
+9,008,District 008,16000.00
+9,008,District 008,18000.00
+9,008,District 008,25000.00
+9,008,District 008,30000.00
+9,008,District 008,35000.00
+9,008,District 008,37500.00
+9,008,District 008,47000.00
+9,008,District 008,50000.00
+9,008,District 008,50001.00
+9,008,District 008,55000.00
+9,008,District 008,67500.00
+9,008,District 008,75000.00
+9,008,District 008,80000.00
+9,008,District 008,85000.00
+9,008,District 008,90000.00
+9,008,District 008,99000.00
+9,008,District 008,100000.00
+9,008,District 008,117000.00
+9,008,District 008,147500.00
+9,008,District 008,156000.00
+9,008,District 008,210000.00
+9,008,District 008,2200000.00
+10,009,District 009,1000.00
+10,009,District 009,5000.00
+10,009,District 009,7500.00
+10,009,District 009,10000.00
+10,009,District 009,13500.00
+10,009,District 009,15000.00
+10,009,District 009,20000.00
+10,009,District 009,27500.00
+10,009,District 009,30000.00
+10,009,District 009,31505.00
+10,009,District 009,32000.00
+10,009,District 009,35395.00
+10,009,District 009,40000.00
+10,009,District 009,42000.00
+10,009,District 009,43000.00
+10,009,District 009,45000.00
+10,009,District 009,54000.00
+10,009,District 009,60000.00
+10,009,District 009,65000.00
+10,009,District 009,69500.00
+10,009,District 009,75000.00
+10,009,District 009,98000.00
+10,009,District 009,100000.00
+10,009,District 009,120000.00
+10,009,District 009,250000.00
+10,009,District 009,6750000.00
+11,010,District 010,500.00
+11,010,District 010,1500.00
+11,010,District 010,3500.00
+11,010,District 010,4500.00
+11,010,District 010,5000.00
+11,010,District 010,7500.00
+11,010,District 010,10000.00
+11,010,District 010,11000.00
+11,010,District 010,15000.00
+11,010,District 010,30000.00
+11,010,District 010,32000.00
+11,010,District 010,32500.00
+11,010,District 010,35000.00
+11,010,District 010,50600.00
+11,010,District 010,59058.00
+11,010,District 010,75000.00
+11,010,District 010,86000.00
+11,010,District 010,92500.00
+11,010,District 010,99000.00
+11,010,District 010,100000.00
+11,010,District 010,115000.00
+11,010,District 010,125000.00
+11,010,District 010,175000.00
+11,010,District 010,400000.00
+11,010,District 010,1444148.00
+11,010,District 010,5467250.00
+11,010,District 010,9499999.00
+12,011,District 011,350.00
+12,011,District 011,2000.00
+12,011,District 011,2500.00
+12,011,District 011,3000.00
+12,011,District 011,5000.00
+12,011,District 011,5500.00
+12,011,District 011,8500.00
+12,011,District 011,9000.00
+12,011,District 011,10000.00
+12,011,District 011,15000.00
+12,011,District 011,20000.00
+12,011,District 011,25000.00
+12,011,District 011,30000.00
+12,011,District 011,36000.00
+12,011,District 011,40000.00
+12,011,District 011,42500.00
+12,011,District 011,50000.00
+12,011,District 011,55000.00
+12,011,District 011,60000.00
+12,011,District 011,62000.00
+12,011,District 011,70000.00
+12,011,District 011,71000.00
+12,011,District 011,75000.00
+12,011,District 011,80000.00
+12,011,District 011,100000.00
+12,011,District 011,128171.00
+12,011,District 011,150000.00
+12,011,District 011,250000.00
+12,011,District 011,315000.00
+12,011,District 011,330000.00
+12,011,District 011,350000.00
+12,011,District 011,395000.00
+12,011,District 011,560000.00
+12,011,District 011,1135000.00
+12,011,District 011,5467250.00
+12,011,District 011,9499999.00
+13,012,District 012,15000.00
+13,012,District 012,30000.00
+13,012,District 012,32000.00
+13,012,District 012,35000.00
+13,012,District 012,35395.00
+13,012,District 012,40000.00
+13,012,District 012,60001.00
+13,012,District 012,75000.00
+13,012,District 012,85000.00
+13,012,District 012,95000.00
+13,012,District 012,100000.00
+14,013,District 013,5000.00
+14,013,District 013,6500.00
+14,013,District 013,10000.00
+14,013,District 013,10001.00
+14,013,District 013,18000.00
+14,013,District 013,20185.00
+14,013,District 013,30000.00
+14,013,District 013,50000.00
+14,013,District 013,60000.00
+14,013,District 013,70000.00
+14,013,District 013,75000.00
+14,013,District 013,85000.00
+14,013,District 013,99000.00
+14,013,District 013,100000.00
+14,013,District 013,130000.00
+14,013,District 013,161425.00
+14,013,District 013,290000.00
+14,013,District 013,1135000.00
+15,014,District 014,5000.00
+15,014,District 014,6000.00
+15,014,District 014,10000.00
+15,014,District 014,15000.00
+15,014,District 014,15002.00
+15,014,District 014,18000.00
+15,014,District 014,20000.00
+15,014,District 014,21000.00
+15,014,District 014,25000.00
+15,014,District 014,33500.00
+15,014,District 014,40000.00
+15,014,District 014,76500.00
+15,014,District 014,100000.00
+15,014,District 014,120000.00
+15,014,District 014,215000.00
+15,014,District 014,562391.00
+16,015,District 015,2500.00
+16,015,District 015,3000.00
+16,015,District 015,5000.00
+16,015,District 015,10000.00
+16,015,District 015,12500.00
+16,015,District 015,15000.00
+16,015,District 015,20000.00
+16,015,District 015,30000.00
+16,015,District 015,35000.00
+16,015,District 015,40000.00
+16,015,District 015,45000.00
+16,015,District 015,50000.00
+16,015,District 015,52500.00
+16,015,District 015,55004.00
+16,015,District 015,59300.00
+16,015,District 015,60000.00
+16,015,District 015,65000.00
+16,015,District 015,95000.00
+16,015,District 015,99000.00
+16,015,District 015,109004.00
+16,015,District 015,150000.00
+16,015,District 015,200000.00
+16,015,District 015,289691.00
+16,015,District 015,290000.00
+16,015,District 015,395000.00
+16,015,District 015,4500000.00
+17,016,District 016,5000.00
+17,016,District 016,15000.00
+17,016,District 016,25000.00
+17,016,District 016,27500.00
+17,016,District 016,40000.00
+17,016,District 016,50000.00
+17,016,District 016,75000.00
+18,017,District 017,10000.00
+18,017,District 017,20000.00
+18,017,District 017,30000.00
+18,017,District 017,32500.00
+18,017,District 017,45000.00
+18,017,District 017,48000.00
+18,017,District 017,50000.00
+18,017,District 017,58500.00
+18,017,District 017,60000.00
+18,017,District 017,90000.00
+18,017,District 017,109004.00
+18,017,District 017,150000.00
+18,017,District 017,950000.00
+19,018,District 018,2000.00
+19,018,District 018,3750.00
+19,018,District 018,7500.00
+19,018,District 018,8000.00
+19,018,District 018,17000.00
+19,018,District 018,19000.00
+19,018,District 018,20000.00
+19,018,District 018,30000.00
+19,018,District 018,37500.00
+19,018,District 018,45000.00
+19,018,District 018,46000.00
+19,018,District 018,47100.00
+19,018,District 018,50000.00
+19,018,District 018,55000.00
+19,018,District 018,60000.00
+19,018,District 018,65000.00
+19,018,District 018,71000.00
+19,018,District 018,77500.00
+19,018,District 018,95000.00
+19,018,District 018,100000.00
+19,018,District 018,130000.00
+19,018,District 018,155000.00
+19,018,District 018,250000.00
+19,018,District 018,796500.00
+19,018,District 018,1300000.00
+20,019,District 019,1000.00
+20,019,District 019,5000.00
+20,019,District 019,6000.00
+20,019,District 019,12500.00
+20,019,District 019,13000.00
+20,019,District 019,15000.00
+20,019,District 019,20000.00
+20,019,District 019,30000.00
+20,019,District 019,38000.00
+20,019,District 019,60000.00
+20,019,District 019,75000.00
+20,019,District 019,1000000.00
+21,020,District 020,7500.00
+21,020,District 020,27500.00
+21,020,District 020,55000.00
+21,020,District 020,60000.00
+21,020,District 020,185000.00
+22,021,District 021,5000.00
+22,021,District 021,11000.00
+22,021,District 021,23000.00
+22,021,District 021,40000.00
+22,021,District 021,50000.00
+22,021,District 021,56750.00
+22,021,District 021,80000.00
+22,021,District 021,200000.00
+22,021,District 021,430000.00
+23,022,District 022,1000.00
+23,022,District 022,10000.00
+23,022,District 022,20000.00
+23,022,District 022,23000.00
+23,022,District 022,24000.00
+23,022,District 022,25000.00
+23,022,District 022,27500.00
+23,022,District 022,31000.00
+23,022,District 022,32500.00
+23,022,District 022,34000.00
+23,022,District 022,50000.00
+23,022,District 022,57500.00
+23,022,District 022,75000.00
+23,022,District 022,100000.00
+23,022,District 022,180000.00
+23,022,District 022,392000.00
+23,022,District 022,700000.00
+24,023,District 023,2500.00
+24,023,District 023,7500.00
+24,023,District 023,15002.00
+24,023,District 023,40000.00
+24,023,District 023,62500.00
+24,023,District 023,99000.00
+24,023,District 023,100000.00
+24,023,District 023,250000.00
+24,023,District 023,4000000.00
+25,024,District 024,1750.00
+25,024,District 024,5000.00
+25,024,District 024,7250.00
+25,024,District 024,11000.00
+25,024,District 024,16000.00
+25,024,District 024,27500.00
+25,024,District 024,52643.00
+25,024,District 024,70000.00
+25,024,District 024,75000.00
+25,024,District 024,80000.00
+25,024,District 024,100000.00
+26,025,District 025,1000.00
+26,025,District 025,1500.00
+26,025,District 025,2500.00
+26,025,District 025,2642.00
+26,025,District 025,3500.00
+26,025,District 025,5000.00
+26,025,District 025,9000.00
+26,025,District 025,10000.00
+26,025,District 025,11000.00
+26,025,District 025,17500.00
+26,025,District 025,23000.00
+26,025,District 025,25000.00
+26,025,District 025,40000.00
+26,025,District 025,46000.00
+26,025,District 025,60006.00
+26,025,District 025,75000.00
+26,025,District 025,80000.00
+26,025,District 025,85000.00
+26,025,District 025,92200.00
+26,025,District 025,99000.00
+26,025,District 025,100000.00
+26,025,District 025,200000.00
+26,025,District 025,215000.00
+26,025,District 025,290000.00
+26,025,District 025,325000.00
+26,025,District 025,375000.00
+26,025,District 025,560000.00
+26,025,District 025,562391.00
+26,025,District 025,1135000.00
+26,025,District 025,1375000.00
+26,025,District 025,2000000.00
+26,025,District 025,6500000.00
+30,044,Recruit Training Section,500.00
+30,044,Recruit Training Section,950.00
+30,044,Recruit Training Section,1500.00
+30,044,Recruit Training Section,2500.00
+30,044,Recruit Training Section,2650.00
+30,044,Recruit Training Section,3000.00
+30,044,Recruit Training Section,3500.00
+30,044,Recruit Training Section,4000.00
+30,044,Recruit Training Section,4500.00
+30,044,Recruit Training Section,5000.00
+30,044,Recruit Training Section,6000.00
+30,044,Recruit Training Section,8500.00
+30,044,Recruit Training Section,10000.00
+30,044,Recruit Training Section,15000.00
+30,044,Recruit Training Section,20000.00
+30,044,Recruit Training Section,20001.00
+30,044,Recruit Training Section,22500.00
+30,044,Recruit Training Section,24436.00
+30,044,Recruit Training Section,30000.00
+30,044,Recruit Training Section,34000.00
+30,044,Recruit Training Section,35000.00
+30,044,Recruit Training Section,35001.00
+30,044,Recruit Training Section,37500.00
+30,044,Recruit Training Section,40000.00
+30,044,Recruit Training Section,45000.00
+30,044,Recruit Training Section,46000.00
+30,044,Recruit Training Section,50000.00
+30,044,Recruit Training Section,51000.00
+30,044,Recruit Training Section,52643.00
+30,044,Recruit Training Section,54000.00
+30,044,Recruit Training Section,60001.00
+30,044,Recruit Training Section,65000.00
+30,044,Recruit Training Section,70000.00
+30,044,Recruit Training Section,75000.00
+30,044,Recruit Training Section,78000.00
+30,044,Recruit Training Section,80000.00
+30,044,Recruit Training Section,85000.00
+30,044,Recruit Training Section,99999.00
+30,044,Recruit Training Section,100000.00
+30,044,Recruit Training Section,200000.00
+30,044,Recruit Training Section,225000.00
+30,044,Recruit Training Section,285000.00
+30,044,Recruit Training Section,400000.00
+30,044,Recruit Training Section,950000.00
+30,044,Recruit Training Section,4500000.00
+31,045,District Reinstatement Unit,15000.00
+31,045,District Reinstatement Unit,31505.00
+31,045,District Reinstatement Unit,55000.00
+31,045,District Reinstatement Unit,100000.00
+42,059,Marine Operations Unit,24000.00
+42,059,Marine Operations Unit,45000.00
+53,075,Youth Division Area5,100000.00
+65,092,Narc General Enforce,170000.00
+80,121,Bureau Of Internal Affairs,2000.00
+80,121,Bureau Of Internal Affairs,100000.00
+80,121,Bureau Of Internal Affairs,375000.00
+80,121,Bureau Of Internal Affairs,5467250.00
+83,124,Education And Training Division,30000.00
+83,124,Education And Training Division,60000.00
+107,142,Bureau Of Patrol,250000.00
+107,142,Bureau Of Patrol,5467250.00
+119,153,Special Functions Support Unit,1500.00
+119,153,Special Functions Support Unit,3500.00
+119,153,Special Functions Support Unit,5000.00
+119,153,Special Functions Support Unit,11000.00
+119,153,Special Functions Support Unit,15000.00
+119,153,Special Functions Support Unit,21000.00
+119,153,Special Functions Support Unit,29000.00
+119,153,Special Functions Support Unit,30000.00
+119,153,Special Functions Support Unit,45000.00
+119,153,Special Functions Support Unit,50000.00
+119,153,Special Functions Support Unit,51000.00
+119,153,Special Functions Support Unit,60000.00
+119,153,Special Functions Support Unit,65000.00
+119,153,Special Functions Support Unit,75000.00
+119,153,Special Functions Support Unit,80000.00
+119,153,Special Functions Support Unit,85000.00
+119,153,Special Functions Support Unit,99999.00
+119,153,Special Functions Support Unit,100000.00
+119,153,Special Functions Support Unit,130000.00
+119,153,Special Functions Support Unit,392000.00
+119,153,Special Functions Support Unit,796500.00
+119,153,Special Functions Support Unit,1241907.00
+119,153,Special Functions Support Unit,1334085.00
+119,153,Special Functions Support Unit,3525000.00
+132,167,Evidence And Recovered Property Section,45000.00
+142,177,Forensic Services Division,100000.00
+142,177,Forensic Services Division,870000.00
+148,188,Bureau Of Organized Crime,77750.00
+148,188,Bureau Of Organized Crime,1135000.00
+148,188,Bureau Of Organized Crime,5467250.00
+149,189,Narcotics Division,9600.00
+149,189,Narcotics Division,9800.00
+149,189,Narcotics Division,10000.00
+149,189,Narcotics Division,12000.00
+149,189,Narcotics Division,15000.00
+149,189,Narcotics Division,20000.00
+149,189,Narcotics Division,24000.00
+149,189,Narcotics Division,25000.00
+149,189,Narcotics Division,25001.00
+149,189,Narcotics Division,27500.00
+149,189,Narcotics Division,28000.00
+149,189,Narcotics Division,30000.00
+149,189,Narcotics Division,33500.00
+149,189,Narcotics Division,37500.00
+149,189,Narcotics Division,50000.00
+149,189,Narcotics Division,52500.00
+149,189,Narcotics Division,55004.00
+149,189,Narcotics Division,60000.00
+149,189,Narcotics Division,62000.00
+149,189,Narcotics Division,71000.00
+149,189,Narcotics Division,80000.00
+149,189,Narcotics Division,85000.00
+149,189,Narcotics Division,88500.00
+149,189,Narcotics Division,5467250.00
+151,191,Intelligence Section,3000.00
+152,192,Vice & Asset Forfeiture Division,2000.00
+152,192,Vice & Asset Forfeiture Division,10000.00
+152,192,Vice & Asset Forfeiture Division,34000.00
+152,192,Vice & Asset Forfeiture Division,50000.00
+152,192,Vice & Asset Forfeiture Division,150000.00
+153,193,Gang Investigation Division,750.00
+153,193,Gang Investigation Division,1000.00
+153,193,Gang Investigation Division,5001.00
+153,193,Gang Investigation Division,15000.00
+153,193,Gang Investigation Division,30000.00
+153,193,Gang Investigation Division,50001.00
+153,193,Gang Investigation Division,250000.00
+153,193,Gang Investigation Division,5375000.00
+153,193,Gang Investigation Division,6150000.00
+156,211,Bureau Of Patrol - Area Central,45000.00
+160,214,Freedom Of Information Section,175000.00
+160,214,Freedom Of Information Section,1444148.00
+162,216,Deputy Chief Central Control Group,5467250.00
+168,253,Targeted Response Unit,5000.00
+168,253,Targeted Response Unit,5750.00
+168,253,Targeted Response Unit,7500.00
+168,253,Targeted Response Unit,8273.00
+168,253,Targeted Response Unit,9000.00
+168,253,Targeted Response Unit,15000.00
+168,253,Targeted Response Unit,22500.00
+168,253,Targeted Response Unit,25000.00
+168,253,Targeted Response Unit,30000.00
+168,253,Targeted Response Unit,40000.00
+168,253,Targeted Response Unit,50000.00
+168,253,Targeted Response Unit,60000.00
+168,253,Targeted Response Unit,62500.00
+168,253,Targeted Response Unit,80000.00
+168,253,Targeted Response Unit,99999.00
+168,253,Targeted Response Unit,100000.00
+168,253,Targeted Response Unit,250001.00
+168,253,Targeted Response Unit,290000.00
+168,253,Targeted Response Unit,325000.00
+168,253,Targeted Response Unit,1000000.00
+168,253,Targeted Response Unit,2200000.00
+172,284,Admin School Securit,99000.00
+173,311,Gang Enforcement - Area Central,10000.00
+173,311,Gang Enforcement - Area Central,18000.00
+173,311,Gang Enforcement - Area Central,35400.00
+173,311,Gang Enforcement - Area Central,48750.00
+173,311,Gang Enforcement - Area Central,50000.00
+173,311,Gang Enforcement - Area Central,60000.00
+173,311,Gang Enforcement - Area Central,70000.00
+173,311,Gang Enforcement - Area Central,75000.00
+173,311,Gang Enforcement - Area Central,100000.00
+173,311,Gang Enforcement - Area Central,110000.00
+173,311,Gang Enforcement - Area Central,156000.00
+174,312,Gang Enforcement - Area South,7500.00
+174,312,Gang Enforcement - Area South,10000.00
+174,312,Gang Enforcement - Area South,24000.00
+174,312,Gang Enforcement - Area South,30000.00
+174,312,Gang Enforcement - Area South,36000.00
+174,312,Gang Enforcement - Area South,78000.00
+174,312,Gang Enforcement - Area South,110000.00
+175,313,Gang Enforcement - Area North,1000.00
+175,313,Gang Enforcement - Area North,27500.00
+175,313,Gang Enforcement - Area North,250000.00
+176,314,Gang Section - Area 4,15000.00
+176,314,Gang Section - Area 4,20000.00
+176,314,Gang Section - Area 4,40003.00
+176,314,Gang Section - Area 4,50000.00
+176,314,Gang Section - Area 4,100000.00
+176,314,Gang Section - Area 4,290000.00
+177,315,Gang Section - Area 5,4500.00
+177,315,Gang Section - Area 5,10000.00
+177,315,Gang Section - Area 5,20000.00
+177,315,Gang Section - Area 5,23500.00
+177,315,Gang Section - Area 5,25000.00
+177,315,Gang Section - Area 5,30000.00
+177,315,Gang Section - Area 5,35001.00
+177,315,Gang Section - Area 5,40000.00
+177,315,Gang Section - Area 5,42000.00
+177,315,Gang Section - Area 5,50000.00
+177,315,Gang Section - Area 5,75000.00
+177,315,Gang Section - Area 5,77500.00
+177,315,Gang Section - Area 5,125000.00
+177,315,Gang Section - Area 5,290000.00
+179,353,Special Weapons And Tactics (Swat) Unit,40000.00
+183,393,Gang Enforcement Division,3500.00
+183,393,Gang Enforcement Division,10000.00
+183,393,Gang Enforcement Division,15000.00
+183,393,Gang Enforcement Division,25000.00
+183,393,Gang Enforcement Division,30000.00
+183,393,Gang Enforcement Division,35000.00
+183,393,Gang Enforcement Division,35400.00
+183,393,Gang Enforcement Division,40003.00
+183,393,Gang Enforcement Division,70000.00
+183,393,Gang Enforcement Division,75000.00
+183,393,Gang Enforcement Division,100000.00
+191,477,Forensic Services Unit - Et South,22500.00
+194,543,Detached Services - Miscellaneous Detail,9600.00
+198,601,Det Div Admin.,15000.00
+198,601,Det Div Admin.,5467250.00
+200,603,Arson Section,4755000.00
+204,606,Central Investigations Division,15000.00
+204,606,Central Investigations Division,250000.00
+206,608,Major Accident Investigation Unit,250000.00
+208,610,Detective Area - Central,1000.00
+208,610,Detective Area - Central,9000.00
+208,610,Detective Area - Central,9500.00
+208,610,Detective Area - Central,30000.00
+208,610,Detective Area - Central,40000.00
+208,610,Detective Area - Central,77750.00
+208,610,Detective Area - Central,100000.00
+208,610,Detective Area - Central,870000.00
+208,610,Detective Area - Central,1200000.00
+208,610,Detective Area - Central,3600000.00
+208,610,Detective Area - Central,6750000.00
+211,612,Violent Crimes Dda 1,77750.00
+211,612,Violent Crimes Dda 1,170000.00
+211,612,Violent Crimes Dda 1,3600000.00
+211,612,Violent Crimes Dda 1,6750000.00
+211,612,Violent Crimes Dda 1,8080000.00
+212,620,Detective Area - South,500.00
+212,620,Detective Area - South,350000.00
+212,620,Detective Area - South,409647.00
+214,622,Violent Crimes Dda 2,1800000.00
+214,622,Violent Crimes Dda 2,5250000.00
+214,622,Violent Crimes Dda 2,5375000.00
+214,622,Violent Crimes Dda 2,6875000.00
+214,622,Violent Crimes Dda 2,8750000.00
+214,622,Violent Crimes Dda 2,9300000.00
+215,630,Detective Area - North,5000.00
+215,630,Detective Area - North,10000.00
+215,630,Detective Area - North,27500.00
+215,630,Detective Area - North,30000.00
+215,630,Detective Area - North,95000.00
+215,630,Detective Area - North,250000.00
+215,630,Detective Area - North,300000.00
+217,632,Violent Crimes Dda 3,4755000.00
+217,632,Violent Crimes Dda 3,6150000.00
+217,632,Violent Crimes Dda 3,9300000.00
+218,640,Detective Section - Area 4,1150.00
+218,640,Detective Section - Area 4,2500.00
+218,640,Detective Section - Area 4,4000.00
+218,640,Detective Section - Area 4,5000.00
+218,640,Detective Section - Area 4,15000.00
+218,640,Detective Section - Area 4,40000.00
+218,640,Detective Section - Area 4,50000.00
+218,640,Detective Section - Area 4,60000.00
+218,640,Detective Section - Area 4,95000.00
+218,640,Detective Section - Area 4,99000.00
+218,640,Detective Section - Area 4,100000.00
+218,640,Detective Section - Area 4,250000.00
+218,640,Detective Section - Area 4,340000.00
+218,640,Detective Section - Area 4,750000.00
+218,640,Detective Section - Area 4,1000000.00
+221,650,Detective Section - Area 5,6000.00
+221,650,Detective Section - Area 5,10000.00
+221,650,Detective Section - Area 5,13500.00
+221,650,Detective Section - Area 5,15000.00
+221,650,Detective Section - Area 5,20000.00
+221,650,Detective Section - Area 5,21000.00
+221,650,Detective Section - Area 5,40000.00
+221,650,Detective Section - Area 5,46000.00
+221,650,Detective Section - Area 5,60000.00
+221,650,Detective Section - Area 5,75000.00
+221,650,Detective Section - Area 5,100000.00
+221,650,Detective Section - Area 5,109004.00
+221,650,Detective Section - Area 5,200000.00
+221,650,Detective Section - Area 5,250000.00
+221,650,Detective Section - Area 5,560000.00
+221,650,Detective Section - Area 5,562391.00
+225,701,Public Transportation Section,100000.00
+225,701,Public Transportation Section,3000000.00
+229,710,G/C Unit South,77750.00
+229,710,G/C Unit South,250000.00
+236,765,Public Housing North,2500.00
+255,093,,77750.00

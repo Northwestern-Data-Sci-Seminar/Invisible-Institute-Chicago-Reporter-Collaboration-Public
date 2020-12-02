@@ -1,0 +1,4 @@
+allennlp
+pandas
+numpy
+scikit-learn

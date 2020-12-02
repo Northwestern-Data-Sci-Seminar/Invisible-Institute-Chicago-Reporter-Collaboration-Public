@@ -1,0 +1,6 @@
+Officer: 5417
+Neighbor num: 2
+Neighbors: [1883, 9262]
+Attention mean of neighbors: 0.5
+Attention variance of neighbors: 0.0011290998663753271
+

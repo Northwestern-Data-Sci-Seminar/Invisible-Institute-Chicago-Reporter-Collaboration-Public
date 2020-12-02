@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style> /* set the CSS */
+
+.bar { fill: steelblue; }
+
+</style>
+<body>
+  
+<!-- load the d3.js library -->     
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+
+// Adapted from template found here: https://bl.ocks.org/d3noob/bdf28027e0ce70bd132edc64f1dd7ea4
+
+// set the dimensions and margins of the graph
+var margin = {top: 80, right: 20, bottom: 170, left: 150},
+    width = 1260 - margin.left - margin.right,
+    height = 700 - margin.top - margin.bottom;
+
+// set the ranges
+var x = d3.scaleBand()
+          .range([0, width])
+          .padding(0.1);
+var y = d3.scaleLinear()
+          .range([height, 0]);
+          
+// append the svg object to the body of the page
+// append a 'group' element to 'svg'
+// moves the 'group' element to the top left margin
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", 
+          "translate(" + margin.left + "," + margin.top + ")");
+
+// get the data
+d3.csv("complaint_distribution_by_category.csv", function(error, data) {
+  if (error) throw error;
+
+  // format the data
+  data.forEach(function(d) {
+    d.category = d.category;
+    d.total = +d.total;
+    d.sustained = +d.sustained
+    d.unsustained = + d.unsustained
+    console.log(d);
+  });
+
+  // Scale the range of the data in the domains
+  x.domain(data.map(function(d) { return d.category; }));
+  y.domain([0, d3.max(data, function(d) { return d.total; })]);
+
+  // append the rectangles for the bar chart
+  svg.selectAll(".bar")
+      .data(data)
+    .enter().append("rect")
+      .attr("class", "bar")
+      .attr("x", function(d) { return x(d.category); })
+      .attr("width", x.bandwidth())
+      .attr("y", function(d) { return y(d.total); })
+      .attr("height", function(d) { return height - y(d.total); });
+
+  // add the x Axis
+  svg.append("g")
+      .attr("transform", "translate(0," + height + ")")
+      .call(d3.axisBottom(x))
+      .selectAll("text")  
+      .style("text-anchor", "end")
+      .attr("dx", "-.8em")
+      .attr("dy", ".15em")
+      .attr("transform", "rotate(-65)");
+
+  // add label for x Axis
+  svg.append("text")
+    .attr("transform",
+          "translate(" + (width/2) + " ," + 
+                          (height + margin.top + 40) + ")")
+      .style("text-anchor", "middle")
+      .style("font-family", "sans-serif")
+      .text("Categories");
+
+  // add the y Axis
+  svg.append("g")
+      .call(d3.axisLeft(y));
+
+  // add label for y Axis
+  svg.append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("y", 0 - (margin.left / 2))
+    .attr("x", 0 - (height / 2))
+    .style("text-anchor", "middle")
+    .style("font-family", "sans-serif")
+    .text("Complaint Frequency"); 
+
+  // add title
+  svg.append("text")
+      .attr("x", (width / 2))
+      .attr("y", 0 - (margin.top / 2))
+      .attr("text-anchor", "middle")
+      .text("Complaint Distribution by Category")
+      .style("font-family", "sans-serif")
+      .style("font-size", "20px");
+
+});
+
+</script>
+</body>

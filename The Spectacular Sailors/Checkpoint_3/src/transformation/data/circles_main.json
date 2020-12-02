@@ -1,0 +1,35 @@
+{
+ "name": "All Chicago Police",
+ "children": [
+  {
+   "name": "crew",
+   "children": [
+    {"name": "Crew Population", "value": 1156},
+    {"name": "Coaccusals", "value": 56294},
+    {"name": "Has Allegation", "value": 1156},
+    {"name": "Allegations", "value": 20174},
+    {"name": "Is Disciplined", "value": 1144}
+   ]
+  },
+  {
+   "name": "community",
+   "children": [
+    {"name": "Community Population", "value": 10071},
+    {"name": "Coaccusals", "value": 196844},
+    {"name": "Has Allegation", "value": 10071},
+    {"name": "Allegations", "value": 96651},
+    {"name": "Is Disciplined", "value": 9921}
+   ]
+  },
+  {
+   "name": "unaffiliated",
+   "children": [
+    {"name": "Unaffiliated Population", "value": 23780},
+    {"name": "Coaccusals", "value": 91000},
+    {"name": "Has Allegation", "value": 12217},
+    {"name": "Allegations", "value": 47137},
+    {"name": "Is Disciplined", "value": 7880}
+   ]
+  }
+ ]
+}

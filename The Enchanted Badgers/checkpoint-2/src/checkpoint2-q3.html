@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<style type="text/css">
+
+/* Style the lines by removing the fill and applying a stroke */
+.line {
+    fill: none;
+    stroke: #ffab00;
+    stroke-width: 3;
+}
+  
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+/* Style the dots by assigning a fill and stroke */
+.dot {
+    fill: #ffab00;
+    stroke: #fff;
+}
+  
+  .focus circle {
+  fill: none;
+  stroke: steelblue;
+}
+
+</style>
+<!-- Body tag is where we will append our SVG and SVG objects-->
+<body>
+</body>
+
+<!-- Load in the d3 library -->
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script>
+
+// Adapted from template found here: https://bl.ocks.org/gordlea/27370d1eea8464b04538e6d8ced39e89
+
+// Set margins 
+var margin = {top: 100, right: 100, bottom: 100, left: 100}
+  , width = 1260 - margin.left - margin.right
+  , height = 700 - margin.top - margin.bottom;
+
+// The number of datapoints
+var n = 0;
+
+// get the data
+d3.csv("percentage_uncategorized_by_year.csv").then(function(data) {
+  data.forEach(function(d) {
+    d.year = d.year;
+    d.percentage = +d.percentage;
+    console.log(d);
+    n++;
+  });
+
+// X scale will use the year
+var xScale = d3.scaleLinear()
+    .domain([1995, 2018]) // input
+    .range([0, width]); // output
+
+// Y scale will use the percentage
+var yScale = d3.scaleLinear()
+    .domain([0, 15]) // input 
+    .range([height, 0]); // output 
+
+// d3's line generator
+var line = d3.line()
+    .x(function(d) { return xScale(d.year); }) // set the x values for the line generator
+    .y(function(d) { return yScale(d.percentage); }) // set the y values for the line generator 
+    .curve(d3.curveMonotoneX) // apply smoothing to the line
+  
+// Add the SVG to the page
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+// 3. Call the x axis in a group tag
+svg.append("g")
+    .attr("class", "x axis")
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(xScale).tickFormat(d3.format("d"))); // Create an axis component with d3.axisBottom
+
+// 4. Call the y axis in a group tag
+svg.append("g")
+    .attr("class", "y axis")
+    .call(d3.axisLeft(yScale)); // Create an axis component with d3.axisLeft
+
+// 9. Append the path, bind the data, and call the line generator 
+svg.append("path")
+    .datum(data) // 10. Binds data to the line 
+    .attr("class", "line") // Assign a class for styling 
+    .attr("d", line); // 11. Calls the line generator 
+
+// 12. Appends a circle for each datapoint 
+svg.selectAll(".dot")
+    .data(data)
+  .enter().append("circle") // Uses the enter().append() method
+    .attr("class", "dot") // Assign a class for styling
+    .attr("cx", function(d) { return xScale(d.year) })
+    .attr("cy", function(d) { return yScale(d.percentage) })
+    .attr("r", 5)
+      .on("mouseover", function(a, b, c) { 
+  			console.log(a) 
+        this.attr('class', 'focus')
+		})
+      .on("mouseout", function() {  })
+
+  // add label for x Axis
+  svg.append("text")
+    .attr("transform",
+          "translate(" + (width/2) + " ," + 
+                          (height + 60) + ")")
+      .style("text-anchor", "middle")
+      .style("font-family", "sans-serif")
+      .style("font-size", "16px")
+      .text("Year");
+
+  // add label for y Axis
+  svg.append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("y", 0 - (margin.left / 2))
+    .attr("x", 0 - (height / 2))
+    .style("text-anchor", "middle")
+    .style("font-family", "sans-serif")
+    .style("font-size", "18px")
+    .text("Percent"); 
+
+  // add title
+  svg.append("text")
+      .attr("x", (width / 2))
+      .attr("y", -40)
+      .attr("text-anchor", "middle")
+      .text("Percentage of Miscategorized Complaints Year over Year")
+      .style("font-family", "sans-serif")
+      .style("font-size", "20px");
+
+  });
+
+</script>
