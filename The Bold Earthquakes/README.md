@@ -11,10 +11,10 @@ We will analyze instances of career rewards and misconduct records, and the rela
 
 [**Checkpoint 1: SQL Analytics**](https://github.com/Northwestern-Data-Sci-Seminar/Invisible-Institute-Chicago-Reporter-Collaboration-Public/tree/master/The%20Bold%20Earthquakes/checkpoint-1)
 
-[**Checkpoint 2: Data Visualizations**](https://github.com/Northwestern-Data-Sci-Seminar/Invisible-Institute-Chicago-Reporter-Collaboration-Public/tree/master/The%20Bold%20Earthquakes/checkpoint-1)
+[**Checkpoint 2: Data Visualizations**](https://github.com/Northwestern-Data-Sci-Seminar/Invisible-Institute-Chicago-Reporter-Collaboration-Public/tree/master/The%20Bold%20Earthquakes/checkpoint-2)
 
-[**Checkpoint 3: Interactive Visualization**](https://github.com/Northwestern-Data-Sci-Seminar/Invisible-Institute-Chicago-Reporter-Collaboration-Public/tree/master/The%20Bold%20Earthquakes/checkpoint-1)
+[**Checkpoint 3: Interactive Visualization**](https://github.com/Northwestern-Data-Sci-Seminar/Invisible-Institute-Chicago-Reporter-Collaboration-Public/tree/master/The%20Bold%20Earthquakes/checkpoint-3)
 
-[**Checkpoint 4: Machine Learning**](https://github.com/Northwestern-Data-Sci-Seminar/Invisible-Institute-Chicago-Reporter-Collaboration-Public/tree/master/The%20Bold%20Earthquakes/checkpoint-1)
+[**Checkpoint 4: Machine Learning**](https://github.com/Northwestern-Data-Sci-Seminar/Invisible-Institute-Chicago-Reporter-Collaboration-Public/tree/master/The%20Bold%20Earthquakes/checkpoint-4)
 
-[**Checkpoint 5: Natural Language Processing**](https://github.com/Northwestern-Data-Sci-Seminar/Invisible-Institute-Chicago-Reporter-Collaboration-Public/tree/master/The%20Bold%20Earthquakes/checkpoint-1)
+[**Checkpoint 5: Natural Language Processing**](https://github.com/Northwestern-Data-Sci-Seminar/Invisible-Institute-Chicago-Reporter-Collaboration-Public/tree/master/The%20Bold%20Earthquakes/checkpoint-5)
