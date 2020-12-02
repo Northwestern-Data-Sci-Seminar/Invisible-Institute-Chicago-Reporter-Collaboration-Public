@@ -1,6 +1,6 @@
 # CPDB: Injury Trends <br />
-## The Incredible Pirates <br />
 >By: Hawkins Gay, Alex Leidner, Ramsey Wehbe <br />
+>"The Incredible Pirates" <br />
 >Data Science Seminary Fall 2020 <br />
 
 ## Theme:
