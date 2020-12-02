@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="cpdb.cgod7egsd6vr.us-east-2.rds.amazonaws.com" uuid="0c11fa6d-29f6-4c08-b0dd-fe9c64cd9728">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://cpdb.cgod7egsd6vr.us-east-2.rds.amazonaws.com:5432/cpdb</jdbc-url>
+    </data-source>
+  </component>
+</project>

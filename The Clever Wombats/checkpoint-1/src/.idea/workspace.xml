@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="17fbd2ac-eec9-4b86-b73e-1dd5f74df520" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/q1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/q1.sql" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1jFF3QPvJC32I1rfIXslsbJNv0m" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DBE.Init.BalloonShown" value="true" />
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="database.data.extractors.current.export.id" value="Comma-separated (CSV)_id" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../CPDP Project/Checkpoint 4 2/data" />
+    <property name="settings.editor.selected.configurable" value="database.main2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../../../../CPDP Project/Checkpoint 4 2/data" />
+      <recent name="$PROJECT_DIR$/../../../../CPDP Project/Checkpoint 5/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Database Script.newSql.sql">
+    <configuration name="newSql.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/newSql.sql" />
+      <script-mode>FILE</script-mode>
+      <method v="2" />
+    </configuration>
+    <configuration name="q1.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/q1.sql" />
+      <script-mode>FILE</script-mode>
+      <method v="2" />
+    </configuration>
+    <configuration name="setup.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/setup.sql" />
+      <script-mode>FILE</script-mode>
+      <method v="2" />
+    </configuration>
+    <configuration name="setup.sql" type="DatabaseScript" editBeforeRun="true" temporary="true">
+      <script-file value="$PROJECT_DIR$/q1.sql" />
+      <script-mode>FILE</script-mode>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Database Script.newSql.sql" />
+        <item itemvalue="Database Script.setup.sql" />
+        <item itemvalue="Database Script.q1.sql" />
+        <item itemvalue="Database Script.setup.sql" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="450" y="347" key="#Notifications" timestamp="1603394590737">
+      <screen x="0" y="23" width="1792" height="1026" />
+    </state>
+    <state x="450" y="347" key="#Notifications/0.23.1792.1026@0.23.1792.1026" timestamp="1603394590737" />
+    <state x="497" y="472" key="#SQL_Dialects" timestamp="1603392298267">
+      <screen x="0" y="23" width="1792" height="1030" />
+    </state>
+    <state x="497" y="472" key="#SQL_Dialects/0.23.1792.1030@0.23.1792.1030" timestamp="1603392298267" />
+    <state x="263" y="23" width="1084" height="1005" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603394432732">
+      <screen x="0" y="23" width="1792" height="1026" />
+    </state>
+    <state x="263" y="23" width="1084" height="1005" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1026@0.23.1792.1026" timestamp="1603394432732" />
+    <state x="651" y="232" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1030@0.23.1792.1030" timestamp="1603392217186" />
+    <state width="0" height="0" key="GridCell.Tab.0.bottom" timestamp="1606864106958">
+      <screen x="0" y="23" width="1792" height="1030" />
+    </state>
+    <state width="930" height="249" key="GridCell.Tab.0.bottom/0.23.1792.1026@0.23.1792.1026" timestamp="1604790369715" />
+    <state width="0" height="0" key="GridCell.Tab.0.bottom/0.23.1792.1030@0.23.1792.1030" timestamp="1606864106958" />
+    <state width="930" height="261" key="GridCell.Tab.0.bottom/0.23.1792.1033@0.23.1792.1033" timestamp="1605386448616" />
+    <state width="930" height="261" key="GridCell.Tab.0.bottom/0.23.1792.1034@0.23.1792.1034" timestamp="1606620282940" />
+    <state width="930" height="261" key="GridCell.Tab.0.bottom/0.23.1792.1037@0.23.1792.1037" timestamp="1606522180900" />
+    <state width="930" height="261" key="GridCell.Tab.0.bottom/0.23.1792.1041@0.23.1792.1041" timestamp="1606521926558" />
+    <state width="0" height="0" key="GridCell.Tab.0.center" timestamp="1606864106957">
+      <screen x="0" y="23" width="1792" height="1030" />
+    </state>
+    <state width="930" height="249" key="GridCell.Tab.0.center/0.23.1792.1026@0.23.1792.1026" timestamp="1604790369714" />
+    <state width="0" height="0" key="GridCell.Tab.0.center/0.23.1792.1030@0.23.1792.1030" timestamp="1606864106957" />
+    <state width="930" height="261" key="GridCell.Tab.0.center/0.23.1792.1033@0.23.1792.1033" timestamp="1605386448615" />
+    <state width="930" height="261" key="GridCell.Tab.0.center/0.23.1792.1034@0.23.1792.1034" timestamp="1606620282936" />
+    <state width="930" height="261" key="GridCell.Tab.0.center/0.23.1792.1037@0.23.1792.1037" timestamp="1606522180899" />
+    <state width="930" height="261" key="GridCell.Tab.0.center/0.23.1792.1041@0.23.1792.1041" timestamp="1606521926557" />
+    <state width="0" height="0" key="GridCell.Tab.0.left" timestamp="1606864106957">
+      <screen x="0" y="23" width="1792" height="1030" />
+    </state>
+    <state width="930" height="249" key="GridCell.Tab.0.left/0.23.1792.1026@0.23.1792.1026" timestamp="1604790369714" />
+    <state width="0" height="0" key="GridCell.Tab.0.left/0.23.1792.1030@0.23.1792.1030" timestamp="1606864106957" />
+    <state width="930" height="261" key="GridCell.Tab.0.left/0.23.1792.1033@0.23.1792.1033" timestamp="1605386448615" />
+    <state width="930" height="261" key="GridCell.Tab.0.left/0.23.1792.1034@0.23.1792.1034" timestamp="1606620282935" />
+    <state width="930" height="261" key="GridCell.Tab.0.left/0.23.1792.1037@0.23.1792.1037" timestamp="1606522180898" />
+    <state width="930" height="261" key="GridCell.Tab.0.left/0.23.1792.1041@0.23.1792.1041" timestamp="1606521926555" />
+    <state width="0" height="0" key="GridCell.Tab.0.right" timestamp="1606864106958">
+      <screen x="0" y="23" width="1792" height="1030" />
+    </state>
+    <state width="930" height="249" key="GridCell.Tab.0.right/0.23.1792.1026@0.23.1792.1026" timestamp="1604790369715" />
+    <state width="0" height="0" key="GridCell.Tab.0.right/0.23.1792.1030@0.23.1792.1030" timestamp="1606864106958" />
+    <state width="930" height="261" key="GridCell.Tab.0.right/0.23.1792.1033@0.23.1792.1033" timestamp="1605386448616" />
+    <state width="930" height="261" key="GridCell.Tab.0.right/0.23.1792.1034@0.23.1792.1034" timestamp="1606620282939" />
+    <state width="930" height="261" key="GridCell.Tab.0.right/0.23.1792.1037@0.23.1792.1037" timestamp="1606522180899" />
+    <state width="930" height="261" key="GridCell.Tab.0.right/0.23.1792.1041@0.23.1792.1041" timestamp="1606521926557" />
+    <state width="249" height="471" key="HiddenNamespacesPopup" timestamp="1603746406823">
+      <screen x="0" y="23" width="1792" height="1028" />
+    </state>
+    <state width="249" height="470" key="HiddenNamespacesPopup/0.23.1792.1026@0.23.1792.1026" timestamp="1603394453130" />
+    <state width="249" height="471" key="HiddenNamespacesPopup/0.23.1792.1028@0.23.1792.1028" timestamp="1603746406823" />
+    <state width="249" height="471" key="HiddenNamespacesPopup/0.23.1792.1030@0.23.1792.1030" timestamp="1603392499801" />
+    <state x="327" y="238" key="SettingsEditor" timestamp="1604516881995">
+      <screen x="0" y="23" width="1792" height="1028" />
+    </state>
+    <state x="327" y="238" key="SettingsEditor/0.23.1792.1026@0.23.1792.1026" timestamp="1603394230812" />
+    <state x="327" y="238" key="SettingsEditor/0.23.1792.1028@0.23.1792.1028" timestamp="1604516881995" />
+    <state x="320" y="312" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1604455767725">
+      <screen x="0" y="23" width="1792" height="1028" />
+    </state>
+    <state x="320" y="311" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.23.1792.1026@0.23.1792.1026" timestamp="1603394528512" />
+    <state x="320" y="312" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.23.1792.1028@0.23.1792.1028" timestamp="1604455767725" />
+    <state x="696" y="286" width="670" height="676" key="search.everywhere.popup" timestamp="1604527772075">
+      <screen x="0" y="23" width="1792" height="1028" />
+    </state>
+    <state x="696" y="286" width="670" height="676" key="search.everywhere.popup/0.23.1792.1028@0.23.1792.1028" timestamp="1604527772075" />
+    <state x="696" y="287" width="670" height="678" key="search.everywhere.popup/0.23.1792.1030@0.23.1792.1030" timestamp="1604523757207" />
+  </component>
+</project>
