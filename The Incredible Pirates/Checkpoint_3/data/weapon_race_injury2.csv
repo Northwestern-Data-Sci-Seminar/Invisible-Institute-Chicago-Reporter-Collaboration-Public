@@ -1,0 +1,103 @@
+subject_race,weapon_used,alleged_or_injured,injury_documentation,total_use_of_force_events
+ASIAN/PACIFIC ISLANDER,Taser/Impact Weapon,Injured,Alleged_Injury,4
+ASIAN/PACIFIC ISLANDER,,Injured,Alleged_Injury,40
+ASIAN/PACIFIC ISLANDER,Verbal Commands,Uninjured,,278
+ASIAN/PACIFIC ISLANDER,Other,Uninjured,,43
+ASIAN/PACIFIC ISLANDER,Firearm,Injured,Officer_Supported_Injury,4
+ASIAN/PACIFIC ISLANDER,Chemical,Uninjured,,1
+ASIAN/PACIFIC ISLANDER,Verbal Commands,Injured,Alleged_Injury,11
+ASIAN/PACIFIC ISLANDER,Physical Force,Injured,Officer_Supported_Injury,259
+ASIAN/PACIFIC ISLANDER,Physical Force,Uninjured,,485
+ASIAN/PACIFIC ISLANDER,Member Presence,Injured,Alleged_Injury,9
+ASIAN/PACIFIC ISLANDER,Physical Force,Injured,Alleged_Injury,28
+ASIAN/PACIFIC ISLANDER,Firearm,Uninjured,,6
+ASIAN/PACIFIC ISLANDER,Member Presence,Injured,Officer_Supported_Injury,115
+ASIAN/PACIFIC ISLANDER,Other,Injured,Officer_Supported_Injury,14
+ASIAN/PACIFIC ISLANDER,,Uninjured,,1040
+ASIAN/PACIFIC ISLANDER,Member Presence,Uninjured,,252
+ASIAN/PACIFIC ISLANDER,Taser/Impact Weapon,Uninjured,,16
+ASIAN/PACIFIC ISLANDER,Verbal Commands,Injured,Officer_Supported_Injury,118
+ASIAN/PACIFIC ISLANDER,Taser/Impact Weapon,Injured,Officer_Supported_Injury,23
+ASIAN/PACIFIC ISLANDER,,Injured,Officer_Supported_Injury,498
+BLACK,Taser/Impact Weapon,Injured,Officer_Supported_Injury,2126
+BLACK,Other,Injured,Alleged_Injury,282
+BLACK,,Injured,Officer_Supported_Injury,50948
+BLACK,Member Presence,Uninjured,,31825
+BLACK,Firearm,Injured,Alleged_Injury,1
+BLACK,Firearm,Uninjured,,260
+BLACK,Member Presence,Injured,Alleged_Injury,1815
+BLACK,Physical Force,Uninjured,,65562
+BLACK,Physical Force,Injured,Alleged_Injury,4118
+BLACK,Chemical,Injured,Officer_Supported_Injury,23
+BLACK,Member Presence,Injured,Officer_Supported_Injury,11119
+BLACK,Taser/Impact Weapon,Injured,Alleged_Injury,206
+BLACK,Verbal Commands,Injured,Officer_Supported_Injury,11561
+BLACK,Verbal Commands,Injured,Alleged_Injury,1953
+BLACK,Taser/Impact Weapon,Uninjured,,3238
+BLACK,Other,Uninjured,,4686
+BLACK,,Uninjured,,132719
+BLACK,,Injured,Alleged_Injury,8046
+BLACK,Verbal Commands,Uninjured,,33445
+BLACK,Chemical,Injured,Alleged_Injury,5
+BLACK,Firearm,Injured,Officer_Supported_Injury,517
+BLACK,Chemical,Uninjured,,60
+BLACK,Other,Injured,Officer_Supported_Injury,1442
+BLACK,Physical Force,Injured,Officer_Supported_Injury,24521
+HISPANIC,Firearm,Injured,Officer_Supported_Injury,95
+HISPANIC,Firearm,Injured,Alleged_Injury,1
+HISPANIC,Other,Uninjured,,994
+HISPANIC,,Uninjured,,21174
+HISPANIC,Taser/Impact Weapon,Uninjured,,468
+HISPANIC,Member Presence,Uninjured,,5140
+HISPANIC,Other,Injured,Officer_Supported_Injury,424
+HISPANIC,Verbal Commands,Injured,Alleged_Injury,313
+HISPANIC,Verbal Commands,Injured,Officer_Supported_Injury,2962
+HISPANIC,Verbal Commands,Uninjured,,5403
+HISPANIC,Physical Force,Uninjured,,10468
+HISPANIC,Chemical,Uninjured,,8
+HISPANIC,Taser/Impact Weapon,Injured,Officer_Supported_Injury,500
+HISPANIC,Firearm,Uninjured,,64
+HISPANIC,Taser/Impact Weapon,Injured,Alleged_Injury,35
+HISPANIC,,Injured,Officer_Supported_Injury,12575
+HISPANIC,Other,Injured,Alleged_Injury,44
+HISPANIC,Member Presence,Injured,Alleged_Injury,301
+HISPANIC,Chemical,Injured,Officer_Supported_Injury,2
+HISPANIC,Physical Force,Injured,Officer_Supported_Injury,6344
+HISPANIC,,Injured,Alleged_Injury,1342
+HISPANIC,Physical Force,Injured,Alleged_Injury,677
+HISPANIC,Member Presence,Injured,Officer_Supported_Injury,2822
+NATIVE AMERICAN/ALASKAN NATIVE,Verbal Commands,Uninjured,,42
+NATIVE AMERICAN/ALASKAN NATIVE,Physical Force,Uninjured,,94
+NATIVE AMERICAN/ALASKAN NATIVE,,Injured,Officer_Supported_Injury,38
+NATIVE AMERICAN/ALASKAN NATIVE,,Uninjured,,158
+NATIVE AMERICAN/ALASKAN NATIVE,Member Presence,Injured,Alleged_Injury,1
+NATIVE AMERICAN/ALASKAN NATIVE,Member Presence,Uninjured,,38
+NATIVE AMERICAN/ALASKAN NATIVE,Member Presence,Injured,Officer_Supported_Injury,8
+NATIVE AMERICAN/ALASKAN NATIVE,Physical Force,Injured,Officer_Supported_Injury,14
+NATIVE AMERICAN/ALASKAN NATIVE,,Injured,Alleged_Injury,4
+NATIVE AMERICAN/ALASKAN NATIVE,Verbal Commands,Injured,Officer_Supported_Injury,8
+NATIVE AMERICAN/ALASKAN NATIVE,Physical Force,Injured,Alleged_Injury,1
+NATIVE AMERICAN/ALASKAN NATIVE,Verbal Commands,Injured,Alleged_Injury,1
+NATIVE AMERICAN/ALASKAN NATIVE,Taser/Impact Weapon,Uninjured,,4
+WHITE,Member Presence,Uninjured,,3642
+WHITE,Firearm,Uninjured,,14
+WHITE,Other,Uninjured,,741
+WHITE,Member Presence,Injured,Officer_Supported_Injury,1890
+WHITE,Taser/Impact Weapon,Injured,Officer_Supported_Injury,329
+WHITE,Verbal Commands,Injured,Alleged_Injury,194
+WHITE,Chemical,Injured,Officer_Supported_Injury,3
+WHITE,Taser/Impact Weapon,Injured,Alleged_Injury,15
+WHITE,Physical Force,Injured,Alleged_Injury,385
+WHITE,Chemical,Uninjured,,10
+WHITE,,Uninjured,,15261
+WHITE,Physical Force,Uninjured,,7623
+WHITE,Physical Force,Injured,Officer_Supported_Injury,4152
+WHITE,Other,Injured,Alleged_Injury,28
+WHITE,,Injured,Alleged_Injury,757
+WHITE,Verbal Commands,Uninjured,,3905
+WHITE,Taser/Impact Weapon,Uninjured,,278
+WHITE,Firearm,Injured,Officer_Supported_Injury,48
+WHITE,Other,Injured,Officer_Supported_Injury,276
+WHITE,Member Presence,Injured,Alleged_Injury,178
+WHITE,Verbal Commands,Injured,Officer_Supported_Injury,2000
+WHITE,,Injured,Officer_Supported_Injury,8431

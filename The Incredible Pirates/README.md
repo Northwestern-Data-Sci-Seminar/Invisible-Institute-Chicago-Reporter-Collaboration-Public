@@ -9,7 +9,8 @@ Data Science Seminary Fall 2020 <br />
    As the course advances this topic would lend itself to traversing through the data parsing and visualization modules planned. While these are enumerated below, the ultimate task would be to try to parse through reports, using NLP, to add medical resource utilization to the known outcomes of TRR reports, either through parsing reports or inclusion of civil suits. This data, currently not included in attributes, would provide strong additional evidence to explore individual and societal impact.
    
 ## Checkpoints:
-[Checkpoint 1](https://github.com/Northwestern-Data-Sci-Seminar/Invisible-Institute-Chicago-Reporter-Collaboration-Public/tree/master/The%20Incredible%20Pirates/Checkpoint%201) <br />
+[Checkpoint 1](https://github.com/Northwestern-Data-Sci-Seminar/Invisible-Institute-Chicago-Reporter-Collaboration-Public/tree/master/The%20Incredible%20Pirates/Checkpoint_1) <br />
 [Checkpoint 2](https://github.com/Northwestern-Data-Sci-Seminar/Invisible-Institute-Chicago-Reporter-Collaboration-Public/tree/master/The%20Incredible%20Pirates/Checkpoint_2) <br />
+
  
    

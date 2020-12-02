@@ -1,0 +1,1730 @@
+{
+  "Name": "TRR",
+  "children": [
+    {
+      "Name": "ASIAN/PACIFIC ISLANDER",
+      "children": [
+        {
+          "Name": "Taser/Impact Weapon",
+          "children": [
+            {
+              "Name": "Injured",
+              "children": [
+                {
+                  "Name": "Alleged_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Alleged_Injury",
+                      "subject_race": "ASIAN/PACIFIC ISLANDER",
+                      "total_use_of_force_events": 4,
+                      "weapon_used": "Taser/Impact Weapon"
+                    }
+                  ],
+                  "count": 1
+                },
+                {
+                  "Name": "Officer_Supported_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Officer_Supported_Injury",
+                      "subject_race": "ASIAN/PACIFIC ISLANDER",
+                      "total_use_of_force_events": 23,
+                      "weapon_used": "Taser/Impact Weapon"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 2
+            },
+            {
+              "Name": "Uninjured",
+              "children": [
+                {
+                  "Name": " ",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Uninjured",
+                      "injury_documentation": " ",
+                      "subject_race": "ASIAN/PACIFIC ISLANDER",
+                      "total_use_of_force_events": 16,
+                      "weapon_used": "Taser/Impact Weapon"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            }
+          ],
+          "count": 3
+        },
+        {
+          "Name": "Verbal Commands",
+          "children": [
+            {
+              "Name": "Uninjured",
+              "children": [
+                {
+                  "Name": " ",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Uninjured",
+                      "injury_documentation": " ",
+                      "subject_race": "ASIAN/PACIFIC ISLANDER",
+                      "total_use_of_force_events": 278,
+                      "weapon_used": "Verbal Commands"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            },
+            {
+              "Name": "Injured",
+              "children": [
+                {
+                  "Name": "Alleged_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Alleged_Injury",
+                      "subject_race": "ASIAN/PACIFIC ISLANDER",
+                      "total_use_of_force_events": 11,
+                      "weapon_used": "Verbal Commands"
+                    }
+                  ],
+                  "count": 1
+                },
+                {
+                  "Name": "Officer_Supported_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Officer_Supported_Injury",
+                      "subject_race": "ASIAN/PACIFIC ISLANDER",
+                      "total_use_of_force_events": 118,
+                      "weapon_used": "Verbal Commands"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 2
+            }
+          ],
+          "count": 3
+        },
+        {
+          "Name": "Other",
+          "children": [
+            {
+              "Name": "Uninjured",
+              "children": [
+                {
+                  "Name": " ",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Uninjured",
+                      "injury_documentation": " ",
+                      "subject_race": "ASIAN/PACIFIC ISLANDER",
+                      "total_use_of_force_events": 43,
+                      "weapon_used": "Other"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            },
+            {
+              "Name": "Injured",
+              "children": [
+                {
+                  "Name": "Officer_Supported_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Officer_Supported_Injury",
+                      "subject_race": "ASIAN/PACIFIC ISLANDER",
+                      "total_use_of_force_events": 14,
+                      "weapon_used": "Other"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            }
+          ],
+          "count": 2
+        },
+        {
+          "Name": "Firearm",
+          "children": [
+            {
+              "Name": "Injured",
+              "children": [
+                {
+                  "Name": "Officer_Supported_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Officer_Supported_Injury",
+                      "subject_race": "ASIAN/PACIFIC ISLANDER",
+                      "total_use_of_force_events": 4,
+                      "weapon_used": "Firearm"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            },
+            {
+              "Name": "Uninjured",
+              "children": [
+                {
+                  "Name": " ",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Uninjured",
+                      "injury_documentation": " ",
+                      "subject_race": "ASIAN/PACIFIC ISLANDER",
+                      "total_use_of_force_events": 6,
+                      "weapon_used": "Firearm"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            }
+          ],
+          "count": 2
+        },
+        {
+          "Name": "Chemical",
+          "children": [
+            {
+              "Name": "Uninjured",
+              "children": [
+                {
+                  "Name": " ",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Uninjured",
+                      "injury_documentation": " ",
+                      "subject_race": "ASIAN/PACIFIC ISLANDER",
+                      "total_use_of_force_events": 1,
+                      "weapon_used": "Chemical"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            }
+          ],
+          "count": 1
+        },
+        {
+          "Name": "Physical Force",
+          "children": [
+            {
+              "Name": "Injured",
+              "children": [
+                {
+                  "Name": "Officer_Supported_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Officer_Supported_Injury",
+                      "subject_race": "ASIAN/PACIFIC ISLANDER",
+                      "total_use_of_force_events": 259,
+                      "weapon_used": "Physical Force"
+                    }
+                  ],
+                  "count": 1
+                },
+                {
+                  "Name": "Alleged_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Alleged_Injury",
+                      "subject_race": "ASIAN/PACIFIC ISLANDER",
+                      "total_use_of_force_events": 28,
+                      "weapon_used": "Physical Force"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 2
+            },
+            {
+              "Name": "Uninjured",
+              "children": [
+                {
+                  "Name": " ",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Uninjured",
+                      "injury_documentation": " ",
+                      "subject_race": "ASIAN/PACIFIC ISLANDER",
+                      "total_use_of_force_events": 485,
+                      "weapon_used": "Physical Force"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            }
+          ],
+          "count": 3
+        },
+        {
+          "Name": "Member Presence",
+          "children": [
+            {
+              "Name": "Injured",
+              "children": [
+                {
+                  "Name": "Alleged_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Alleged_Injury",
+                      "subject_race": "ASIAN/PACIFIC ISLANDER",
+                      "total_use_of_force_events": 9,
+                      "weapon_used": "Member Presence"
+                    }
+                  ],
+                  "count": 1
+                },
+                {
+                  "Name": "Officer_Supported_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Officer_Supported_Injury",
+                      "subject_race": "ASIAN/PACIFIC ISLANDER",
+                      "total_use_of_force_events": 115,
+                      "weapon_used": "Member Presence"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 2
+            },
+            {
+              "Name": "Uninjured",
+              "children": [
+                {
+                  "Name": " ",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Uninjured",
+                      "injury_documentation": " ",
+                      "subject_race": "ASIAN/PACIFIC ISLANDER",
+                      "total_use_of_force_events": 252,
+                      "weapon_used": "Member Presence"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            }
+          ],
+          "count": 3
+        }
+      ],
+      "count": 17
+    },
+    {
+      "Name": "BLACK",
+      "children": [
+        {
+          "Name": "Taser/Impact Weapon",
+          "children": [
+            {
+              "Name": "Injured",
+              "children": [
+                {
+                  "Name": "Officer_Supported_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Officer_Supported_Injury",
+                      "subject_race": "BLACK",
+                      "total_use_of_force_events": 2126,
+                      "weapon_used": "Taser/Impact Weapon"
+                    }
+                  ],
+                  "count": 1
+                },
+                {
+                  "Name": "Alleged_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Alleged_Injury",
+                      "subject_race": "BLACK",
+                      "total_use_of_force_events": 206,
+                      "weapon_used": "Taser/Impact Weapon"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 2
+            },
+            {
+              "Name": "Uninjured",
+              "children": [
+                {
+                  "Name": " ",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Uninjured",
+                      "injury_documentation": " ",
+                      "subject_race": "BLACK",
+                      "total_use_of_force_events": 3238,
+                      "weapon_used": "Taser/Impact Weapon"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            }
+          ],
+          "count": 3
+        },
+        {
+          "Name": "Other",
+          "children": [
+            {
+              "Name": "Injured",
+              "children": [
+                {
+                  "Name": "Alleged_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Alleged_Injury",
+                      "subject_race": "BLACK",
+                      "total_use_of_force_events": 282,
+                      "weapon_used": "Other"
+                    }
+                  ],
+                  "count": 1
+                },
+                {
+                  "Name": "Officer_Supported_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Officer_Supported_Injury",
+                      "subject_race": "BLACK",
+                      "total_use_of_force_events": 1442,
+                      "weapon_used": "Other"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 2
+            },
+            {
+              "Name": "Uninjured",
+              "children": [
+                {
+                  "Name": " ",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Uninjured",
+                      "injury_documentation": " ",
+                      "subject_race": "BLACK",
+                      "total_use_of_force_events": 4686,
+                      "weapon_used": "Other"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            }
+          ],
+          "count": 3
+        },
+        {
+          "Name": "Member Presence",
+          "children": [
+            {
+              "Name": "Uninjured",
+              "children": [
+                {
+                  "Name": " ",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Uninjured",
+                      "injury_documentation": " ",
+                      "subject_race": "BLACK",
+                      "total_use_of_force_events": 31825,
+                      "weapon_used": "Member Presence"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            },
+            {
+              "Name": "Injured",
+              "children": [
+                {
+                  "Name": "Alleged_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Alleged_Injury",
+                      "subject_race": "BLACK",
+                      "total_use_of_force_events": 1815,
+                      "weapon_used": "Member Presence"
+                    }
+                  ],
+                  "count": 1
+                },
+                {
+                  "Name": "Officer_Supported_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Officer_Supported_Injury",
+                      "subject_race": "BLACK",
+                      "total_use_of_force_events": 11119,
+                      "weapon_used": "Member Presence"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 2
+            }
+          ],
+          "count": 3
+        },
+        {
+          "Name": "Firearm",
+          "children": [
+            {
+              "Name": "Injured",
+              "children": [
+                {
+                  "Name": "Alleged_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Alleged_Injury",
+                      "subject_race": "BLACK",
+                      "total_use_of_force_events": 1,
+                      "weapon_used": "Firearm"
+                    }
+                  ],
+                  "count": 1
+                },
+                {
+                  "Name": "Officer_Supported_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Officer_Supported_Injury",
+                      "subject_race": "BLACK",
+                      "total_use_of_force_events": 517,
+                      "weapon_used": "Firearm"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 2
+            },
+            {
+              "Name": "Uninjured",
+              "children": [
+                {
+                  "Name": " ",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Uninjured",
+                      "injury_documentation": " ",
+                      "subject_race": "BLACK",
+                      "total_use_of_force_events": 260,
+                      "weapon_used": "Firearm"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            }
+          ],
+          "count": 3
+        },
+        {
+          "Name": "Physical Force",
+          "children": [
+            {
+              "Name": "Uninjured",
+              "children": [
+                {
+                  "Name": " ",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Uninjured",
+                      "injury_documentation": " ",
+                      "subject_race": "BLACK",
+                      "total_use_of_force_events": 65562,
+                      "weapon_used": "Physical Force"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            },
+            {
+              "Name": "Injured",
+              "children": [
+                {
+                  "Name": "Alleged_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Alleged_Injury",
+                      "subject_race": "BLACK",
+                      "total_use_of_force_events": 4118,
+                      "weapon_used": "Physical Force"
+                    }
+                  ],
+                  "count": 1
+                },
+                {
+                  "Name": "Officer_Supported_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Officer_Supported_Injury",
+                      "subject_race": "BLACK",
+                      "total_use_of_force_events": 24521,
+                      "weapon_used": "Physical Force"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 2
+            }
+          ],
+          "count": 3
+        },
+        {
+          "Name": "Chemical",
+          "children": [
+            {
+              "Name": "Injured",
+              "children": [
+                {
+                  "Name": "Officer_Supported_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Officer_Supported_Injury",
+                      "subject_race": "BLACK",
+                      "total_use_of_force_events": 23,
+                      "weapon_used": "Chemical"
+                    }
+                  ],
+                  "count": 1
+                },
+                {
+                  "Name": "Alleged_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Alleged_Injury",
+                      "subject_race": "BLACK",
+                      "total_use_of_force_events": 5,
+                      "weapon_used": "Chemical"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 2
+            },
+            {
+              "Name": "Uninjured",
+              "children": [
+                {
+                  "Name": " ",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Uninjured",
+                      "injury_documentation": " ",
+                      "subject_race": "BLACK",
+                      "total_use_of_force_events": 60,
+                      "weapon_used": "Chemical"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            }
+          ],
+          "count": 3
+        },
+        {
+          "Name": "Verbal Commands",
+          "children": [
+            {
+              "Name": "Injured",
+              "children": [
+                {
+                  "Name": "Officer_Supported_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Officer_Supported_Injury",
+                      "subject_race": "BLACK",
+                      "total_use_of_force_events": 11561,
+                      "weapon_used": "Verbal Commands"
+                    }
+                  ],
+                  "count": 1
+                },
+                {
+                  "Name": "Alleged_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Alleged_Injury",
+                      "subject_race": "BLACK",
+                      "total_use_of_force_events": 1953,
+                      "weapon_used": "Verbal Commands"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 2
+            },
+            {
+              "Name": "Uninjured",
+              "children": [
+                {
+                  "Name": " ",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Uninjured",
+                      "injury_documentation": " ",
+                      "subject_race": "BLACK",
+                      "total_use_of_force_events": 33445,
+                      "weapon_used": "Verbal Commands"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            }
+          ],
+          "count": 3
+        }
+      ],
+      "count": 21
+    },
+    {
+      "Name": "HISPANIC",
+      "children": [
+        {
+          "Name": "Firearm",
+          "children": [
+            {
+              "Name": "Injured",
+              "children": [
+                {
+                  "Name": "Officer_Supported_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Officer_Supported_Injury",
+                      "subject_race": "HISPANIC",
+                      "total_use_of_force_events": 95,
+                      "weapon_used": "Firearm"
+                    }
+                  ],
+                  "count": 1
+                },
+                {
+                  "Name": "Alleged_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Alleged_Injury",
+                      "subject_race": "HISPANIC",
+                      "total_use_of_force_events": 1,
+                      "weapon_used": "Firearm"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 2
+            },
+            {
+              "Name": "Uninjured",
+              "children": [
+                {
+                  "Name": " ",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Uninjured",
+                      "injury_documentation": " ",
+                      "subject_race": "HISPANIC",
+                      "total_use_of_force_events": 64,
+                      "weapon_used": "Firearm"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            }
+          ],
+          "count": 3
+        },
+        {
+          "Name": "Other",
+          "children": [
+            {
+              "Name": "Uninjured",
+              "children": [
+                {
+                  "Name": " ",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Uninjured",
+                      "injury_documentation": " ",
+                      "subject_race": "HISPANIC",
+                      "total_use_of_force_events": 994,
+                      "weapon_used": "Other"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            },
+            {
+              "Name": "Injured",
+              "children": [
+                {
+                  "Name": "Officer_Supported_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Officer_Supported_Injury",
+                      "subject_race": "HISPANIC",
+                      "total_use_of_force_events": 424,
+                      "weapon_used": "Other"
+                    }
+                  ],
+                  "count": 1
+                },
+                {
+                  "Name": "Alleged_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Alleged_Injury",
+                      "subject_race": "HISPANIC",
+                      "total_use_of_force_events": 44,
+                      "weapon_used": "Other"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 2
+            }
+          ],
+          "count": 3
+        },
+        {
+          "Name": "Taser/Impact Weapon",
+          "children": [
+            {
+              "Name": "Uninjured",
+              "children": [
+                {
+                  "Name": " ",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Uninjured",
+                      "injury_documentation": " ",
+                      "subject_race": "HISPANIC",
+                      "total_use_of_force_events": 468,
+                      "weapon_used": "Taser/Impact Weapon"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            },
+            {
+              "Name": "Injured",
+              "children": [
+                {
+                  "Name": "Officer_Supported_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Officer_Supported_Injury",
+                      "subject_race": "HISPANIC",
+                      "total_use_of_force_events": 500,
+                      "weapon_used": "Taser/Impact Weapon"
+                    }
+                  ],
+                  "count": 1
+                },
+                {
+                  "Name": "Alleged_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Alleged_Injury",
+                      "subject_race": "HISPANIC",
+                      "total_use_of_force_events": 35,
+                      "weapon_used": "Taser/Impact Weapon"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 2
+            }
+          ],
+          "count": 3
+        },
+        {
+          "Name": "Member Presence",
+          "children": [
+            {
+              "Name": "Uninjured",
+              "children": [
+                {
+                  "Name": " ",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Uninjured",
+                      "injury_documentation": " ",
+                      "subject_race": "HISPANIC",
+                      "total_use_of_force_events": 5140,
+                      "weapon_used": "Member Presence"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            },
+            {
+              "Name": "Injured",
+              "children": [
+                {
+                  "Name": "Alleged_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Alleged_Injury",
+                      "subject_race": "HISPANIC",
+                      "total_use_of_force_events": 301,
+                      "weapon_used": "Member Presence"
+                    }
+                  ],
+                  "count": 1
+                },
+                {
+                  "Name": "Officer_Supported_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Officer_Supported_Injury",
+                      "subject_race": "HISPANIC",
+                      "total_use_of_force_events": 2822,
+                      "weapon_used": "Member Presence"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 2
+            }
+          ],
+          "count": 3
+        },
+        {
+          "Name": "Verbal Commands",
+          "children": [
+            {
+              "Name": "Injured",
+              "children": [
+                {
+                  "Name": "Alleged_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Alleged_Injury",
+                      "subject_race": "HISPANIC",
+                      "total_use_of_force_events": 313,
+                      "weapon_used": "Verbal Commands"
+                    }
+                  ],
+                  "count": 1
+                },
+                {
+                  "Name": "Officer_Supported_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Officer_Supported_Injury",
+                      "subject_race": "HISPANIC",
+                      "total_use_of_force_events": 2962,
+                      "weapon_used": "Verbal Commands"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 2
+            },
+            {
+              "Name": "Uninjured",
+              "children": [
+                {
+                  "Name": " ",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Uninjured",
+                      "injury_documentation": " ",
+                      "subject_race": "HISPANIC",
+                      "total_use_of_force_events": 5403,
+                      "weapon_used": "Verbal Commands"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            }
+          ],
+          "count": 3
+        },
+        {
+          "Name": "Physical Force",
+          "children": [
+            {
+              "Name": "Uninjured",
+              "children": [
+                {
+                  "Name": " ",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Uninjured",
+                      "injury_documentation": " ",
+                      "subject_race": "HISPANIC",
+                      "total_use_of_force_events": 10468,
+                      "weapon_used": "Physical Force"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            },
+            {
+              "Name": "Injured",
+              "children": [
+                {
+                  "Name": "Officer_Supported_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Officer_Supported_Injury",
+                      "subject_race": "HISPANIC",
+                      "total_use_of_force_events": 6344,
+                      "weapon_used": "Physical Force"
+                    }
+                  ],
+                  "count": 1
+                },
+                {
+                  "Name": "Alleged_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Alleged_Injury",
+                      "subject_race": "HISPANIC",
+                      "total_use_of_force_events": 677,
+                      "weapon_used": "Physical Force"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 2
+            }
+          ],
+          "count": 3
+        },
+        {
+          "Name": "Chemical",
+          "children": [
+            {
+              "Name": "Uninjured",
+              "children": [
+                {
+                  "Name": " ",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Uninjured",
+                      "injury_documentation": " ",
+                      "subject_race": "HISPANIC",
+                      "total_use_of_force_events": 8,
+                      "weapon_used": "Chemical"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            },
+            {
+              "Name": "Injured",
+              "children": [
+                {
+                  "Name": "Officer_Supported_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Officer_Supported_Injury",
+                      "subject_race": "HISPANIC",
+                      "total_use_of_force_events": 2,
+                      "weapon_used": "Chemical"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            }
+          ],
+          "count": 2
+        }
+      ],
+      "count": 20
+    },
+    {
+      "Name": "NATIVE AMERICAN/ALASKAN NATIVE",
+      "children": [
+        {
+          "Name": "Verbal Commands",
+          "children": [
+            {
+              "Name": "Uninjured",
+              "children": [
+                {
+                  "Name": " ",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Uninjured",
+                      "injury_documentation": " ",
+                      "subject_race": "NATIVE AMERICAN/ALASKAN NATIVE",
+                      "total_use_of_force_events": 42,
+                      "weapon_used": "Verbal Commands"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            },
+            {
+              "Name": "Injured",
+              "children": [
+                {
+                  "Name": "Officer_Supported_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Officer_Supported_Injury",
+                      "subject_race": "NATIVE AMERICAN/ALASKAN NATIVE",
+                      "total_use_of_force_events": 8,
+                      "weapon_used": "Verbal Commands"
+                    }
+                  ],
+                  "count": 1
+                },
+                {
+                  "Name": "Alleged_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Alleged_Injury",
+                      "subject_race": "NATIVE AMERICAN/ALASKAN NATIVE",
+                      "total_use_of_force_events": 1,
+                      "weapon_used": "Verbal Commands"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 2
+            }
+          ],
+          "count": 3
+        },
+        {
+          "Name": "Physical Force",
+          "children": [
+            {
+              "Name": "Uninjured",
+              "children": [
+                {
+                  "Name": " ",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Uninjured",
+                      "injury_documentation": " ",
+                      "subject_race": "NATIVE AMERICAN/ALASKAN NATIVE",
+                      "total_use_of_force_events": 94,
+                      "weapon_used": "Physical Force"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            },
+            {
+              "Name": "Injured",
+              "children": [
+                {
+                  "Name": "Officer_Supported_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Officer_Supported_Injury",
+                      "subject_race": "NATIVE AMERICAN/ALASKAN NATIVE",
+                      "total_use_of_force_events": 14,
+                      "weapon_used": "Physical Force"
+                    }
+                  ],
+                  "count": 1
+                },
+                {
+                  "Name": "Alleged_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Alleged_Injury",
+                      "subject_race": "NATIVE AMERICAN/ALASKAN NATIVE",
+                      "total_use_of_force_events": 1,
+                      "weapon_used": "Physical Force"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 2
+            }
+          ],
+          "count": 3
+        },
+        {
+          "Name": "Member Presence",
+          "children": [
+            {
+              "Name": "Injured",
+              "children": [
+                {
+                  "Name": "Alleged_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Alleged_Injury",
+                      "subject_race": "NATIVE AMERICAN/ALASKAN NATIVE",
+                      "total_use_of_force_events": 1,
+                      "weapon_used": "Member Presence"
+                    }
+                  ],
+                  "count": 1
+                },
+                {
+                  "Name": "Officer_Supported_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Officer_Supported_Injury",
+                      "subject_race": "NATIVE AMERICAN/ALASKAN NATIVE",
+                      "total_use_of_force_events": 8,
+                      "weapon_used": "Member Presence"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 2
+            },
+            {
+              "Name": "Uninjured",
+              "children": [
+                {
+                  "Name": " ",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Uninjured",
+                      "injury_documentation": " ",
+                      "subject_race": "NATIVE AMERICAN/ALASKAN NATIVE",
+                      "total_use_of_force_events": 38,
+                      "weapon_used": "Member Presence"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            }
+          ],
+          "count": 3
+        },
+        {
+          "Name": "Taser/Impact Weapon",
+          "children": [
+            {
+              "Name": "Uninjured",
+              "children": [
+                {
+                  "Name": " ",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Uninjured",
+                      "injury_documentation": " ",
+                      "subject_race": "NATIVE AMERICAN/ALASKAN NATIVE",
+                      "total_use_of_force_events": 4,
+                      "weapon_used": "Taser/Impact Weapon"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            }
+          ],
+          "count": 1
+        }
+      ],
+      "count": 10
+    },
+    {
+      "Name": "WHITE",
+      "children": [
+        {
+          "Name": "Member Presence",
+          "children": [
+            {
+              "Name": "Uninjured",
+              "children": [
+                {
+                  "Name": " ",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Uninjured",
+                      "injury_documentation": " ",
+                      "subject_race": "WHITE",
+                      "total_use_of_force_events": 3642,
+                      "weapon_used": "Member Presence"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            },
+            {
+              "Name": "Injured",
+              "children": [
+                {
+                  "Name": "Officer_Supported_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Officer_Supported_Injury",
+                      "subject_race": "WHITE",
+                      "total_use_of_force_events": 1890,
+                      "weapon_used": "Member Presence"
+                    }
+                  ],
+                  "count": 1
+                },
+                {
+                  "Name": "Alleged_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Alleged_Injury",
+                      "subject_race": "WHITE",
+                      "total_use_of_force_events": 178,
+                      "weapon_used": "Member Presence"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 2
+            }
+          ],
+          "count": 3
+        },
+        {
+          "Name": "Firearm",
+          "children": [
+            {
+              "Name": "Uninjured",
+              "children": [
+                {
+                  "Name": " ",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Uninjured",
+                      "injury_documentation": " ",
+                      "subject_race": "WHITE",
+                      "total_use_of_force_events": 14,
+                      "weapon_used": "Firearm"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            },
+            {
+              "Name": "Injured",
+              "children": [
+                {
+                  "Name": "Officer_Supported_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Officer_Supported_Injury",
+                      "subject_race": "WHITE",
+                      "total_use_of_force_events": 48,
+                      "weapon_used": "Firearm"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            }
+          ],
+          "count": 2
+        },
+        {
+          "Name": "Other",
+          "children": [
+            {
+              "Name": "Uninjured",
+              "children": [
+                {
+                  "Name": " ",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Uninjured",
+                      "injury_documentation": " ",
+                      "subject_race": "WHITE",
+                      "total_use_of_force_events": 741,
+                      "weapon_used": "Other"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            },
+            {
+              "Name": "Injured",
+              "children": [
+                {
+                  "Name": "Alleged_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Alleged_Injury",
+                      "subject_race": "WHITE",
+                      "total_use_of_force_events": 28,
+                      "weapon_used": "Other"
+                    }
+                  ],
+                  "count": 1
+                },
+                {
+                  "Name": "Officer_Supported_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Officer_Supported_Injury",
+                      "subject_race": "WHITE",
+                      "total_use_of_force_events": 276,
+                      "weapon_used": "Other"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 2
+            }
+          ],
+          "count": 3
+        },
+        {
+          "Name": "Taser/Impact Weapon",
+          "children": [
+            {
+              "Name": "Injured",
+              "children": [
+                {
+                  "Name": "Officer_Supported_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Officer_Supported_Injury",
+                      "subject_race": "WHITE",
+                      "total_use_of_force_events": 329,
+                      "weapon_used": "Taser/Impact Weapon"
+                    }
+                  ],
+                  "count": 1
+                },
+                {
+                  "Name": "Alleged_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Alleged_Injury",
+                      "subject_race": "WHITE",
+                      "total_use_of_force_events": 15,
+                      "weapon_used": "Taser/Impact Weapon"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 2
+            },
+            {
+              "Name": "Uninjured",
+              "children": [
+                {
+                  "Name": " ",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Uninjured",
+                      "injury_documentation": " ",
+                      "subject_race": "WHITE",
+                      "total_use_of_force_events": 278,
+                      "weapon_used": "Taser/Impact Weapon"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            }
+          ],
+          "count": 3
+        },
+        {
+          "Name": "Verbal Commands",
+          "children": [
+            {
+              "Name": "Injured",
+              "children": [
+                {
+                  "Name": "Alleged_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Alleged_Injury",
+                      "subject_race": "WHITE",
+                      "total_use_of_force_events": 194,
+                      "weapon_used": "Verbal Commands"
+                    }
+                  ],
+                  "count": 1
+                },
+                {
+                  "Name": "Officer_Supported_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Officer_Supported_Injury",
+                      "subject_race": "WHITE",
+                      "total_use_of_force_events": 2000,
+                      "weapon_used": "Verbal Commands"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 2
+            },
+            {
+              "Name": "Uninjured",
+              "children": [
+                {
+                  "Name": " ",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Uninjured",
+                      "injury_documentation": " ",
+                      "subject_race": "WHITE",
+                      "total_use_of_force_events": 3905,
+                      "weapon_used": "Verbal Commands"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            }
+          ],
+          "count": 3
+        },
+        {
+          "Name": "Chemical",
+          "children": [
+            {
+              "Name": "Injured",
+              "children": [
+                {
+                  "Name": "Officer_Supported_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Officer_Supported_Injury",
+                      "subject_race": "WHITE",
+                      "total_use_of_force_events": 3,
+                      "weapon_used": "Chemical"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            },
+            {
+              "Name": "Uninjured",
+              "children": [
+                {
+                  "Name": " ",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Uninjured",
+                      "injury_documentation": " ",
+                      "subject_race": "WHITE",
+                      "total_use_of_force_events": 10,
+                      "weapon_used": "Chemical"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            }
+          ],
+          "count": 2
+        },
+        {
+          "Name": "Physical Force",
+          "children": [
+            {
+              "Name": "Injured",
+              "children": [
+                {
+                  "Name": "Alleged_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Alleged_Injury",
+                      "subject_race": "WHITE",
+                      "total_use_of_force_events": 385,
+                      "weapon_used": "Physical Force"
+                    }
+                  ],
+                  "count": 1
+                },
+                {
+                  "Name": "Officer_Supported_Injury",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Injured",
+                      "injury_documentation": "Officer_Supported_Injury",
+                      "subject_race": "WHITE",
+                      "total_use_of_force_events": 4152,
+                      "weapon_used": "Physical Force"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 2
+            },
+            {
+              "Name": "Uninjured",
+              "children": [
+                {
+                  "Name": " ",
+                  "children": [
+                    {
+                      "alleged_or_injured": "Uninjured",
+                      "injury_documentation": " ",
+                      "subject_race": "WHITE",
+                      "total_use_of_force_events": 7623,
+                      "weapon_used": "Physical Force"
+                    }
+                  ],
+                  "count": 1
+                }
+              ],
+              "count": 1
+            }
+          ],
+          "count": 3
+        }
+      ],
+      "count": 19
+    }
+  ]
+}
